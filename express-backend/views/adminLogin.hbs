@@ -1,0 +1,45 @@
+<div class="auth-main">
+    <div class="grid-50">
+        <div class="heading-container">
+            <p class="authText1 authText">Authentication Required</p>
+        </div>
+        <div class="left-container">
+            <div class="calendar-container">
+                <div class="date-container">
+                    <div class="monthDay-container">
+                        <p class="month" id="month"></p>
+                        <p class="dayNumber" id="dayNumber"></p>
+                        <p class="dayWord" id="dayWord"></p>
+                    </div>
+                    <div class="time-container">
+                        <p class="time" id="time"></p>
+                    </div>
+                    {{!-- <div class="weather-container"></div> --}}
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="authentication-container">
+                <form class="formAuth" id="login" name="login" method="POST" action="/admin/login">
+                    <div class="intro-container">
+                        <p class="intro-text">Login</p>
+                    </div>
+                    <div class="username-div">
+                        <label class="username-label" for="name">Username: </label>
+                        <input class="username-input" type="text" name="username" required />
+                    </div>
+                    <div class="password-div">
+                        <label class="password-label" for="name">Password: </label>
+                        <input class="password-input" type="password" name="password" />
+                    </div>
+                    <div class="submit-div">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="message-container">
+            <p class="login-message">{{authMessage}}</p>
+        </div>
+    </div>
+</div>

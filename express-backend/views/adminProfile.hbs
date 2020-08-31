@@ -1,0 +1,50 @@
+{{!-- UI DESIGN FOR ADMIN PROFILES --}}
+<div class="profile-container global-height-backend">
+    <div class="profile-navigation-left">
+        <div class="profile-display-container">
+            <div class="profile-data-name">
+                <p class="profile-text1">Welcome: {{FirstName}}</p>
+            </div>
+            <div class="profile-data-power">
+                <p class="profile-text2">User: {{powerMessage}} | </p>
+            </div>
+            <div class="profile-data-logout">
+                <a class="profile-logout-link" href="http://localhost:3000/admin/logout">Logout</a>
+            </div>
+        </div>
+        <div class="profile-navigation-links">
+            <div class="profile-container-link">
+                <button type="button" class="profile-link-button"
+                    onclick="window.location.href = 'http://localhost:3000/admin/profile';">Profile</button>
+            </div>
+            <div class="profile-edit-menu">
+                <button type="button" class="profile-link-button profile-button-global
+                " onclick="expandButton(), buttonAnimation()">Menu Editor
+                    <i class="far fa-arrow-alt-circle-up" id="profile-dropdown"></i>
+                </button>
+                <div id="profile-content" class="profile-dropdown-content">
+                    <a href="http://localhost:3000/menu/edit/pizzas"
+                    target="targetframe" class="profile-links pizzas-link">Pizzas</a>
+
+                    <a href="http://localhost:3000/menu/edit/sandwiches"
+                    target="targetframe" class="profile-links sandwiches-link">Sandwiches</a>
+                    
+                    <a href="http://localhost:3000/menu/edit/salads" class="profile-links salads-link">Salads</a>
+                    
+                    <a href="http://localhost:3000/menu/edit/appetizers" class="profile-links appetizers-link">Appetizers</a>
+                    
+                    <a href="http://localhost:3000/menu/edit/sides" class="profile-links sides-link">Sides</a>
+                    
+                    <a href="http://localhost:3000/menu/edit/soup" class="profile-links soups-link">Soups</a>
+                </div>
+            </div>
+            <div class="profile-edit-menu">
+                <button type="button" class="profile-link-button"
+                    onclick="window.location.href = 'http://localhost:3000/schedule/editor';">Schedule</button>
+            </div>
+        </div>
+    </div>
+    <div class="profile-web-render-container" id="pageRender">
+        <iframe class="render-pages" src="http://localhost:3001/" name="targetframe"></iframe>
+    </div>
+</div>
