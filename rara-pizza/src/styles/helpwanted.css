@@ -1,0 +1,69 @@
+.helpWanted-container {
+    float: left;
+    margin-left: 1.2em;
+    margin-top: 5em;
+    width: 30%;
+    height: 28em;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.helpWanted-boxC {
+    width: 100%;
+    float: left;
+    margin-top: 2em;
+}
+
+.helpWanted-text {
+    color: red;
+    text-decoration: none;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 50px;
+    border: solid red 2px;
+    background-color: black;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.helpWanted-infoC {
+    width: 100%;
+    float: left;
+    margin-top: 2em;
+}
+
+.helpWanted-p1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Bungee Inline', cursive;
+    margin-top: -25px;
+}
+
+.helpWanted-p1 b {
+    color: red;
+    text-shadow: 2px 2px black;
+}
+
+.helpWanted-buttonC {
+    width: 100%;
+    float: left;
+}
+
+.apply-now-button {
+    width: 50%;
+    margin-top: 2em;
+    height: 50px;
+    background-color: black;
+    color: red;
+    border: solid red;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.apply-link {
+    width: 100%;
+    float: left;
+    color: red;
+    text-decoration: none;
+    font-family: 'Bungee Inline', cursive;
+    margin-top: -8px;
+}

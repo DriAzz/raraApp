@@ -1,0 +1,107 @@
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingScreen-container {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.fa-hourglass {
+    width: 120px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid white 1px;
+    box-shadow: 0px 0px 5px lightblue;;
+    border-radius: 100%;
+    color: white;
+    font-size: 80px;
+    margin-top: 3em;
+    animation: rotating 2s linear infinite;
+}
+
+
+.pizzaGet-box {
+    width: 33.3%;
+    margin-top: 3em;
+    float: left;
+}
+
+.pizzaGetName-container {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGet-name {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pizzaGetIng-container {
+    margin-top: 5px;
+    margin-left: 0.7em;
+    width: 100%;
+    float: left;
+}
+
+.pizzaGetIng-inner {
+    width: 100%;
+    float: left;
+    height: 20em;
+    margin-top: 5px;
+}
+
+.pizzaGetIng-sauces, .pizzaGetIng-meats, .pizzaGetIng-veg {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGetIng-title-container {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGet-data-container {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGetIng-title {
+    margin-left: 1em;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.pizzaGet-ing {
+    float: left;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.pizzaGetPrice-container {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGet-price {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pizzaGrid-3 {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.globalRender-container {
+    width: 100%;
+    float: left;
+}
+
+.globalRenderTitle-container {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.globalRenderTitle {
+    color: white;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}

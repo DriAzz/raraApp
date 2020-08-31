@@ -1,0 +1,69 @@
+.menuCom-container {
+    width: 100%;
+    height: 62em;
+    float: left;
+}
+
+.menu-box {
+    width: 80%;
+    margin: auto;
+    margin-top: 7em;
+    height: 65em;
+    border: solid white 1px;
+    background: rgba(52, 71, 137, 1);
+}
+
+.menuHeight-box {
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+
+.menu-leftC {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.menu-leftC-line {
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+    float: left;
+    border-right: solid white 1px;
+}
+
+.menu-leftC-inner {
+    margin-top: 12em;
+}
+
+.navLink-container {
+    width: 100%;
+    float: left;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.navLinks-menu {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2em;
+}
+
+.menu-active {
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px white;
+}
+
+
+
+
+
+
+.menu-rightC {
+    width: 75%;
+    float: left;
+}

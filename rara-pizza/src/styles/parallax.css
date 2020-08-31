@@ -1,0 +1,136 @@
+/* 
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Bungee Inline', cursive;
+*/
+
+.pizzaSpecContainer {
+    float: left;
+    margin-left: 4.2em;
+    margin-top: 5em;
+    width: 60%;
+    height: 35em;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.pizzaSpecText {
+    color: black;
+    text-shadow: 2px 2px blue;
+    opacity: 1;
+    font-size: 35px;
+    font-family: 'Luckiest Guy';
+    padding-top: 0.5em;
+}
+
+.pizzaInfo, .breadInfo {
+    color: black;
+    font-size: 35px;
+    font-family: 'Luckiest Guy';
+    text-shadow: 2px 2px red;
+}
+
+.hoursContainer {
+    width: 50%;
+    float: left;
+}
+
+.hoursText {
+    font-family: 'Bungee Inline', cursive;
+    text-shadow: 2px 2px red;
+    font-size: 40px;
+    margin-left: 1.5em;
+}
+
+.ulHoursText {
+    list-style-type: none;
+}
+
+.daysText {
+    text-align: center;
+    margin-left: 0em;
+    margin-top: -15px;
+    font-size: 25px;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.dayContainer {
+    width: 100%;
+    float: left;
+}
+
+.weekDayText {
+    float: left;
+    margin-left: 3.0em;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+
+.weekDayText, .closedText, .openedText {
+    margin-top: -0.8em;
+}
+
+.openedText {
+    float: right;
+    text-shadow: 2px 2px black;
+    color: blue;
+}
+
+.closedText {
+    float: right;
+    text-shadow: 2px 2px black;
+    margin-right: 0.7em;
+    color: red;
+}
+
+.readme {
+    height: 800px;
+    width: 100%;
+    float: left;
+}
+
+/* Carshow Container */
+.csHourContainer {
+    width: 50%;
+    float: left;
+}
+
+.csTitleContainer {
+    margin-top: 7em;
+    text-align: center;
+}
+
+.csDateContainer {
+    margin-top: -2em;
+    text-align: center;
+}
+
+.csHoursContainer {
+    margin-top: -2em;
+}
+
+.csTitle {
+    font-family: 'Bungee Inline', cursive;
+    text-shadow: 2px 2px red;
+    font-size: 40px;
+    margin-left: 0.8em;
+}
+
+.csDate {
+    text-align: center;
+    margin-left: 1.5em;
+    font-size: 25px;
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
+.csHours {
+    font-size: 25px;
+    font-family: 'Bungee Inline', cursive;
+    color: blue;
+    text-shadow: black 2px 2px;
+    margin-left: 1.4em;
+}
