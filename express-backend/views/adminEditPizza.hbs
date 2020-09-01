@@ -15,13 +15,29 @@
                             <th>Pizza Price Small</th>
                         </tr>
                         {{#each pizzas}}
-                        <tr class="tablerow-adminEdit-td1">
-                            <td>{{PizzaID}}</td>
+                        <tr class="tablerow-adminEdit-td1 getData-{{PizzaID}}">
+                            <td class="pizza-ID-data">{{PizzaID}}</td>
                             <td>{{PizzaName}}</td>
                             <td>${{PizzaLargePrice}}</td>
                             <td>${{PizzaMediumPrice}}</td>
                             <td>${{PizzaSmallPrice}}</td>
+                            <td class="pizzaData-td pizzaData-td-{{PizzaID}}">
+                                <button type="button" onclick="getData();" id="pizzaData-edit pizzaData-edit-{{PizzaID}}">
+                                    <i class="fas fa-info"></i>
+                                </button>
+                            </td>
                         </tr>
+                        {{!-- <div class="pizzaData-edit-hidden" id="editToggle-pizzaData">
+                            <div class="pizzaData-dataRenderContainer">
+                                <p class="pizzaData-dataTextRender">{{PizzaName}}</p>
+                            </div>
+                            <div class="pizzaData-divInner">
+                                <button type="button" class="editToggle-edit">Edit</button>
+                            </div>
+                            <div class="pizzaData-divInner">
+                                <button type="button" class="editToggle-remove">Remove</button>
+                            </div>
+                        </div> --}}
                         {{/each}}
                         <tr class="tablerow-adminEdit-td2">
                             <td>#</td>

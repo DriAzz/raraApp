@@ -36,7 +36,7 @@ $(document).ready(function () {
             $("#buttonSubmit").removeClass("submitButtonRev")
             $(".addButtonGlobal").removeClass("addPizzaButtonAct");
         }
-        
+
         $(".tablerow-adminEdit-td2").toggle();
         $(".whiteTop").slideToggle("slow", function () {
 
@@ -166,3 +166,40 @@ $(document).ready(function () {
         $(this).css("color", "white");
     });
 })
+
+//Cheese Button
+$(document).ready(function () {
+    $(".cheeseContainer").hide();
+    $(".cheeseButton").click(function () {
+        $(".cheeseContainer").slideToggle(function () {
+
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".cheeseButton").hover(function () {
+        $(this).css("box-shadow", "0px 0px 6px 1px gold");
+        $(this).css("color", "blue");
+    }, function () {
+        $(this).css("box-shadow", "none");
+        $(this).css("color", "white");
+    });
+});
+
+//Info Button- EXPAND
+
+$(document).ready(function () {
+    var getDataClass = $(".pizza-ID-data").html();
+    getDataClass = toString(getDataClass);
+
+
+});
+
+// Button Controls Edit and Remove
+// $(document).ready(function () {
+//     $(".pizzaData-td").hide();
+//     $(".").hover(function () {
+//         $(".pizzaData-td").toggle();
+//     });
+// });

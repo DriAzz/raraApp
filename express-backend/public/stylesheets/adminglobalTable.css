@@ -1,0 +1,15 @@
+.adminEdit-container-right {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.adminEdit-text-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.adminEdit-text {
+    text-align: center;
+}
