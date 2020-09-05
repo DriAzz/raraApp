@@ -8,11 +8,19 @@ const ApplyForm = () => (
                 <p className="titleForm">Employment Application</p>
             </div>
             <div className="nameInfo-container">
-                <input type="text" className="apply-input input-firstname" placeholder="First Name" />
-                <input type="text" className="apply-input input-middlename" placeholder="Middle Name" />
-                <input type="text" className="apply-input input-lastname" placeholder="Last Name" />
+                <div className="firstName-container">
+                    <label for="fname" className="labels label-fname">First Name</label>
+                    <input type="text" className="apply-input input-firstname" placeholder="First Name" />
+                </div>
+                <div calssName="middleName-container">
+                    <input type="text" className="apply-input input-middlename" placeholder="Middle Name" />
+                </div>
+                    <input type="text" className="apply-input input-lastname" placeholder="Last Name" />
             </div>
             <div className="locationInfo-container">
+                <div calssName="">
+                    
+                </div>
                 <input type="text" className="address-input" placeholder="Address" />
                 <input type="text" className="city-input" placeholder="City" />
                 <select>

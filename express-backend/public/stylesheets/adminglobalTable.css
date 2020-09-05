@@ -1,15 +1,64 @@
-.adminEdit-container-right {
+.globalEdit-right-container {
     position: relative;
     float: left;
     width: 100%;
 }
 
-.adminEdit-text-container {
+.globalEdit-title-container {
     width: 100%;
-    text-align: center;
-    padding-top: 10px;
+    margin-top: 15px;
 }
 
-.adminEdit-text {
+.globalEdit-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.globalEdit-post-container, .globalEdit-sizes,
+.globalEdit-sizeTable {
+    width: 100%;
+    float: left;
+}
+
+.globalEdit-formEdit {
+    width: 75%;
+    margin: auto;
+}
+
+.globalEdit-table {
+    background: lightgrey;
+    /* border: solid black 1px; */
+    width: 100%;
+    float: left;
+}
+
+.tablerow-globalEdit-th th {
     text-align: center;
 }
+
+.tablerow-globalEdit-td1 {
+    border: solid black 1px;
+}
+
+.tablerow-globalEdit-td1 td {
+    text-align: center;
+}
+
+.tablerow-globalEdit-td2 {
+    border: solid black 1px;
+}
+
+.tablerow-globalEdit-td2 td {
+    text-align: center;
+}
+
+.globalInputFood {
+    text-align: center;
+    width: 100%;
+}
+
+.foodEditButtonContainer {
+    width: 100%;
+    float: left;
+}
+

@@ -1,13 +1,13 @@
-<div class="adminEdit-container-right">
-    <div class="adminEdit-text-container">
-        <p class="adminEdit-text">Pizzas</p>
+<div class="adminEdit-container-right globalEdit-right-container">
+    <div class="adminEdit-text-container globalEdit-title-container">
+        <p class="adminEdit-text globalEdit-title">Pizzas</p>
     </div>
-    <div class="adminEdit-post-container">
-        <div class="adminEdit-sizes">
-            <div class="adminEdit-sizeTable">
-                <form class="formEdit" id="editPizza" name="editPizza" method="POST" action="/menu/edit/pizzas">
-                    <table class="adminEdit-table">
-                        <tr class="tablerow-adminEdit-th">
+    <div class="adminEdit-post-container globalEdit-post-container">
+        <div class="adminEdit-sizes globalEdit-sizes">
+            <div class="adminEdit-sizeTable globalEdit-sizeTable">
+                <form class="formEdit globalEdit-formEdit" id="editPizza" name="editPizza" method="POST" action="/menu/edit/pizzas">
+                    <table class="adminEdit-table globalEdit-table">
+                        <tr class="tablerow-adminEdit-th tablerow-globalEdit-th">
                             <th>Pizza ID</th>
                             <th>Pizza Name</th>
                             <th>Pizza Price Large</th>
@@ -15,16 +15,16 @@
                             <th>Pizza Price Small</th>
                         </tr>
                         {{#each pizzas}}
-                        <tr class="tablerow-adminEdit-td1 getData-{{PizzaID}}">
+                        <tr class="tablerow-adminEdit-td1 tablerow-globalEdit-td1 getData-{{PizzaID}}">
                             <td class="pizza-ID-data">{{PizzaID}}</td>
                             <td>{{PizzaName}}</td>
                             <td>${{PizzaLargePrice}}</td>
                             <td>${{PizzaMediumPrice}}</td>
                             <td>${{PizzaSmallPrice}}</td>
                             <td class="pizzaData-td pizzaData-td-{{PizzaID}}">
-                                <button type="button" onclick="getData();" id="pizzaData-edit pizzaData-edit-{{PizzaID}}">
+                                {{!-- <button type="button" onclick="getData();" id="pizzaData-edit pizzaData-edit-{{PizzaID}}">
                                     <i class="fas fa-info"></i>
-                                </button>
+                                </button> --}}
                             </td>
                         </tr>
                         {{!-- <div class="pizzaData-edit-hidden" id="editToggle-pizzaData">
@@ -39,21 +39,21 @@
                             </div>
                         </div> --}}
                         {{/each}}
-                        <tr class="tablerow-adminEdit-td2">
+                        <tr class="tablerow-adminEdit-td2 tablerow-globalEdit-td2">
                             <td>#</td>
                             <td>
-                                <input type="text" class="nameGlobal-input" placeholder="Pizza Name" name="pizzaname" />
+                                <input type="text" class="foodName-globalInput globalInputFood" placeholder="Pizza Name" name="pizzaname" />
                             </td>
                             <td>
-                                <input type="number" class="foodPrice-input" step="0.01" min="0" max="30"
+                                <input type="number" step=".01" class="foodPrice-globalInput globalInputFood" step="0.01" min="0" max="30"
                                     name="pizzalargeprice" placeholder="Large Price" />
                             </td>
                             <td>
-                                <input type="number" class="foodPrice-input" step="0.01" min="0" max="30"
+                                <input type="number" step=".01" class="foodPrice-globalInput globalInputFood" step="0.01" min="0" max="30"
                                     name="pizzamediumprice" placeholder="Medium Price" />
                             </td>
                             <td>
-                                <input type="number" class="foodPrice-input" step="0.01" min="0" max="30"
+                                <input type="number" step=".01" class="foodPrice-globalInput globalInputFood" step="0.01" min="0" max="30"
                                     name="pizzasmallprice" placeholder="Small Price" />
                             </td>
                         </tr>
@@ -229,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="addContainer" id="addSubmitButton">
+                    <div class="foodEditButtonContainer" id="addSubmitButton">
                         <button type="button" class="addButtonGlobal" id="buttonEdit"
                             onclick="changeButton(), addButton();">Edit Table</button>
                         <button class="submitButton" id="buttonSubmit">Submit<i
