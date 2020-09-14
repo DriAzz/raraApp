@@ -1,64 +1,313 @@
-.globalEdit-right-container {
-    position: relative;
-    float: left;
-    width: 100%;
-}
-
-.globalEdit-title-container {
-    width: 100%;
-    margin-top: 15px;
-}
-
-.globalEdit-title {
-    text-align: center;
-    font-size: 25px;
-}
-
-.globalEdit-post-container, .globalEdit-sizes,
-.globalEdit-sizeTable {
+.pizzaEdit-container {
     width: 100%;
     float: left;
 }
 
-.globalEdit-formEdit {
-    width: 75%;
+.pizzaEdit-inner {
+    width: 85%;
     margin: auto;
 }
 
-.globalEdit-table {
+.pizzaEdit-titleContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pizzaEdit-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.pizzaEdit-dataContainer {
+    width: 100%;
+    float: left;
+}
+
+.pizzaEdit-containerBox {
+    width: 100%;
+    float: left;
     background: lightgrey;
-    /* border: solid black 1px; */
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.pizzaEdit-leftBox, .pizzaEdit-rightBox {
+    width: 50%;
+    float: left;
+}
+
+.pizzaEdit-id-title-wrap {
     width: 100%;
     float: left;
 }
 
-.tablerow-globalEdit-th th {
+.pizzaEdit-idBox {
+    width: 10%;
+    float: left;
     text-align: center;
 }
 
-.tablerow-globalEdit-td1 {
-    border: solid black 1px;
+.pizzaEdit-id {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 0.2em;
 }
 
-.tablerow-globalEdit-td1 td {
-    text-align: center;
+.pizzaEdit-titleBox {
+    width: 90%;
+    float: left;
 }
 
-.tablerow-globalEdit-td2 {
-    border: solid black 1px;
-}
-
-.tablerow-globalEdit-td2 td {
-    text-align: center;
-}
-
-.globalInputFood {
-    text-align: center;
-    width: 100%;
-}
-
-.foodEditButtonContainer {
+.pizzaEdit-priceBox {
     width: 100%;
     float: left;
 }
 
+.pizzaEdit-priceLarge {
+    font-size: 15px;
+    font-family: 'Lato';
+}
+
+.pizzaEdit-gridContainer {
+    width: 100%;
+    float: left;
+    margin-top: 0.5em;
+}
+
+.gE-3-3 {
+    width: 15%;
+    float: left;
+    margin-left: 1.8em;
+}
+
+.pizzaEdit-buttonContainer {
+    width: 100%;
+    float: left;
+}
+
+.pizzaEdit-buttonInner {
+    width: 100%;
+    float: left;
+    margin-top: 0.6em;
+}
+
+.pizzaEdit-buttonRemove, .pizzaEdit-buttonEdit {
+    float: right;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1em;
+}
+
+.pizzaEdit-buttonRemove {
+    background: white;
+    border: solid red 1px;
+}
+
+.pizzaEdit-buttonEdit {
+    background: white;
+    border: solid green 1px;
+}
+
+.fa-minus-circle, .fa-cogs {
+    font-size: 20px;
+}
+
+.fa-minus-circle {
+    color: red;
+}
+
+.fa-cogs {
+    color: green;
+}
+
+.pizzaForm {
+    font-family: 'Lato', sans-serif;
+}
+
+.pizzaForm-container1 {
+    width: 100%;
+    float: left;
+}
+
+.pizzaForm-container2 {
+    width: 100%;
+    float: left;
+    margin-top: 1em;
+}
+
+.pizzaForm-containerG {
+    width: 33.3%;
+    float: left;
+    margin-top: 1em;
+}
+
+.pizzaFormLabelTitle {
+    width: 100%;
+    float: left;
+    text-decoration: underline;
+}
+
+.pizzaForm-buttonContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.pizzaForm-dataContainer {
+    width: 100%;
+    float: left;
+}
+
+
+
+
+
+
+.pizzaForm-Inner {
+    width: 50%;
+    float: left;
+}
+
+.pizzaForm-container1 {
+    width: 100%;
+    float: left;
+}
+
+
+
+.pizzaForm-nameInput {
+    width: 90%;
+    text-align: center;
+    color: black;
+    height: 2.2em;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    border: solid rgba(72, 166, 255, 0.561) 1px;
+    background: rgba(72, 166, 255, 0.561);
+    border-radius: 5px;
+    outline: none;
+    margin: auto;
+    margin-top: -1em;
+}
+
+.pizzaFormLabel {
+    float: left;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.pizzaFormL1 {
+    width: 100%;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+
+.pizzaForm-largeInput, .pizzaForm-mediumInput, .pizzaForm-smallInput {
+    width: 50%;
+    height: 2em;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    border: solid rgba(72, 166, 255, 0.561) 1px;
+    background: rgba(72, 166, 255, 0.561);
+    border-radius: 5px;
+    outline: none;
+    margin-left: 1em;
+}
+
+.pizzaFormLabelTitle {
+    width: 100%;
+    float: left;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+.pizzaForm-buttonInner {
+    width: 8em;
+    height: 1.6em;
+    position: relative;
+    border: solid lightskyblue 1px;
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px lightskyblue;
+    color: white;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.pizzaForm-buttonText1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.pizzaForm-buttonAdd {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+.ingDisplay-container {
+    width: 50%;
+    float: left;
+    margin-top: 2em;
+}
+
+.ingDisplay-buttonContainer {
+    width: 100%;
+    float: left;
+    margin-top: 1em;
+}
+
+.ingButton {
+    width: 100%;
+    height: 2em;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    border: solid lightskyblue 1px;
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px lightskyblue;
+    outline: none;
+    color: white;
+}
+
+.pizzaForm-sauceC {
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.pizzaForm-sauceTitle {
+    width: 100%;
+    float: left;
+    font-size: 23px;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
