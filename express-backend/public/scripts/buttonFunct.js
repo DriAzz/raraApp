@@ -18,6 +18,17 @@ $(document).ready(function () {
     });
 });
 
+//Pizza Editor Buttons
+$(document).ready(function () {
+    $("#sauceSelector1").click(function () {
+        alert("Marinara has been clicked");
+    });
+
+    $("#sauceSelector2").click(function () {
+        alert("Alfredo has been clicked");
+    });
+});
+
 
 
 

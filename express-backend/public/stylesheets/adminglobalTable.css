@@ -311,3 +311,101 @@
     margin-bottom: 1em;
     text-decoration: underline;
 }
+
+.pizzaForm-sauce {
+    width: 100%;
+    float: left;
+}
+
+.pizzaForm-sauceInputC {
+    width: 90%;
+    float: left;
+    height: 3em;
+    margin-top: 1em;
+}
+
+.sauceSelectorDisabled {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: solid black 1px;
+    box-shadow: none;
+    outline: none;
+}
+
+.sauceSelectorActive {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: lightskyblue;
+    border: solid 1px lightskyblue;
+    box-shadow: 0px 0px 10px lightskyblue;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sauceSelector-left {
+    width: 50%;
+    float: left;
+}
+
+.sauceLabel {
+    font-size: 28px;
+    float: left;
+    margin-left: 5px;
+}
+
+.sauceLabelActive {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+.sauceSelector-right {
+    width: 50%;
+    float: left;
+}
+
+
+.sauceSelectorInner {
+    width: 100%;
+    float: left;
+}
+
+.sauceCheckBox {
+    width: 2em;
+    height: 2em;
+    float: right;
+    margin-right: 2em;
+}
+
+.fa-check {
+    visibility: hidden;
+}
+
+.fa-checkActive {
+    visibility: visible;
+    color: green;
+    font-size: 25px;
+}

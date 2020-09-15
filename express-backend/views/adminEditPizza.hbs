@@ -102,21 +102,34 @@
                                 <label class="pizzaForm-sauceTitle">Sauces</label>
                                 <div class="pizzaForm-sauce">
                                     <div class="pizzaForm-sauceInputC">
-                                        <div class="pizzaForm-sauceInputLeft">
-                                            <div class="pizzaForm-saucesContainer">
-                                                <label class="allLabelSauce redSauce-label">Red Sauce: </label>
-                                                <input type="button" value="Marinara" />
+                                        <button class="sauceSelectorDisabled" type="button" value="Marinara"
+                                            id="sauceSelector1">
+                                            <div class="sauceSelector-left">
+                                                <label class="sauceLabel" id="sauceLabel">Marinara</label>
                                             </div>
-                                            <div class="pizzaForm-saucesContainer">
-                                                <label class="allLabelSauce whiteSauce-label">Alfredo Sauce: </label>
-                                                <input type="button" value="Marinara" />
+                                            <div class="sauceSelector-right">
+                                                <div class="sauceSelectorInner">
+                                                    <div class="sauceCheckBox">
+                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="pizzaForm-saucesContainer">
-                                                <label class="allLabelSauce bbqSauce-label">BBQ Sauce: </label>
-                                                <input type="button" value="Marinara" />
+                                        </button>
+                                    </div>
+                                    <div class="pizzaForm-sauceInputC">
+                                        <button class="sauceSelectorDisabled" type="button" value="Alfredo"
+                                            id="sauceSelector2">
+                                            <div class="sauceSelector-left">
+                                                <label class="sauceLabel" id="sauceLabel">Alfredo</label>
                                             </div>
-                                        </div>
-                                        <div class="pizzaForm-sauceInputRight"></div>
+                                            <div class="sauceSelector-right">
+                                                <div class="sauceSelectorInner">
+                                                    <div class="sauceCheckBox">
+                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
