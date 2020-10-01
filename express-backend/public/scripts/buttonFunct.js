@@ -18,14 +18,111 @@ $(document).ready(function () {
     });
 });
 
+
+
+
 //Pizza Editor Buttons
 $(document).ready(function () {
+    var selectedData = document.getElementById("selected");
+
     $("#sauceSelector1").click(function () {
-        alert("Marinara has been clicked");
+        var marinara = document.getElementById("sauceLabel1").innerHTML;
+        $(this).addClass("sauceSelectorActive");
+        $("#sauceSelector2").removeClass("sauceSelectorActive");
+        $("#sauceSelector3").removeClass("sauceSelectorActive");
+        $("#sauceSelector4").removeClass("sauceSelectorActive");
+        $("#sauceSelector5").removeClass("sauceSelectorActive");
+        $("#sauceSelector6").removeClass("sauceSelectorActive");
+
+        if (selectedData.value == "") {
+            selectedData.value = marinara;
+        } else if (selectedData.value != "Marinara") {
+            selectedData.value = marinara;
+        };
     });
 
     $("#sauceSelector2").click(function () {
-        alert("Alfredo has been clicked");
+        var alfredo = document.getElementById("sauceLabel2").innerHTML;
+        $(this).addClass("sauceSelectorActive");
+        $("#sauceSelector1").removeClass("sauceSelectorActive");
+        $("#sauceSelector3").removeClass("sauceSelectorActive");
+        $("#sauceSelector4").removeClass("sauceSelectorActive");
+        $("#sauceSelector5").removeClass("sauceSelectorActive");
+        $("#sauceSelector6").removeClass("sauceSelectorActive");
+
+        if (selectedData.value == "") {
+            selectedData.value = alfredo;
+        } else if (selectedData.value != "Alfredo") {
+            selectedData.value = alfredo;
+        };
+    });
+
+    $("#sauceSelector3").click(function () {
+        var bbq = document.getElementById("sauceLabel3").innerHTML;
+        $(this).addClass("sauceSelectorActive");
+        $("#sauceSelector1").removeClass("sauceSelectorActive");
+        $("#sauceSelector2").removeClass("sauceSelectorActive");
+        $("#sauceSelector4").removeClass("sauceSelectorActive");
+        $("#sauceSelector5").removeClass("sauceSelectorActive");
+        $("#sauceSelector6").removeClass("sauceSelectorActive");
+
+
+        if (selectedData.value == "") {
+            selectedData.value = bbq;
+        } else if (selectedData.value != "BBQ") {
+            selectedData.value = bbq;
+        };
+    });
+
+    $("#sauceSelector4").click(function () {
+        var ranch = document.getElementById("sauceLabel4").innerHTML;
+        $(this).addClass("sauceSelectorActive");
+        $("#sauceSelector1").removeClass("sauceSelectorActive");
+        $("#sauceSelector2").removeClass("sauceSelectorActive");
+        $("#sauceSelector3").removeClass("sauceSelectorActive");
+        $("#sauceSelector5").removeClass("sauceSelectorActive");
+        $("#sauceSelector6").removeClass("sauceSelectorActive");
+
+
+        if (selectedData.value == "") {
+            selectedData.value = ranch;
+        } else if (selectedData.value != "Ranch") {
+            selectedData.value = ranch;
+        };
+    });
+
+    $("#sauceSelector5").click(function () {
+        var bean = document.getElementById("sauceLabel5").innerHTML;
+        $(this).addClass("sauceSelectorActive");
+        $("#sauceSelector1").removeClass("sauceSelectorActive");
+        $("#sauceSelector2").removeClass("sauceSelectorActive");
+        $("#sauceSelector3").removeClass("sauceSelectorActive");
+        $("#sauceSelector4").removeClass("sauceSelectorActive");
+        $("#sauceSelector6").removeClass("sauceSelectorActive");
+
+
+        if (selectedData.value == "") {
+            selectedData.value = bean;
+        } else if (selectedData.value != "Bean") {
+            selectedData.value = bean;
+        };
+    });
+
+    $("#sauceSelector6").click(function () {
+        var bufallo = document.getElementById("sauceLabel6").innerHTML;
+        $(this).addClass("sauceSelectorActive");
+        $("#sauceSelector1").removeClass("sauceSelectorActive");
+        $("#sauceSelector2").removeClass("sauceSelectorActive");
+        $("#sauceSelector3").removeClass("sauceSelectorActive");
+        $("#sauceSelector4").removeClass("sauceSelectorActive");
+        $("#sauceSelector5").removeClass("sauceSelectorActive");
+
+
+        if (selectedData.value == "") {
+            selectedData.value = buffalo;
+        } else if (selectedData.value != "Buffalo") {
+            selectedData.value = bufallo;
+        };
     });
 });
 
