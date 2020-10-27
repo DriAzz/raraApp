@@ -23,6 +23,7 @@ $(document).ready(function () {
 
 //Pizza Editor Buttons
 $(document).ready(function () {
+    document.getElementById("selected").disabled = true;
     var selectedData = document.getElementById("selected");
 
     $("#sauceSelector1").click(function () {
