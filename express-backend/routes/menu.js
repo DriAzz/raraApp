@@ -64,7 +64,9 @@ router.post('/edit/pizzas', function (req, res, next) {
                     PizzaIngredientBananaPepper: req.body.ingBananaPepper,
                     PizzaIngredientPickle: req.body.ingPickle,
                     PizzaIngredientJalapeno: req.body.ingJalapeno,
-                    PizzaIngredientBlackOlive: req.body.ingBlackOlive
+                    PizzaIngredientBlackOlive: req.body.ingBlackOlive,
+                    PizzaIngredientSourKrout: req.body.ingSourKrout,
+                    PizzaIngredientShreddedLettuce: req.body.ingShreddedLettuce
                 }
             }).spread(function (result, created) {
                 if (created) {

@@ -14,7 +14,7 @@ var Sequelize = require('sequelize');
 var info = {
     "revision": 1,
     "name": "initial_migration",
-    "created": "2020-08-17T18:03:57.352Z",
+    "created": "2020-11-01T17:43:08.666Z",
     "comment": ""
 };
 
@@ -36,17 +36,17 @@ var migrationCommands = [{
                     "allowNull": false
                 },
                 "PizzaLargePrice": {
-                    "type": Sequelize.DECIMAL,
+                    "type": Sequelize.DECIMAL(10, 2),
                     "field": "PizzaLargePrice",
                     "allowNull": false
                 },
                 "PizzaMediumPrice": {
-                    "type": Sequelize.DECIMAL,
+                    "type": Sequelize.DECIMAL(10, 2),
                     "field": "PizzaMediumPrice",
                     "allowNull": false
                 },
                 "PizzaSmallPrice": {
-                    "type": Sequelize.DECIMAL,
+                    "type": Sequelize.DECIMAL(10, 2),
                     "field": "PizzaSmallPrice",
                     "allowNull": false
                 },

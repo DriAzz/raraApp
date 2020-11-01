@@ -14,15 +14,15 @@ module.exports = function(sequelize, DataTypes) {
     },
     //Prices
     PizzaLargePrice: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false
     },
     PizzaMediumPrice: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false
     },
     PizzaSmallPrice: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false
     },
     //Ingredients

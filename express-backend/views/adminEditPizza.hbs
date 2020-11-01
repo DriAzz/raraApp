@@ -58,51 +58,36 @@
             <div class="pizzaForm-dataContainer">
                 <form class="pizzaForm" method="POST" action="/menu/edit/pizzas">
                     <div class="pizzaForm-innerForm">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         {{!-- 50% width --}}
                         <div class="pizzaForm-Inner">
                             <div class="pizzaForm-container1">
-                                <label for="pizzaName" class="pizzaFormLabel pizzaFormL1">Pizza Name</label>
-                                <input type="text" class="pizzaForm-nameInput" placeholder="Pizza Name" />
+                                <label for="name" class="pizzaFormLabel pizzaFormL1">Pizza Name</label>
+                                <input name="pizzaname" type="text" class="pizzaForm-nameInput"
+                                    placeholder="Pizza Name" />
                             </div>
                             <div class="pizzaForm-container2">
                                 <label class="pizzaFormLabelTitle">Set Prices</label>
                             </div>
                             <div class="pizzaForm-containerG pF-1">
-                                <label for="pizzaLargePrice" class="pizzaFormLabel pizzaFormL2">16": </label>
+                                <label for="name" class="pizzaFormLabel pizzaFormL2">16": </label>
                                 <input type="number" class="pizzaForm-largeInput" placeholder="$##.##" required
-                                    step=".01" name="pizzaLargePrice" />
+                                    step=".01" name="pizzalargeprice" />
                             </div>
                             <div class="pizzaForm-containerG pF-2">
-                                <label for="pizzaMediumPrice" class="pizzaFormLabel pizzaFormL3">12": </label>
+                                <label for="name" class="pizzaFormLabel pizzaFormL3">12": </label>
                                 <input type="number" class="pizzaForm-mediumInput" placeholder="$##.##" required
-                                    step=".01" name="pizzaMediumPrice" />
+                                    step=".01" name="pizzamediumprice" />
                             </div>
                             <div class="pizzaForm-containerG pF-3">
-                                <label for="pizzaSmallPrice" class="pizzaFormLabel pizzaFormL4">6": </label>
+                                <label for="name" class="pizzaFormLabel pizzaFormL4">6": </label>
                                 <input type="number" class="pizzaForm-smallInput" placeholder="$##.##" required
-                                    step=".01" name="pizzaSmallPrice" />
+                                    step=".01" name="pizzasmallprice" />
                             </div>
                             <div class="pizzaForm-sauceC">
                                 <label class="pizzaForm-sauceTitle">Sauces</label>
                                 <div class="selected-container">
-                                    <label class="selected-label">You've Selected: <input type="text" id="selected"
-                                            value="" /></label>
+                                    <label class="selected-label" for="name">You've Selected: <input type="text"
+                                            id="selected" name="ingRedSauce" /></label>
                                 </div>
                                 <div class="pizzaForm-sauce">
                                     <div class="pizzaForm-sauceInputC">
@@ -211,79 +196,131 @@
                             </div>
                             <div class="ingDisplay-ingredients">
 
-                                <input type="checkbox" name="pepName" class="pep-input meat-inputs" id="pepInput"
-                                    value="Pepperoni" />
-                                <label class="pep-label" for="pepName">Pepperoni</label>
+                                <div>
+                                    <input type="checkbox" name="ingPepperoni" class="pep-input meat-inputs"
+                                        id="pepInput" value="Pepperoni" />
+                                    <label class="pep-label" for="name">Pepperoni</label>
+                                </div>
 
-                                <input type="checkbox" name="sausName" class="saus-input meat-inputs" id="sausInput"
-                                    value="Sausage" />
-                                <label class="saus-label" for="sausName">Sausage</label>
+                                <div>
+                                    <input type="checkbox" name="ingSausage" class="saus-input meat-inputs"
+                                        id="sausInput" value="Sausage" />
+                                    <label class="saus-label" for="name">Sausage</label>
+                                </div>
 
-                                <input type="checkbox" name="canName" class="can-input meat-inputs" id="canInput"
-                                    value="Can. Bacon" />
-                                <label class="can-label" for="canName">Can. Bacon</label>
+                                <div>
+                                    <input type="checkbox" name="ingSalami" class="sala-input meat-inputs"
+                                        id="salaInput" value="Salami" />
+                                    <label class="sala-label" for="name">Salami</label>
+                                </div>
 
-                                <input type="checkbox" name="salaName" class="sala-input meat-inputs" id="salaInput"
-                                    value="Salami" />
-                                <label class="sala-label" for="salaName">Salami</label>
+                                <div>
+                                    <input type="checkbox" name="ingCanBacon" class="can-input meat-inputs"
+                                        id="canInput" value="Can. Bacon" />
+                                    <label class="can-label" for="name">Can. Bacon</label>
+                                </div>
 
-                                <input type="checkbox" name="burName" class="bur-input meat-inputs" id="burInput"
-                                    value="Burger" />
-                                <label class="bur-label" for="burName">Burger</label>
+                                <div>
+                                    <input type="checkbox" name="ingBeef"
+                                        class="bur-input meat-inputs" id="burInput" value="Burger" />
+                                    <label class="bur-label" for="name">Burger</label>
+                                </div>
 
-                                <input type="checkbox" name="bacName" class="bac-input meat-inputs" id="bacInput"
-                                    value="Bacon Bits" />
-                                <label class="bac-label" for="bacName">Bacon Bits</label>
+                                <div>
+                                    <input type="checkbox" name="ingBaconBit" class="bac-input meat-inputs"
+                                        id="bacInput" value="Bacon Bits" />
+                                    <label class="bac-label" for="name">Bacon Bits</label>
+                                </div>
 
                             </div>
                             <div class="ingDisplay-buttonContainer ingDisplay-button02">
                                 <button type="button" class="ingButton ingB-vegetables">Vegetables</button>
                             </div>
                             <div class="ingDisplay-ingredients">
-                                <input type="checkbox" name="bOliveName" class="bOlive-input veg-inputs"
-                                    id="bOliveInput" value="Black Olives" />
-                                <label class="bOlive-label" for="bOliveName">Black Olives</label>
 
-                                <input type="checkbox" name="banPepperName" class="banPepper-input veg-inputs"
-                                    id="banPepperInput" value="Banana Peppers" />
-                                <label class="banPepper-label" for="banPepperName">Banana Peppers</label>
+                                <div>
+                                    <input type="checkbox" name="ingPickle" class="pickle-input veg-inputs"
+                                        id="pickleInput" value="Pickles" />
+                                    <label class="pickle-label" for="name">Pickles</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Jalapenos</label>
+                                <div>
+                                    <input type="checkbox" name="ingBananaPepper"
+                                        class="banPepper-input veg-inputs" id="banPepperInput" value="Banana Peppers" />
+                                    <label class="banPepper-label" for="name">Banana Peppers</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Cucumbers</label>
+                                <div>
+                                    <input type="checkbox" name="ingBlackOlive"
+                                        class="bOlive-input veg-inputs" id="bOliveInput" value="Black Olives" />
+                                    <label class="bOlive-label" for="name">Black Olives</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Pickles</label>
+                                <div>
+                                    <input type="checkbox" name="ingPineApple"
+                                        class="pineapple-input veg-inputs" id="pineappleInput" value="Pineapples" />
+                                    <label class="pineapple-label" for="name">Pineapple</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Pineapple</label>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Tomatos</label>
+                                <div>
+                                    <input type="checkbox" name="ingCucumber"
+                                        class="cucumber-input veg-inputs" id="cucumberInput" value="Cucumbers" />
+                                    <label class="cucumber-label" for="name">Cucumbers</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Onions</label>
+                                <div>
+                                    <input type="checkbox" name="ingJalapeno"
+                                        class="jalapeno-input veg-inputs" id="jalapenoInput" value="Jalapenos" />
+                                    <label class="jalapeno-label" for="name">Jalapenos</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Mushrooms</label>
+                                <div>
+                                    <input type="checkbox" name="ingMushroom"
+                                        class="mushroom-input veg-inputs" id="mushroomInput" value="Mushrooms" />
+                                    <label class="mushroom-label" for="name">Mushrooms</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Mixed Peppers</label>
+                                <div>
+                                    <input type="checkbox" name="ingMixedPepper"
+                                        class="mixedPepper-input veg-inputs" id="mixedPepperInput"
+                                        value="Mixed Peppers" />
+                                    <label class="mixedPeppers-label" for="name">Mixed Peppers</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Sour Krout</label>
+                                <div>
+                                    <input type="checkbox" name="ingTomato" class="tomato-input veg-inputs"
+                                        id="tomatoInput" value="Tomatos" />
+                                    <label class="tomato-label" for="name">Tomatos</label>
+                                </div>
 
-                                <input type="checkbox" name="" class=" veg-inputs" id="" value="" />
-                                <label class="" for="">Shredded Lettuce</label>
-                            </div>
-                            <div class="ingDisplay-buttonContainer ingDisplay-button03">
-                                <button type="button" class="ingButton ingB-"
+                                <div>
+                                    <input type="checkbox" name="ingOnion" class="onion-input veg-inputs"
+                                        id="onionInput" value="Onions" />
+                                    <label class="onion-label" for="name">Onions</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="ingSourKrout"
+                                        class="sourKrout-input veg-inputs" id="sourKroutInput" value="Sour Krout" />
+                                    <label class="sourKrout-label" for="name">Sour Krout</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="ingShreddedLettuce"
+                                        class="shreddedLettuce-input veg-inputs" id="shreddedLettuceInput"
+                                        value="Shredded Lettuce" />
+                                    <label class="shreddedLettuce-label" for="name">Shredded
+                                        Lettuce</label>
+                                </div>
+
                             </div>
                         </div>
-
-
+                        <div class="submitPizzaContainer">
+                            <button type="submit" class="submitPizzaButton" id="submitPizzaButton">
+                                Submit
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>

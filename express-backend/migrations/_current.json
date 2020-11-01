@@ -18,17 +18,17 @@
                 "PizzaLargePrice": {
                     "allowNull": false,
                     "field": "PizzaLargePrice",
-                    "seqType": "Sequelize.DECIMAL"
+                    "seqType": "Sequelize.DECIMAL(10, 2)"
                 },
                 "PizzaMediumPrice": {
                     "allowNull": false,
                     "field": "PizzaMediumPrice",
-                    "seqType": "Sequelize.DECIMAL"
+                    "seqType": "Sequelize.DECIMAL(10, 2)"
                 },
                 "PizzaSmallPrice": {
                     "allowNull": false,
                     "field": "PizzaSmallPrice",
-                    "seqType": "Sequelize.DECIMAL"
+                    "seqType": "Sequelize.DECIMAL(10, 2)"
                 },
                 "PizzaIngredientRedSauce": {
                     "allowNull": true,

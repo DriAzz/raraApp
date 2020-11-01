@@ -37,6 +37,12 @@ $(document).ready(function () {
 
         if (selectedData.value == "") {
             selectedData.value = marinara;
+            if (selectedData.value == "Marinara") {
+                selectedData.setAttribute("name", "ingRedSauce");
+                if (selectedData.getAttribute("name") == "ingRedSauce") {
+                    selectedData.setAttribute("value", "Marinara");
+                }
+            };
         } else if (selectedData.value != "Marinara") {
             selectedData.value = marinara;
         };
@@ -53,6 +59,9 @@ $(document).ready(function () {
 
         if (selectedData.value == "") {
             selectedData.value = alfredo;
+            if (selectedData.value == "Alfredo") {
+                selectedData.setAttribute("name", "pizzaingredientwhitesauce");
+            };
         } else if (selectedData.value != "Alfredo") {
             selectedData.value = alfredo;
         };
@@ -70,6 +79,9 @@ $(document).ready(function () {
 
         if (selectedData.value == "") {
             selectedData.value = bbq;
+            if (selectedData.value == "BBQ") {
+                selectedData.setAttribute("name", "pizzaingredientbbqsauce");
+            };
         } else if (selectedData.value != "BBQ") {
             selectedData.value = bbq;
         };
@@ -87,6 +99,9 @@ $(document).ready(function () {
 
         if (selectedData.value == "") {
             selectedData.value = ranch;
+            if (selectedData.value == "Ranch") {
+                selectedData.setAttribute("name", "pizzaingredientranch");
+            };
         } else if (selectedData.value != "Ranch") {
             selectedData.value = ranch;
         };
@@ -104,6 +119,9 @@ $(document).ready(function () {
 
         if (selectedData.value == "") {
             selectedData.value = bean;
+            if (selectedData.value = "Bean") {
+                selectedData.setAttribute("name", "pizzaingredientbeansauce");
+            };
         } else if (selectedData.value != "Bean") {
             selectedData.value = bean;
         };
@@ -121,13 +139,14 @@ $(document).ready(function () {
 
         if (selectedData.value == "") {
             selectedData.value = buffalo;
+            if (selectedData.value = "Buffalo") {
+                selectedData.setAttribute("name", "pizzaingredientbuffalosauce");
+            };
         } else if (selectedData.value != "Buffalo") {
-            selectedData.value = bufallo;
+            selectedData.value = buffalo;
         };
     });
 });
-
-
 
 
 

@@ -425,3 +425,23 @@
     color: green;
     font-size: 25px;
 }
+
+
+/* Submit Button Container */
+.submitPizzaContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.submitPizzaButton {
+    width: 15%;
+    height: 2em;
+    background: green;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5em;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
