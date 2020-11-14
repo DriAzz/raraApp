@@ -14,7 +14,7 @@ var Sequelize = require('sequelize');
 var info = {
     "revision": 1,
     "name": "initial_migration",
-    "created": "2020-11-01T17:43:08.666Z",
+    "created": "2020-11-01T21:24:40.423Z",
     "comment": ""
 };
 
@@ -50,35 +50,10 @@ var migrationCommands = [{
                     "field": "PizzaSmallPrice",
                     "allowNull": false
                 },
-                "PizzaIngredientRedSauce": {
+                "PizzaIngredientSauceType": {
                     "type": Sequelize.STRING(40),
-                    "field": "PizzaIngredientRedSauce",
-                    "allowNull": true
-                },
-                "PizzaIngredientWhiteSauce": {
-                    "type": Sequelize.STRING(40),
-                    "field": "PizzaIngredientWhiteSauce",
-                    "allowNull": true
-                },
-                "PizzaIngredientBBQSauce": {
-                    "type": Sequelize.STRING(40),
-                    "field": "PizzaIngredientBBQSauce",
-                    "allowNull": true
-                },
-                "PizzaIngredientRanch": {
-                    "type": Sequelize.STRING(40),
-                    "field": "PizzaIngredientRanch",
-                    "allowNull": true
-                },
-                "PizzaIngredientBeanSauce": {
-                    "type": Sequelize.STRING(40),
-                    "field": "PizzaIngredientBeanSauce",
-                    "allowNull": true
-                },
-                "PizzaIngredientBuffSauce": {
-                    "type": Sequelize.STRING(40),
-                    "field": "PizzaIngredientBuffSauce",
-                    "allowNull": true
+                    "field": "PizzaIngredientSauceType",
+                    "allowNull": false
                 },
                 "PizzaIngredientCheddarCheese": {
                     "type": Sequelize.STRING(40),

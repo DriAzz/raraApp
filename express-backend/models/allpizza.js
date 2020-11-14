@@ -26,29 +26,9 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     //Ingredients
-    PizzaIngredientRedSauce: {
+    PizzaIngredientSauceType: {
       type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    PizzaIngredientWhiteSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    PizzaIngredientBBQSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    PizzaIngredientRanch: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    PizzaIngredientBeanSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    PizzaIngredientBuffSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
+      allowNull: false
     },
     PizzaIngredientCheddarCheese: {
       type: DataTypes.STRING(40),

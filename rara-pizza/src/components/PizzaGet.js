@@ -42,12 +42,7 @@ class PizzaGet extends React.Component {
                                 <p className="pizzaGetIng-title">Sauce</p>
                             </div>
                             <div className="pizzaGet-data-container">
-                                <p className="pizzaGet-ing">{pizza.PizzaIngredientRedSauce}</p>
-                                <p className="pizzaGet-ing">{pizza.PizzaIngredientWhiteSauce}</p>
-                                <p className="pizzaGet-ing">{pizza.PizzaIngredientBBQSauce}</p>
-                                <p className="pizzaGet-ing">{pizza.PizzaIngredientRanch}</p>
-                                <p className="pizzaGet-ing">{pizza.PizzaIngredientBeanSauce}</p>
-                                <p className="pizzaGet-ing">{pizza.PizzaIngredientBuffSauce}</p>
+                                <p className="pizzaGet-ing">{pizza.PizzaIngredientSauceType}</p>
                             </div>
                         </div>
                         <div className="pizzaGetIng-meats">

@@ -18,31 +18,45 @@ $(document).ready(function () {
     });
 });
 
-
+$(document).ready(function () {
+    var buttonCheck = document.getElementById("addPizza");
+    $("#addPizza").click(function () {
+        if (buttonCheck.innerHTML == "Add Pizza +") {
+            $("#dataContainerDisabled").addClass("pizzaForm-dataContainerActive");
+            buttonCheck.innerHTML = "Stop Editing";
+        } else if (buttonCheck.innerHTML == "Stop Editing") {
+            $("#dataContainerDisabled").removeClass("pizzaForm-dataContainerActive");
+            buttonCheck.innerHTML = "Add Pizza +";
+        }
+    });
+});
 
 
 //Pizza Editor Buttons
 $(document).ready(function () {
-    document.getElementById("selected").disabled = true;
+    // document.getElementById("selected").disabled = true;
     var selectedData = document.getElementById("selected");
 
     $("#sauceSelector1").click(function () {
         var marinara = document.getElementById("sauceLabel1").innerHTML;
         $(this).addClass("sauceSelectorActive");
+        $(this).addClass("fa-checkActive");
         $("#sauceSelector2").removeClass("sauceSelectorActive");
         $("#sauceSelector3").removeClass("sauceSelectorActive");
         $("#sauceSelector4").removeClass("sauceSelectorActive");
         $("#sauceSelector5").removeClass("sauceSelectorActive");
         $("#sauceSelector6").removeClass("sauceSelectorActive");
 
+        $("#sauceCheck1").addClass("fa-checkActive");
+
+        $("#sauceCheck2").removeClass("fa-checkActive");
+        $("#sauceCheck3").removeClass("fa-checkActive");
+        $("#sauceCheck4").removeClass("fa-checkActive");
+        $("#sauceCheck5").removeClass("fa-checkActive");
+        $("#sauceCheck6").removeClass("fa-checkActive");
+
         if (selectedData.value == "") {
             selectedData.value = marinara;
-            if (selectedData.value == "Marinara") {
-                selectedData.setAttribute("name", "ingRedSauce");
-                if (selectedData.getAttribute("name") == "ingRedSauce") {
-                    selectedData.setAttribute("value", "Marinara");
-                }
-            };
         } else if (selectedData.value != "Marinara") {
             selectedData.value = marinara;
         };
@@ -57,11 +71,16 @@ $(document).ready(function () {
         $("#sauceSelector5").removeClass("sauceSelectorActive");
         $("#sauceSelector6").removeClass("sauceSelectorActive");
 
+        $("#sauceCheck2").addClass("fa-checkActive");
+
+        $("#sauceCheck1").removeClass("fa-checkActive");
+        $("#sauceCheck3").removeClass("fa-checkActive");
+        $("#sauceCheck4").removeClass("fa-checkActive");
+        $("#sauceCheck5").removeClass("fa-checkActive");
+        $("#sauceCheck6").removeClass("fa-checkActive");
+
         if (selectedData.value == "") {
             selectedData.value = alfredo;
-            if (selectedData.value == "Alfredo") {
-                selectedData.setAttribute("name", "pizzaingredientwhitesauce");
-            };
         } else if (selectedData.value != "Alfredo") {
             selectedData.value = alfredo;
         };
@@ -76,12 +95,16 @@ $(document).ready(function () {
         $("#sauceSelector5").removeClass("sauceSelectorActive");
         $("#sauceSelector6").removeClass("sauceSelectorActive");
 
+        $("#sauceCheck3").addClass("fa-checkActive");
+
+        $("#sauceCheck1").removeClass("fa-checkActive");
+        $("#sauceCheck2").removeClass("fa-checkActive");
+        $("#sauceCheck4").removeClass("fa-checkActive");
+        $("#sauceCheck5").removeClass("fa-checkActive");
+        $("#sauceCheck6").removeClass("fa-checkActive");
 
         if (selectedData.value == "") {
             selectedData.value = bbq;
-            if (selectedData.value == "BBQ") {
-                selectedData.setAttribute("name", "pizzaingredientbbqsauce");
-            };
         } else if (selectedData.value != "BBQ") {
             selectedData.value = bbq;
         };
@@ -96,12 +119,16 @@ $(document).ready(function () {
         $("#sauceSelector5").removeClass("sauceSelectorActive");
         $("#sauceSelector6").removeClass("sauceSelectorActive");
 
+        $("#sauceCheck4").addClass("fa-checkActive");
+
+        $("#sauceCheck1").removeClass("fa-checkActive");
+        $("#sauceCheck2").removeClass("fa-checkActive");
+        $("#sauceCheck3").removeClass("fa-checkActive");
+        $("#sauceCheck5").removeClass("fa-checkActive");
+        $("#sauceCheck6").removeClass("fa-checkActive");
 
         if (selectedData.value == "") {
             selectedData.value = ranch;
-            if (selectedData.value == "Ranch") {
-                selectedData.setAttribute("name", "pizzaingredientranch");
-            };
         } else if (selectedData.value != "Ranch") {
             selectedData.value = ranch;
         };
@@ -116,19 +143,23 @@ $(document).ready(function () {
         $("#sauceSelector4").removeClass("sauceSelectorActive");
         $("#sauceSelector6").removeClass("sauceSelectorActive");
 
+        $("#sauceCheck5").addClass("fa-checkActive");
+
+        $("#sauceCheck1").removeClass("fa-checkActive");
+        $("#sauceCheck2").removeClass("fa-checkActive");
+        $("#sauceCheck3").removeClass("fa-checkActive");
+        $("#sauceCheck4").removeClass("fa-checkActive");
+        $("#sauceCheck6").removeClass("fa-checkActive");
 
         if (selectedData.value == "") {
             selectedData.value = bean;
-            if (selectedData.value = "Bean") {
-                selectedData.setAttribute("name", "pizzaingredientbeansauce");
-            };
         } else if (selectedData.value != "Bean") {
             selectedData.value = bean;
         };
     });
 
     $("#sauceSelector6").click(function () {
-        var bufallo = document.getElementById("sauceLabel6").innerHTML;
+        var buffalo = document.getElementById("sauceLabel6").innerHTML;
         $(this).addClass("sauceSelectorActive");
         $("#sauceSelector1").removeClass("sauceSelectorActive");
         $("#sauceSelector2").removeClass("sauceSelectorActive");
@@ -136,12 +167,16 @@ $(document).ready(function () {
         $("#sauceSelector4").removeClass("sauceSelectorActive");
         $("#sauceSelector5").removeClass("sauceSelectorActive");
 
+        $("#sauceCheck6").addClass("fa-checkActive");
+
+        $("#sauceCheck1").removeClass("fa-checkActive");
+        $("#sauceCheck2").removeClass("fa-checkActive");
+        $("#sauceCheck3").removeClass("fa-checkActive");
+        $("#sauceCheck4").removeClass("fa-checkActive");
+        $("#sauceCheck5").removeClass("fa-checkActive");
 
         if (selectedData.value == "") {
             selectedData.value = buffalo;
-            if (selectedData.value = "Buffalo") {
-                selectedData.setAttribute("name", "pizzaingredientbuffalosauce");
-            };
         } else if (selectedData.value != "Buffalo") {
             selectedData.value = buffalo;
         };

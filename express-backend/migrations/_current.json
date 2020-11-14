@@ -30,34 +30,9 @@
                     "field": "PizzaSmallPrice",
                     "seqType": "Sequelize.DECIMAL(10, 2)"
                 },
-                "PizzaIngredientRedSauce": {
-                    "allowNull": true,
-                    "field": "PizzaIngredientRedSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "PizzaIngredientWhiteSauce": {
-                    "allowNull": true,
-                    "field": "PizzaIngredientWhiteSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "PizzaIngredientBBQSauce": {
-                    "allowNull": true,
-                    "field": "PizzaIngredientBBQSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "PizzaIngredientRanch": {
-                    "allowNull": true,
-                    "field": "PizzaIngredientRanch",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "PizzaIngredientBeanSauce": {
-                    "allowNull": true,
-                    "field": "PizzaIngredientBeanSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "PizzaIngredientBuffSauce": {
-                    "allowNull": true,
-                    "field": "PizzaIngredientBuffSauce",
+                "PizzaIngredientSauceType": {
+                    "allowNull": false,
+                    "field": "PizzaIngredientSauceType",
                     "seqType": "Sequelize.STRING(40)"
                 },
                 "PizzaIngredientCheddarCheese": {

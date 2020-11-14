@@ -34,9 +34,12 @@
                 <div class="pizzaEdit-rightBox">
                     <div class="pizzaEdit-buttonContainer">
                         <div class="pizzaEdit-buttonInner">
+                            {{!-- Does a delete request. --}}
                             <button class="pizzaEdit-buttonRemove">
                                 <i class="fas fa-minus-circle"></i>
                             </button>
+
+                            {{!-- Does a put request --}}
                             <button class="pizzaEdit-buttonEdit">
                                 <i class="fas fa-cogs"></i>
                             </button>
@@ -50,12 +53,11 @@
             <div class="pizzaForm-buttonContainer">
                 <div class="pizzaForm-buttonInner">
                     <div class="pizzaForm-buttonTextC">
-                        <p class="pizzaForm-buttonText1">Add Pizza +</p>
+                        <button class="pizzaForm-buttonText1" id="addPizza">Add Pizza +</button>
                     </div>
-                    <button class="pizzaForm-buttonAdd" type="button"></button>
                 </div>
             </div>
-            <div class="pizzaForm-dataContainer">
+            <div class="pizzaForm-dataContainer" id="dataContainerDisabled">
                 <form class="pizzaForm" method="POST" action="/menu/edit/pizzas">
                     <div class="pizzaForm-innerForm">
                         {{!-- 50% width --}}
@@ -86,8 +88,9 @@
                             <div class="pizzaForm-sauceC">
                                 <label class="pizzaForm-sauceTitle">Sauces</label>
                                 <div class="selected-container">
-                                    <label class="selected-label" for="name">You've Selected: <input type="text"
-                                            id="selected" name="ingRedSauce" /></label>
+                                    <label class="selected-label" for="name">You've Selected:
+                                        <input type="text" id="selected" name="ingSauceType" />
+                                    </label>
                                 </div>
                                 <div class="pizzaForm-sauce">
                                     <div class="pizzaForm-sauceInputC">
@@ -98,7 +101,7 @@
                                             <div class="sauceSelector-right">
                                                 <div class="sauceSelectorInner">
                                                     <div class="sauceCheckBox">
-                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                        <i class="fas fa-check" id="sauceCheck1"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,7 +115,7 @@
                                             <div class="sauceSelector-right">
                                                 <div class="sauceSelectorInner">
                                                     <div class="sauceCheckBox">
-                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                        <i class="fas fa-check" id="sauceCheck2"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -126,7 +129,7 @@
                                             <div class="sauceSelector-right">
                                                 <div class="sauceSelectorInner">
                                                     <div class="sauceCheckBox">
-                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                        <i class="fas fa-check" id="sauceCheck3"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -140,7 +143,7 @@
                                             <div class="sauceSelector-right">
                                                 <div class="sauceSelectorInner">
                                                     <div class="sauceCheckBox">
-                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                        <i class="fas fa-check" id="sauceCheck4"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -154,7 +157,7 @@
                                             <div class="sauceSelector-right">
                                                 <div class="sauceSelectorInner">
                                                     <div class="sauceCheckBox">
-                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                        <i class="fas fa-check" id="sauceCheck5"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -168,7 +171,7 @@
                                             <div class="sauceSelector-right">
                                                 <div class="sauceSelectorInner">
                                                     <div class="sauceCheckBox">
-                                                        <i class="fas fa-check" id="sauceCheck"></i>
+                                                        <i class="fas fa-check" id="sauceCheck6"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -221,8 +224,8 @@
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingBeef"
-                                        class="bur-input meat-inputs" id="burInput" value="Burger" />
+                                    <input type="checkbox" name="ingBeef" class="bur-input meat-inputs" id="burInput"
+                                        value="Burger" />
                                     <label class="bur-label" for="name">Burger</label>
                                 </div>
 
@@ -245,46 +248,45 @@
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingBananaPepper"
-                                        class="banPepper-input veg-inputs" id="banPepperInput" value="Banana Peppers" />
+                                    <input type="checkbox" name="ingBananaPepper" class="banPepper-input veg-inputs"
+                                        id="banPepperInput" value="Banana Peppers" />
                                     <label class="banPepper-label" for="name">Banana Peppers</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingBlackOlive"
-                                        class="bOlive-input veg-inputs" id="bOliveInput" value="Black Olives" />
+                                    <input type="checkbox" name="ingBlackOlive" class="bOlive-input veg-inputs"
+                                        id="bOliveInput" value="Black Olives" />
                                     <label class="bOlive-label" for="name">Black Olives</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingPineApple"
-                                        class="pineapple-input veg-inputs" id="pineappleInput" value="Pineapples" />
+                                    <input type="checkbox" name="ingPineApple" class="pineapple-input veg-inputs"
+                                        id="pineappleInput" value="Pineapples" />
                                     <label class="pineapple-label" for="name">Pineapple</label>
                                 </div>
 
 
                                 <div>
-                                    <input type="checkbox" name="ingCucumber"
-                                        class="cucumber-input veg-inputs" id="cucumberInput" value="Cucumbers" />
+                                    <input type="checkbox" name="ingCucumber" class="cucumber-input veg-inputs"
+                                        id="cucumberInput" value="Cucumbers" />
                                     <label class="cucumber-label" for="name">Cucumbers</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingJalapeno"
-                                        class="jalapeno-input veg-inputs" id="jalapenoInput" value="Jalapenos" />
+                                    <input type="checkbox" name="ingJalapeno" class="jalapeno-input veg-inputs"
+                                        id="jalapenoInput" value="Jalapenos" />
                                     <label class="jalapeno-label" for="name">Jalapenos</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingMushroom"
-                                        class="mushroom-input veg-inputs" id="mushroomInput" value="Mushrooms" />
+                                    <input type="checkbox" name="ingMushroom" class="mushroom-input veg-inputs"
+                                        id="mushroomInput" value="Mushrooms" />
                                     <label class="mushroom-label" for="name">Mushrooms</label>
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingMixedPepper"
-                                        class="mixedPepper-input veg-inputs" id="mixedPepperInput"
-                                        value="Mixed Peppers" />
+                                    <input type="checkbox" name="ingMixedPepper" class="mixedPepper-input veg-inputs"
+                                        id="mixedPepperInput" value="Mixed Peppers" />
                                     <label class="mixedPeppers-label" for="name">Mixed Peppers</label>
                                 </div>
 
@@ -301,8 +303,8 @@
                                 </div>
 
                                 <div>
-                                    <input type="checkbox" name="ingSourKrout"
-                                        class="sourKrout-input veg-inputs" id="sourKroutInput" value="Sour Krout" />
+                                    <input type="checkbox" name="ingSourKrout" class="sourKrout-input veg-inputs"
+                                        id="sourKroutInput" value="Sour Krout" />
                                     <label class="sourKrout-label" for="name">Sour Krout</label>
                                 </div>
 

@@ -42,12 +42,7 @@ router.post('/edit/pizzas', function (req, res, next) {
                     PizzaLargePrice: req.body.pizzalargeprice,
                     PizzaMediumPrice: req.body.pizzamediumprice,
                     PizzaSmallPrice: req.body.pizzasmallprice,
-                    PizzaIngredientRedSauce: req.body.ingRedSauce,
-                    PizzaIngredientWhiteSauce: req.body.ingWhiteSauce,
-                    PizzaIngredientBBQSauce: req.body.ingBBQSauce,
-                    PizzaIngredientRanchSauce: req.body.ingRanchSauce,
-                    PizzaIngredientBuffaloSauce: req.body.ingBuffSauce,
-                    PizzaIngredientBeanSauce: req.body.ingBeanSauce,
+                    PizzaIngredientSauceType: req.body.ingSauceType,
                     PizzaIngredientPepperoni: req.body.ingPepperoni,
                     PizzaIngredientSausage: req.body.ingSausage,
                     PizzaIngredientCanBacon: req.body.ingCanBacon,
@@ -94,6 +89,81 @@ router.get('/allpizzas', function (req, res, next) {
         console.log(allpizzaFound);
     });
 });
+
+router.put("/edit/pizzas/:id", function (req, res, next) {
+    let pizzaID = parseInt(req.params.id);
+
+    models.allpizza.update(req.body, {where : {PizzaID : pizzaID}})
+    .then(result => res.redirect('/admin/profile'))
+    .catch(err => {
+        res.status(400);
+        res.send("There was a problem updating the pizza.");
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
