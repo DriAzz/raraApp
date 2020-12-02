@@ -1,416 +1,460 @@
-.adminEdit-container-right {
-    position: relative;
-    float: left;
+.pizzaEdit-container {
     width: 100%;
-}
-
-.adminEdit-text-container {
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.adminEdit-text {
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.adminEdit-sizes {
-    width: 100%;
-    text-align: center;
-}
-
-.adminEdit-sizeTable {
-    width: 100%;
-    text-align: center;
-}
-
-.adminEdit-table {
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    border-collapse: collapse;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    position: relative;
-}
-
-th, td {
-    border: 1px solid #dddddd;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-.pizzaData-td {
-    width: 50px;
-    background: white;
-    border: none;
-}
-
-.pizzaData-td button {
-    width: 50%;
-    height: 25px;
-    border-radius: 50%;
-    margin-bottom: 2px;
-    border: solid 1px lightsteelblue;
-    background: white;
-    color: lightsteelblue;
-    text-decoration: none;
-    outline: none;
-    transition: 0.3s;
-}
-
-.pizzaData-td button:hover {
-    border: gold solid 1px;
-    color: gold;
-    background: lightsteelblue;
-    transition: 0.3s;
-}
-
-.pizzaData-edit-hidden {
-    width: 30em;
-    height: 10em;
-    border: solid black 1px;
-    position: absolute;
-    right: 30em;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 2px grey;
-}
-
-.pizzaData-divInner {
-    width: 50%;
     float: left;
 }
 
-.pizzaData-divInner button {
-    width: 75%;
-    font-size: 20px;
-    height: 50px;
-    border-radius: 5px;
-    border: solid cyan 1px;
-    outline: none;
-    text-decoration: none;
-    color: white;
-}
-
-.editToggle-remove {
-    background: red;
-}
-
-.editToggle-edit {
-    background: #6cc644;
-}
-
-.formEdit {
-    width: 100%;
+.pizzaEdit-inner {
+    width: 85%;
     margin: auto;
 }
 
-.addContainer {
+.pizzaEdit-titleContainer {
     width: 100%;
     float: left;
-    margin-top: 3em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.addButtonGlobal {
-    width: 8em;
-    height: 2em;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    border: none;
-    background-color: #45BDEE;
-    color: white;
-    font-weight: bold;
-    outline: none;
-    letter-spacing: 1px;
-    transition: 0.5s;
-}
-
-.addPizzaButtonAct {
-    position: absolute;
-    right: 52%;
-    background: red;
-    transition: 0.5s;
-}
-
-.fa-angle-double-right {
+.pizzaEdit-title {
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
-    color: #45BDEE;
-    position: absolute;
-    right: 10px;
+    text-decoration: underline;
 }
 
-.submitButton {
-    visibility: hidden;
-    width: 8em;
-    height: 2em;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+.pizzaEdit-dataContainer {
+    width: 100%;
+    float: left;
+}
+
+.pizzaEdit-containerBox {
+    width: 100%;
+    float: left;
+    background: lightgrey;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.pizzaEdit-leftBox, .pizzaEdit-rightBox {
+    width: 50%;
+    float: left;
+}
+
+.pizzaEdit-id-title-wrap {
+    width: 100%;
+    float: left;
+}
+
+.pizzaEdit-idBox {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+
+.pizzaEdit-id {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 0.2em;
+}
+
+.pizzaEdit-titleBox {
+    width: 90%;
+    float: left;
+}
+
+.pizzaEdit-priceBox {
+    width: 100%;
+    float: left;
+}
+
+.pizzaEdit-priceLarge {
+    font-size: 15px;
+    font-family: 'Lato';
+}
+
+.pizzaEdit-gridContainer {
+    width: 100%;
+    float: left;
+    margin-top: 0.5em;
+}
+
+.gE-3-3 {
+    width: 15%;
+    float: left;
+    margin-left: 1.8em;
+}
+
+.pizzaEdit-buttonContainer {
+    width: 100%;
+    float: left;
+}
+
+.pizzaEdit-buttonInner {
+    width: 100%;
+    float: left;
+    margin-top: 0.6em;
+}
+
+.pizzaEdit-buttonRemove, .pizzaEdit-buttonEdit {
+    float: right;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
     border: none;
-    background-color: #7CFC00;
-    color: white;
-    font-weight: bold;
-    outline: none;
-    letter-spacing: 1px;
-    text-align: left;
-    padding-left: 1.5em;
-    /* New added code after this comment */
-    position: absolute;
-    right: 38%;
+    margin-right: 1em;
 }
 
-.submitButtonRev {
+.pizzaEdit-buttonRemove {
+    background: white;
+    border: solid red 1px;
+}
+
+.pizzaEdit-buttonEdit {
+    background: white;
+    border: solid green 1px;
+}
+
+.fa-minus-circle, .fa-cogs {
+    font-size: 20px;
+}
+
+.fa-minus-circle {
+    color: red;
+}
+
+.fa-cogs {
+    color: green;
+}
+
+.pizzaForm {
+    font-family: 'Lato', sans-serif;
+}
+
+.pizzaForm-container1 {
+    width: 100%;
+    float: left;
+}
+
+.pizzaForm-container2 {
+    width: 100%;
+    float: left;
+    margin-top: 1em;
+}
+
+.pizzaForm-containerG {
+    width: 33.3%;
+    float: left;
+    margin-top: 1em;
+}
+
+.pizzaFormLabelTitle {
+    width: 100%;
+    float: left;
+    text-decoration: underline;
+}
+
+.pizzaForm-buttonContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.pizzaForm-dataContainer {
+    width: 100%;
+    float: left;
+    visibility: hidden;
+}
+
+.pizzaForm-dataContainerActive {
     visibility: visible;
 }
 
-.tablerow-adminEdit-td2-edit {
-    float: left;
 
-}
 
-.whiteTop {
-    width: 50%;
-    margin: auto;
-    display: none;
-    position: relative;
-}
 
-.nameGlobal-input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    letter-spacing: 3px;    
-}
 
-.foodPrice-input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    letter-spacing: 3px;    
-}
 
-.sauceButtonContainer {
-    width: 100%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.sauceButton {
-    width: 100%;
-    height: 2em;
-    background-color: lightblue;
-    color: white;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
-    border: none;
-    outline: none;
-    transition: 0.5s;
-}
-
-.grid {
-    width: 20%;
-    float: left;
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding-top: 3px;
-}
-
-.gridMeats1 {
-    width: 20%;
-    float: left;
-    position: relative;
-    margin-top: 2em;
-    padding-top: 3px;
-}
-
-.gridMeats2 {
-    width: 33.3%;
-    float: left;
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding-top: 3px;
-}
-
-.gridMeats3 {
+.pizzaForm-Inner {
     width: 50%;
     float: left;
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
 }
 
-/* Pasted Code */
+.pizzaForm-container1 {
+    width: 100%;
+    float: left;
+}
 
-.container {
-    cursor: pointer;
+
+
+.pizzaForm-nameInput {
+    width: 90%;
+    text-align: center;
+    color: black;
+    height: 2.2em;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    float: left;
-    margin-left: 2.8em;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 5px;
-    left: 20px;
-    height: 25px;
-    width: 25px;
-    background-color: #F8F8FF;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+    border: solid rgba(72, 166, 255, 0.561) 1px;
+    background: rgba(72, 166, 255, 0.561);
+    border-radius: 5px;
+    outline: none;
+    margin: auto;
+    margin-top: -1em;
+}
 
-.gridContainer {
-    background: lightgrey;
+.pizzaFormLabel {
+    float: left;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.pizzaFormL1 {
+    width: 100%;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+
+.pizzaForm-largeInput, .pizzaForm-mediumInput, .pizzaForm-smallInput {
+    width: 50%;
+    height: 2em;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    border: solid rgba(72, 166, 255, 0.561) 1px;
+    background: rgba(72, 166, 255, 0.561);
+    border-radius: 5px;
+    outline: none;
+    margin-left: 1em;
+}
+
+.pizzaFormLabelTitle {
+    width: 100%;
+    float: left;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+.pizzaForm-buttonInner {
+    width: 8em;
+    height: 1.6em;
+    position: relative;
+    border: solid lightskyblue 1px;
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px lightskyblue;
+    color: white;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.pizzaForm-buttonText1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    width: 100%;
     height: 100%;
-    float: left;
-    width: 100%;
-}
-
-.meatsButtonContainer {
-    width: 100%;
-    margin: auto;
-    margin-top: 5px;
-}
-
-  .meatButton {
-    width: 100%;
-    height: 2em;
-    background-color: lightblue;
-    color: white;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
+    background: transparent;
     border: none;
     outline: none;
-    transition: 0.5s; 
-    margin-top: 10px;
-  }
-
-.vegButtonContainer {
-    width: 100%;
-    margin: auto;
-    margin-top: 5px;
 }
 
-.vegButton {
+.pizzaForm-buttonAdd {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 2em;
-    background-color: lightblue;
-    color: white;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
+    height: 100%;
+    background: transparent;
     border: none;
     outline: none;
-    transition: 0.5s;
-    margin-top: 10px;
 }
 
-.gridVeg1 {
-    width: 20%;
+
+
+
+
+
+
+.ingDisplay-container {
+    width: 50%;
     float: left;
-    position: relative;
     margin-top: 2em;
-    padding-top: 3px;
 }
 
-.gridVeg2 {
-    width: 25%;
-    float: left;
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding-top: 3px;
-}
-
-.cheeseButtonContainer {
+.ingDisplay-buttonContainer {
     width: 100%;
-    margin: auto;
-    margin-top: 5px;
+    float: left;
+    margin-top: 0.5em;
 }
 
-.cheeseButton {
+.ingButton {
     width: 100%;
     height: 2em;
-    background-color: lightblue;
-    color: white;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
-    border: none;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    border: solid lightskyblue 1px;
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px lightskyblue;
     outline: none;
-    transition: 0.5s;
-    margin-top: 10px;
+    color: white;
 }
 
-.cheeseContainer, .saucesContainer,
-.vegContainer, .meatsContainer {
+.ingDisplay-ingredients {
     float: left;
-    position: relative;
+    height: 20em;
+}
+
+.pizzaForm-sauceC {
+    float: left;
     width: 100%;
+    margin-top: 1em;
+}
+
+.pizzaForm-sauceTitle {
+    width: 100%;
+    float: left;
+    font-size: 23px;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.pizzaForm-sauce {
+    width: 100%;
+    float: left;
+}
+
+.pizzaForm-sauceInputC {
+    width: 90%;
+    float: left;
+    height: 3em;
+    margin-top: 1em;
+}
+
+.sauceSelectorDisabled {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: solid black 1px;
+    box-shadow: none;
+    outline: none;
+}
+
+.sauceSelectorActive {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: lightskyblue;
+    border: solid 1px lightskyblue;
+    box-shadow: 0px 0px 10px lightskyblue;
+    outline: none;
+}
+
+.selected-label {
+    width: 100%;
+    float: left;
+}
+
+#selected {
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sauceSelector-left {
+    width: 50%;
+    float: left;
+}
+
+.sauceLabel {
+    font-size: 28px;
+    float: left;
+    margin-left: 5px;
+}
+
+.sauceLabelActive {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+.sauceSelector-right {
+    width: 50%;
+    float: left;
+}
+
+
+.sauceSelectorInner {
+    width: 100%;
+    float: left;
+}
+
+.sauceCheckBox {
+    width: 2em;
+    height: 2em;
+    float: right;
+    margin-right: 2em;
+}
+
+.fa-check {
+    visibility: hidden;
+    border: solid white 2px;
+    border-radius: 50%;
+    background-color: limegreen;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.fa-checkActive {
+    visibility: visible;
+}
+
+
+/* Submit Button Container */
+.submitPizzaContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.submitPizzaButton {
+    width: 15%;
+    height: 2em;
+    background: green;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5em;
+    border: none;
+    outline: none;
+    border-radius: 15px;
 }
