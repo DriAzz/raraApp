@@ -134,3 +134,10 @@ font-family: 'Bungee Inline', cursive;
     text-shadow: black 2px 2px;
     margin-left: 1.4em;
 }
+
+
+/* Mobile View 245px max */
+
+@media only screen and (min-width: 0px) and (max-width: 245px) {
+
+}

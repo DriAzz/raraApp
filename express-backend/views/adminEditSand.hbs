@@ -1,282 +1,53 @@
-<div class="adminEdit-container-right">
-    <div class="adminEdit-text-container">
-        <p class="adminEdit-text">Sandwiches</p>
-    </div>
-    <div class="adminEdit-post-container">
-        <div class="adminEdit-sizes">
-            <div class="adminEdit-sizeTable">
-                <form class="formEdit" id="editSandwich" name="editSandwich" action="/menu/edit/sandwich">
-                    <table class="adminEdit-table">
-                        <tr class="tablerow-adminEdit-th">
-                            <th>Sandwich ID</th>
-                            <th>Sandwich Name</th>
-                            <th>Sandwich Price</th>
-                        </tr>
-                        {{#each sandwiches}}
-                        <tr>
-                            <td>{{SandwichID}}</td>
-                            <td>{{SandwichName}}</td>
-                            <td>{{SandwichPrice}}</td>
-                        </tr>
-                        {{/each}}
-                        <tr class="tablerow-adminEdit-td2">
-                            <td>#</td>
-                            <td>
-                                <input type="text" class="nameGlobal-input" placeholder="Sandwich Name"
-                                    name="sandwichname" />
-                            </td>
-                            <td>
-                                <input type="number" class="foodPrice-input" step="0.01" min="0" max="30"
-                                    name="sandwichprice" placeholder="Sandwich Price" />
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="whiteTop">
-                        <div class="sauceButtonContainer">
-                            <button class="sauceButton" type="button" id="sauceButton">Sauces</button>
+<div class="sandwichEdit-container">
+    <div class="sandwichEdit-inner">
+        <div class="sandwichEdit-titleContainer">
+            <p class="sandwichEdit-title">Sandwich Editor</p>
+        </div>
+        <div class="sandwichEdit-dataContainer">
+            {{#each sandwiches}}
+            <div class="sandwichEdit-containerBox">
+                <div class="sandwichEdit-leftBox">
+                    <div class="sandwichEdit-id-title-wrap">
+                        <div class="sandwichEdit-idBox">
+                            <p class="sandwichEdit-id">{{SandwichID}}</p>
                         </div>
-                        <div class="saucesContainer">
-                            <div class="gridContainer">
-                                <div class="grid grid-1">
-                                    <label class="sauceL sauce1 container">Marinara
-                                        <input class="inputSauce inputMarinara" name="ingRedSauce" type="checkbox"
-                                            value="Marinara" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-2">
-                                    <label class="sauceL sauce1 container">BBQ
-                                        <input class="inputSauce inputBBQ" name="ingBBQSauce" type="checkbox"
-                                            value="BBQ Sauce" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-3">
-                                    <label class="sauceL sauce1 container">Alfredo
-                                        <input class="inputSauce inputAlfredo" name="ingWhiteSauce" type="checkbox"
-                                            value="Alfredo" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-4">
-                                    <label class="sauceL sauce1 container">Ranch
-                                        <input class="inputSauce inputRanch" name="ingRanchSauce" type="checkbox"
-                                            value="Ranch" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-5">
-                                    <label class="sauceL sauce1 container">Buffalo
-                                        <input class="inputSauce inputBuff" name="ingBuffSauce" type="checkbox"
-                                            value="Buffalo Sauce" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-1">
-                                    <label class="sauceL sauce1 container">Bean
-                                        <input class="inputSauce inputBean" name="ingBeanSauce" type="checkbox"
-                                            value="Bean Sauce" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-2">
-                                    <label class="sauceL sauce1 container">Honey Mustard
-                                        <input class="inputSauce inputHoney" name="ingHoneySauce" type="checkbox"
-                                            value="Honey Mustard" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-3">
-                                    <label class="sauceL sauce1 container">Mayo
-                                        <input class="inputSauce inputMayo" name="ingMayoSauce" type="checkbox"
-                                            value="Mayo" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid grid-4">
-                                    <label class="sauceL sauce1 container">Spicy Mustard
-                                        <input class="inputSauce inputSpicyMustard" name="ingSpicyMustard" type="checkbox"
-                                            value="Spicy Mustard" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
+                        <div class="sandwichEdit-titleBox">
+                            <div class="sandwichEdit-titleBoxInner">
+                                <p class="sandwichEdit-title">{{SandwichName}}</p>
                             </div>
                         </div>
-
-                        <div class="meatsButtonContainer">
-                            <button class="meatButton" type="button" id="meatButton">Meats</button>
-                        </div>
-
-                        <div class="meatsContainer">
-                            <div class="gridContainer">
-                                <div class="gridMeats1 grid1">
-                                    <label class="container">Pepperoni
-                                        <input type="checkbox" value="Pepperoni" name="ingPepperoni" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats1 grid2">
-                                    <label class="container">Sausage
-                                        <input type="checkbox" value="Sausage" name="ingSausage" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats1 grid3">
-                                    <label class="container">Salami
-                                        <input type="checkbox" value="Salami" name="ingSalami" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats1 grid4">
-                                    <label class="container">Bacon Bits
-                                        <input type="checkbox" value="Bacon Bits" name="ingBaconBit" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats2 grid5">
-                                    <label class="container">Bacon Strip
-                                        <input type="checkbox" value="Bacon Bits" name="ingBaconBit" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats2 grid1">
-                                    <label class="container">Beef
-                                        <input type="checkbox" value="Beef" name="ingBeef" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats2 grid2">
-                                    <label class="container">Grilled Chicken
-                                        <input type="checkbox" value="Grilled Chicken" name="ingGChicken" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats2 grid3">
-                                    <label class="container">Smoked Sausage
-                                        <input type="checkbox" value="Smoked Sausage" name="ingSmokeSausage" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats2 grid4">
-                                    <label class="container">Burger Patty
-                                        <input type="checkbox" value="Smoked Sausage" name="ingSmokeSausage" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats3 grid5">
-                                    <label class="container">Chicken Patty
-                                        <input type="checkbox" value="Smoked Sausage" name="ingSmokeSausage" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridMeats3 grid1">
-                                    <label class="container">Crispy Chicken Patty
-                                        <input type="checkbox" value="Smoked Sausage" name="ingSmokeSausage" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="vegButtonContainer">
-                            <button class="vegButton" type="button" id="vegButton">Vegetables</button>
-                        </div>
-
-                        <div class="vegContainer">
-                            <div class="gridContainer">
-                                <div class="gridVeg1 grid1">
-                                    <label class="container">Mushroom
-                                        <input type="checkbox" value="Mushroom" name="ingMushroom" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg1 grid1">
-                                    <label class="container">M. Pepper
-                                        <input type="checkbox" value="Mixed Pepper" name="ingMixedPepper" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg1 grid1">
-                                    <label class="container">Tomato
-                                        <input type="checkbox" value="Tomato" name="ingTomato" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg1 grid1">
-                                    <label class="container">Onion
-                                        <input type="checkbox" value="Onion" name="ingOnion" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg1 grid1">
-                                    <label class="container">Pine Apple
-                                        <input type="checkbox" value="Pine Apple" name="ingPineApple" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg2 grid1">
-                                    <label class="container">B. Pepper
-                                        <input type="checkbox" value="Banana Pepper" name="ingBananaPepper" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg2 grid1">
-                                    <label class="container">Pickle
-                                        <input type="checkbox" value="Pickle" name="ingPickle" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg2 grid1">
-                                    <label class="container">Jalapeno
-                                        <input type="checkbox" value="Jalapeno" name="ingJalapeno" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg2 grid1">
-                                    <label class="container">Black Olive
-                                        <input type="checkbox" value="Black Olive" name="ingBlackOlive" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg2 grid1">
-                                    <label class="container">Cucumber
-                                        <input type="checkbox" value="Cucumber" name="ingCucumber" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="gridVeg2 grid1">
-                                    <label class="container">Sandwich Lettuce
-                                        <input type="checkbox" value="Sandwich Lettuce" name="ingSandwichLettuce" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="cheeseButtonContainer">
-                            <button class="cheeseButton" type="button" id="cheeseButton">Cheese</button>
-                        </div>
-
-                        <div class="cheeseContainer">
-                            <div class="gridContainer">
-                                <div class="gridCheese1 grid1">
-                                    <label class="container">Colby Jack
-                                        <input type="checkbox" value="Colby Jack" name="ingColbyJack" />
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="addContainer" id="addSubmitButton">
-                        <button type="button" class="addButtonGlobal" id="buttonEdit"
-                            onclick="changeButton(), addButton();">Edit Table</button>
-                        <button class="submitButton" id="buttonSubmit">Submit<i
-                                class="fas fa-angle-double-right"></i></button>
+                    <div class="sandwichEdit-priceBox">
+                        <div class="sandwichEdit-gridContainer">
+                            <div class="sandwichEdit-gridLarge sandgE-3-3">
+                                <p class="sandwichEdit-priceLarge"><b>Price: </b><i>${{SandwichPrice}}</i></p>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                </div>
+                <div class="sandwichEdit-rightBox">
+                    <div class="sandwichEdit-buttonContainer">
+                        <div class="sandwichEdit-buttonInner">
+                            {{!-- Does a delete request. --}}
+                            <button class="sandwichEdit-buttonRemove">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+
+                            {{!-- Does a put request --}}
+                            <button class="sandwichEdit-buttonEdit">
+                                <i class="fas fa-cogs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            {{/each}}
+        </div>
+        <div class="sandwichForm-container">
+            <div class="sandwichButton-container">
+                <button class="sandwichEditor-button" id="sandwichButton">Add Sandwich +</button>
+            </div>
+            <div class=""></div>
         </div>
     </div>
 </div>

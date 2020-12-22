@@ -162,7 +162,11 @@ module.exports = (sequelize, DataTypes) => {
     SandwichIngredientCrispyChickenPatty: {
       type: DataTypes.STRING(40),
       allowNull: true
-    }
+    }//,
+    // SandwichIngredientSecondaryCheese: {
+    //   type: DataTypes.STRING(40),
+    //   allowNull: true
+    // }
   }, {});
   allsandwich.associate = function (models) {
     // associations can be defined here

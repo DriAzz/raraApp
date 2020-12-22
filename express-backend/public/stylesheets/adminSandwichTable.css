@@ -1,5 +1,148 @@
-.adminEdit-container-right {
+.sandwichEdit-container {
     width: 100%;
     float: left;
+}
+
+.sandwichEdit-inner {
+    width: 85%;
+    margin: auto;
+}
+
+.sandwichEdit-titleContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.sandwichEdit-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.sandwichEdit-dataContainer {
+    width: 100%;
+    float: left;
+}
+
+.sandwichEdit-containerBox {
+    width: 100%;
+    float: left;
+    background: lightgrey;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.sandwichEdit-leftBox, .sandwichEdit-rightBox {
+    width: 50%;
+    float: left;
+}
+
+.sandwichEdit-id-title-wrap {
+    width: 100%;
+    float: left;
+}
+
+.sandwichEdit-idBox {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+
+.sandwichEdit-id {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 0.2em;
+}
+
+.sandwichEdit-titleBox {
+    width: 90%;
+    float: left;
+}
+
+.sandwichEdit-priceBox {
+    width: 100%;
+    float: left;
+}
+
+.sandwichEdit-priceLarge {
+    font-size: 15px;
+    font-family: 'Lato';
+}
+
+.sandwichEdit-gridContainer {
+    width: 100%;
+    float: left;
+    margin-top: 0.5em;
+}
+
+.sandgE-3-3 {
+    width: 15%;
+    float: left;
+    margin-left: 1.8em;
+}
+
+.sandwichEdit-buttonContainer {
+    width: 100%;
+    float: left;
+}
+
+.sandwichEdit-buttonInner {
+    width: 100%;
+    float: left;
+    margin-top: 0.6em;
+}
+
+.sandwichEdit-buttonRemove, .sandwichEdit-buttonEdit {
+    float: right;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1em;
+}
+
+.sandwichEdit-buttonRemove {
+    background: white;
+    border: solid red 1px;
+}
+
+.sandwichEdit-buttonEdit {
+    background: white;
+    border: solid green 1px;
+}
+
+.fa-minus-circle, .fa-cogs {
+    font-size: 20px;
+}
+
+.fa-minus-circle {
+    color: red;
+}
+
+.fa-cogs {
+    color: green;
+}
+
+.sandwichForm {
+    font-family: 'Lato', sans-serif;
+}
+
+.sandwichForm-buttonText1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.sandwichForm-buttonContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
