@@ -1,5 +1,28 @@
 {
     "tables": {
+        "allappetizers": {
+            "tableName": "allappetizers",
+            "schema": {
+                "AppetizerID": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "AppetizerID",
+                    "seqType": "Sequelize.INTEGER(11)"
+                },
+                "AppetizerName": {
+                    "allowNull": false,
+                    "field": "AppetizerName",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "AppetizerPrice": {
+                    "allowNull": false,
+                    "field": "AppetizerPrice",
+                    "seqType": "Sequelize.DECIMAL"
+                }
+            },
+            "indexes": []
+        },
         "allpizza": {
             "tableName": "allpizza",
             "schema": {
@@ -143,6 +166,149 @@
             },
             "indexes": []
         },
+        "allsalads": {
+            "tableName": "allsalads",
+            "schema": {
+                "SaladsID": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "SaladsID",
+                    "seqType": "Sequelize.INTEGER(11)"
+                },
+                "SaladsName": {
+                    "allowNull": false,
+                    "field": "SaladsName",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsPrice": {
+                    "allowNull": false,
+                    "field": "SaladsPrice",
+                    "seqType": "Sequelize.DECIMAL"
+                },
+                "SaladsIngredientSauce1": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientSauce1",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientSauce2": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientSauce2",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientTomato": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientTomato",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientOnion": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientOnion",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientMixedPepper": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientMixedPepper",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientMushroom": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientMushroom",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientJalapeno": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientJalapeno",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientBananaPepper": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientBananaPepper",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientPickle": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientPickle",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientBlackOlive": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientBlackOlive",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientCucumber": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientCucumber",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientPineApple": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientPineApple",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientSaladsLettuce": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientSaladsLettuce",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientRoastBeef": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientRoastBeef",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientHam": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientHam",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientTurkey": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientTurkey",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientSalami": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientSalami",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientPepperoni": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientPepperoni",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientBaconStrip": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientBaconStrip",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientCanBacon": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientCanBacon",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientShreddedCheese": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientShreddedCheese",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientBurgerPatty": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientBurgerPatty",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientChickenPatty": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientChickenPatty",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SaladsIngredientCrispyChickenPatty": {
+                    "allowNull": true,
+                    "field": "SaladsIngredientCrispyChickenPatty",
+                    "seqType": "Sequelize.STRING(40)"
+                }
+            },
+            "indexes": []
+        },
         "allsandwiches": {
             "tableName": "allsandwiches",
             "schema": {
@@ -163,49 +329,14 @@
                     "field": "SandwichPrice",
                     "seqType": "Sequelize.DECIMAL"
                 },
-                "SandwichIngredientRedSauce": {
+                "SandwichIngredientSauceType1": {
                     "allowNull": true,
-                    "field": "SandwichIngredientRedSauce",
+                    "field": "SandwichIngredientSauceType1",
                     "seqType": "Sequelize.STRING(40)"
                 },
-                "SandwichIngredientWhiteSauce": {
+                "SandwichIngredientSauceType2": {
                     "allowNull": true,
-                    "field": "SandwichIngredientWhiteSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientBBQSauce": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientBBQSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientRanch": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientRanch",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientHoneyMustard": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientHoneyMustard",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientBeanSauce": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientBeanSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientBuffSauce": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientBuffSauce",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientMayo": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientMayo",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientSpicyMustard": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientSpicyMustard",
+                    "field": "SandwichIngredientSauceType2",
                     "seqType": "Sequelize.STRING(40)"
                 },
                 "SandwichIngredientTomato": {
@@ -283,49 +414,34 @@
                     "field": "SandwichIngredientSalami",
                     "seqType": "Sequelize.STRING(40)"
                 },
+                "SandwichIngredientCanBacon": {
+                    "allowNull": true,
+                    "field": "SandwichIngredientCanBacon",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SandwichIngredientSausage": {
+                    "allowNull": true,
+                    "field": "SandwichIngredientSausage",
+                    "seqType": "Sequelize.STRING(40)"
+                },
                 "SandwichIngredientPepperoni": {
                     "allowNull": true,
                     "field": "SandwichIngredientPepperoni",
                     "seqType": "Sequelize.STRING(40)"
                 },
-                "SandwichIngredientBaconStrip": {
+                "SandwichIngredientBaconBit": {
                     "allowNull": true,
-                    "field": "SandwichIngredientBaconStrip",
+                    "field": "SandwichIngredientBaconBit",
                     "seqType": "Sequelize.STRING(40)"
                 },
-                "SandwichIngredientPepJack": {
+                "SandwichIngredientSecondaryCheese": {
                     "allowNull": true,
-                    "field": "SandwichIngredientPepJack",
+                    "field": "SandwichIngredientSecondaryCheese",
                     "seqType": "Sequelize.STRING(40)"
                 },
-                "SandwichIngredientCheddar": {
+                "SandwichIngredientFirstCheese": {
                     "allowNull": true,
-                    "field": "SandwichIngredientCheddar",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientAmerican": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientAmerican",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientColbyJack": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientColbyJack",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientProvolone": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientProvolone",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientSwiss": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientSwiss",
-                    "seqType": "Sequelize.STRING(40)"
-                },
-                "SandwichIngredientSmokedGuda": {
-                    "allowNull": true,
-                    "field": "SandwichIngredientSmokedGuda",
+                    "field": "SandwichIngredientFirstCheese",
                     "seqType": "Sequelize.STRING(40)"
                 },
                 "SandwichIngredientBurgerPatty": {
@@ -342,6 +458,29 @@
                     "allowNull": true,
                     "field": "SandwichIngredientCrispyChickenPatty",
                     "seqType": "Sequelize.STRING(40)"
+                }
+            },
+            "indexes": []
+        },
+        "allsides": {
+            "tableName": "allsides",
+            "schema": {
+                "SidesID": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "SidesID",
+                    "seqType": "Sequelize.INTEGER(11)"
+                },
+                "SidesName": {
+                    "allowNull": false,
+                    "field": "SidesName",
+                    "seqType": "Sequelize.STRING(40)"
+                },
+                "SidesPrice": {
+                    "allowNull": false,
+                    "field": "SidesPrice",
+                    "seqType": "Sequelize.DECIMAL"
                 }
             },
             "indexes": []

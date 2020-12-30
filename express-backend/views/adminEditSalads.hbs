@@ -1,0 +1,267 @@
+<div class="saladEdit-container">
+    <div class="saladEdit-inner">
+        <div class="saladEdit-titleContainer">
+            <p class="saladEdit-title">Salad Editor</p>
+        </div>
+        <div class="saladEdit-dataContainer">
+            {{#each salads}}
+            <div class="saladEdit-containerBox">
+                <div class="saladEdit-leftBox">
+                    <div class="saladEdit-id-title-wrap">
+                        <div class="saladEdit-idBox">
+                            <p class="saladEdit-id">{{SaladID}}</p>
+                        </div>
+                        <div class="saladEdit-titleBox">
+                            <div class="saladEdit-titleBoxInner">
+                                <p class="saladEdit-title">{{SaladName}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saladEdit-priceBox">
+                        <div class="saladEdit-gridContainer">
+                            <div class="saladEdit-grid">
+                                <p class="saladEdit-price"><b>Price: </b><i>${{SaladPrice}}</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="saladEdit-rightBox">
+                <div class="saladEdit-buttonContainer">
+                    <div class="saladEdit-buttonInner">
+                        {{!-- Does a delete request --}}
+                        <button class="saladEdit-buttonRemove">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+
+                        {{!-- Does a put request --}}
+                        <button class="saladEdit-buttonEdit">
+                            <i class="fas fa-cogs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="saladForm-container">
+            <div class="saladForm-buttonContainer">
+                <div class="saladForm-buttonInner">
+                    <div class="saladForm-buttonTextC">
+                        <button class="saladForm-buttonText1" id="addSalad">Add Salad +</button>
+                    </div>
+                </div>
+            </div>
+            <div class="saladForm-dataContainer" id="dataContainerDisabled">
+                <form class="saladForm" method="POST" action="/menu/edit/salads">
+                    <div class="saladForm-innerForm">
+                        <div class="saladForm-Inner">
+                            <div class="saladGrid-1-3 sG-3-3">
+                                <div class="saladVegtable-container">
+                                    <div class="saladVegetable-opt">
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Mushroom
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Mixed Pep.
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Tomato
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Onion
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Jalapeno
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Pineapple
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Banana Pep.
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Pickle
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Black Olive
+                                                </label>
+                                            </button>
+                                        </div>
+                                        <div class="saladVegetableC">
+                                            <button class="saladVegButton" type="button" id="saladVegSelector">
+                                                <label class="saladVegLabel" id="saladVegLabel">
+                                                    Cucumber
+                                                </label>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="saladGrid-2-3 sG-3-3">
+                                <div class="saladMeats-container">
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Ham
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Turkey
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Roast Beef
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Salami
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Can. Bacon
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Bacon Bits
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Bacon Strips
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Beef Crumble
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Sausage
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Pepperoni
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Burger Patty
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Crispy Chicken
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Chicken Patty
+                                            </label>
+                                        </button>
+                                    </div>
+                                    <div class="saladMeats-opt">
+                                        <button class="saladMeatsButton" type="button" id="saladMeatsSelector">
+                                            <label class="saladMeatsLabel" id="saladMeatsLabel">
+                                                Grilled Patty
+                                            </label>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="saladGrid-3-3 sG-3-3">
+                                <div class="saladEnd-container">
+                                    <div class="saladProps-container">
+                                        <div class="saladProps-left">
+                                            <div class="saladProps-name">
+                                                <p>Salad Name:</p>
+                                            </div>
+                                            <div class="saladProps-nameInput">
+                                                <input type="text" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                        <div class="saladProps-right">
+                                            <div class="saladProps-price">
+                                                <p>Price:</p>
+                                            </div>
+                                            <div class="saladProps-priceInput">
+                                                <input type="text" placeholder="Price" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saladSubmit-container">
+                                        <button type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

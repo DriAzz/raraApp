@@ -1,0 +1,87 @@
+<div class="sidesEdit-container">
+    <div class="sidesEdit-inner">
+        <div class="sidesEdit-titleContainer">
+            <p class="sidesEdit-title">Sides Editor</p>
+        </div>
+        <div class="sidesEdit-dataContainer">
+            {{#each sides}}
+            <div class="sidesEdit-containerBox">
+                <div class="sidesEdit-leftBox">
+                    <div class="sidesEdit-id-title-wrap">
+                        <div class="sidesEdit-idBox">
+                            <p class="sidesEdit-id">{{SidesID}}</p>
+                        </div>
+                        <div class="sidesEdit-titleBox">
+                            <div class="sidesEdit-titleBoxInner">
+                                <p class="sidesEdit-title">{{SidesName}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidesEdit-priceBox">
+                        <div class="sidesEdit-gridContainer">
+                            <div class="sidesEdit-grid">
+                                <p class="sidesEdit-price"><b>Price: </b><i>${{SidesPrice}}</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidesEdit-rightBox">
+                <div class="sidesEdit-buttonContainer">
+                    <div class="sidesEdit-buttonInner">
+                        {{!-- Does a delete request --}}
+                        <button class="sidesEdit-buttonRemove">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+
+                        {{!-- Does a put request --}}
+                        <button class="sidesEdit-buttonEdit">
+                            <i class="fas fa-cogs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="sidesForm-container">
+            <div class="sidesForm-buttonContainer">
+                <div class="sidesForm-buttonInner">
+                    <div class="sidesForm-buttonTextC">
+                        <button class="sidesForm-buttonText1" id="addsides">Add Sides +</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidesForm-dataContainer" id="dataContainerDisabled">
+                <form class="sidesForm" method="POST" action="/menu/edit/sidess">
+                    <div class="sidesForm-innerForm">
+                        <div class="sidesForm-Inner">
+                            <div class="sidesForm-g2-2">
+                                <div class="sidesForm-nameDataC">
+                                    <div class="sidesForm-nameDataInLabel">
+                                        <label>Side Name:</label>
+                                    </div>
+                                    <div class="sidesForm-nameDataInInput">
+                                        <input type="text" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="sidesForm-sidesDataC">
+                                    <div class="sidesForm-nameDataInLabel">
+                                        <label>Price:</label>
+                                    </div>
+                                    <div class="sidesForm-nameDataInInput">
+                                        <input type="text" placeholder="Price" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidesForm-g2-2">
+                                <div class="sidesForm-submitC">
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

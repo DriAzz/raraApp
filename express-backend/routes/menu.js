@@ -22,7 +22,7 @@ router.get('/edit/pizzas', function (req, res, next) {
                 });
             } else if (user.Power == false) {
                 res.status(401);
-                res.send('You do not have access to this');
+                res.render('noAccess', {});
             } else {
                 res.status(401);
                 res.send('Must be logged in');
@@ -93,63 +93,13 @@ router.get('/allpizzas', function (req, res, next) {
 router.put("/edit/pizzas/:id", function (req, res, next) {
     let pizzaID = parseInt(req.params.id);
 
-    models.allpizza.update(req.body, {where : {PizzaID : pizzaID}})
-    .then(result => res.redirect('/admin/profile'))
-    .catch(err => {
-        res.status(400);
-        res.send("There was a problem updating the pizza.");
-    });
+    models.allpizza.update(req.body, { where: { PizzaID: pizzaID } })
+        .then(result => res.redirect('/admin/profile'))
+        .catch(err => {
+            res.status(400);
+            res.send("There was a problem updating the pizza.");
+        });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -198,15 +148,7 @@ router.post('/edit/sandwiches', function (req, res, next) {
                 },
                 defaults: {
                     SandwichPrice: req.body.sandwichprice,
-                    SandwichIngredientRedSauce: req.body.ingRedSauce,
-                    SandwichIngredientWhiteSauce: req.body.ingWhiteSauce,
-                    SandwichIngredientBBQSauce: req.body.ingBBQSauce,
-                    SandwichIngredientRanch: req.body.ingRanchSauce,
-                    SandwichIngredientHoneyMustard: req.body.ingHoneyMustard,
-                    SandwichIngredientBeanSauce: req.body.ingBeanSauce,
-                    SandwichIngredientBuffSauce: req.body.ingBuffSauce,
-                    SandwichIngredientMayo: req.body.ingMayoSauce,
-                    SandwichIngredientSpicyMustard: req.body.ingSpicyMustard,
+                    SandwichIngredientSauceType: req.body.ingSauceType,
                     SandwichIngredientTomato: req.body.ingTomato,
                     SandwichIngredientOnion: req.body.ingOnion,
                     SandwichIngredientMixedPepper: req.body.ingMixedPepper,
@@ -223,23 +165,111 @@ router.post('/edit/sandwiches', function (req, res, next) {
                     SandwichIngredientTurkey: req.body.ingTurkey,
                     SandwichIngredientSalami: req.body.ingSalami,
                     SandwichIngredientPepperoni: req.body.ingPepperoni,
-                    SandwichIngredientBaconBit: req.body.ingBaconBit
-                    // SandwichIngredientBaconStrip: req.body.ingBaconStrip
-                    // SandwichIngredientPepJack: req.body.,
-                    // SandwichIngredientCheddar: req.body.,
-                    // SandwichIngredientAmerican: req.body.,
-                    // SandwichIngredientColbyJack: req.body.,
-                    // SandwichIngredientProvolone: req.body.,
-                    // SandwichIngredientSwiss: req.body.,
-                    // SandwichIngredientSmokedGuda: req.body.,
-                    // SandwichIngredientBurgerPatty: req.body.,
-                    // SandwichIngredientChickenPatty: req.body.,
-                    // SandwichIngredientCrispyChickenPatty: req.body.,
+                    SandwichIngredientBaconBit: req.body.ingBaconBit,
+                    SandwichIngredientBaconStrip: req.body.ingBaconStrip,
+                    SandwichIngredientFirstCheese: req.body.ingFirstCheese,
+                    SandwichIngredientSecondaryCheese: req.body.ingSecondaryCheese,
+                    SandwichIngredientBurgerPatty: req.body.ingBurgerPatty,
+                    SandwichIngredientChickenPatty: req.body.ingChickenPatty,
+                    SandwichIngredientCrispyChickenPatty: req.body.ingCrispChickenPatty
                 }
-            })
+            });
         }
-    })
-})
+    });
+});
 
+
+
+//Salad Routes
+router.get('/edit/salads', function (req, res, next) {
+    let token = req.cookies.jwt;
+    authService.verifyUser(token)
+        .then(user => {
+            if (user.Power == true) {
+                models.allsalads.findAll({}).then(saladFound => {
+                    res.render('adminEditSalads', {
+                        salads: saladFound
+                    })
+                });
+            } else if (user.Power == false) {
+                res.status(401);
+                res.send('You do not have access to this');
+            } else {
+                res.status(401);
+                res.send('Must be logged in');
+            }
+        });
+});
+
+// router.post('/edit/salads', function (req, res, next) {
+//     let token = req.cookies.jwt;
+//     authService.verifyUser(token).then(user => {
+//         models.allsalads.findOrCreate({
+//             where: {
+//                 SaladName: req.body.saladname
+//             },
+//             defaults: {
+//                 SaladPrice: req.body.saladprice,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//                 SaladIngredient: req.body.,
+//             }
+//         })
+//     })
+// })
+
+
+
+//Appetizers Route
+
+router.get('/edit/appetizers', function (req, res, next) {
+    let token = req.cookies.jwt;
+    authService.verifyUser(token)
+        .then(user => {
+            if (user.Power == true) {
+                models.allappetizer.findAll({}).then(appetizerFound => {
+                    res.render('adminEditAppet', {
+                        appetizers: appetizerFound
+                    })
+                });
+            } else if (user.Power == false) {
+                res.status(401);
+                res.render('noAccess', {});
+            } else {
+                res.status(401);
+                res.send('Must be logged in');
+            }
+        });
+});
+
+
+
+//Sides Route
+router.get('/edit/sides', function (req, res, next) {
+    let token = req.cookies.jwt;
+    authService.verifyUser(token)
+        .then(user => {
+            if (user.Power == true) {
+                models.allsides.findAll({}).then(sideFound => {
+                    res.render('adminEditSides', {
+                        sides: sideFound
+                    })
+                });
+            } else if (user.Power == false) {
+                res.status(401);
+                res.render('noAccess', {});
+            } else {
+                res.status(401);
+                res.send('Must be logged in');
+            }
+        });
+});
 
 module.exports = router;

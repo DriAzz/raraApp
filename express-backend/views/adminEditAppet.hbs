@@ -1,0 +1,87 @@
+<div class="appetizerEdit-container">
+    <div class="appetizerEdit-inner">
+        <div class="appetizerEdit-titleContainer">
+            <p class="appetizerEdit-title">Appetizer Editor</p>
+        </div>
+        <div class="appetizerEdit-dataContainer">
+            {{#each appetizers}}
+            <div class="appetizerEdit-containerBox">
+                <div class="appetizerEdit-leftBox">
+                    <div class="appetizerEdit-id-title-wrap">
+                        <div class="appetizerEdit-idBox">
+                            <p class="appetizerEdit-id">{{AppetizerID}}</p>
+                        </div>
+                        <div class="appetizerEdit-titleBox">
+                            <div class="appetizerEdit-titleBoxInner">
+                                <p class="appetizerEdit-title">{{AppetizerName}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appetizerEdit-priceBox">
+                        <div class="appetizerEdit-gridContainer">
+                            <div class="appetizerEdit-grid">
+                                <p class="appetizerEdit-price"><b>Price: </b><i>${{AppetizerPrice}}</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appetizerEdit-rightBox">
+                <div class="appetizerEdit-buttonContainer">
+                    <div class="appetizerEdit-buttonInner">
+                        {{!-- Does a delete request --}}
+                        <button class="appetizerEdit-buttonRemove">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+
+                        {{!-- Does a put request --}}
+                        <button class="appetizerEdit-buttonEdit">
+                            <i class="fas fa-cogs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="appetizerForm-container">
+            <div class="appetizerForm-buttonContainer">
+                <div class="appetizerForm-buttonInner">
+                    <div class="appetizerForm-buttonTextC">
+                        <button class="appetizerForm-buttonText1" id="addappetizer">Add Appetizer +</button>
+                    </div>
+                </div>
+            </div>
+            <div class="appetizerForm-dataContainer" id="dataContainerDisabled">
+                <form class="appetizerForm" method="POST" action="/menu/edit/appetizers">
+                    <div class="appetizerForm-innerForm">
+                        <div class="appetizerForm-Inner">
+                            <div class="appetizerForm-g2-2">
+                                <div class="appetizerForm-nameDataC">
+                                    <div class="appetizerForm-nameDataInLabel">
+                                        <label>Appetizer Name:</label>
+                                    </div>
+                                    <div class="appetizerForm-nameDataInInput">
+                                        <input type="text" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="appetizerForm-appetizerDataC">
+                                    <div class="appetizerForm-nameDataInLabel">
+                                        <label>Price:</label>
+                                    </div>
+                                    <div class="appetizerForm-nameDataInInput">
+                                        <input type="text" placeholder="Price" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appetizerForm-g2-2">
+                                <div class="appetizerForm-submitC">
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

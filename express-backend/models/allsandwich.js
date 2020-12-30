@@ -16,39 +16,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     //Sauces
-    SandwichIngredientRedSauce: {
+    SandwichIngredientSauceType1: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
-    SandwichIngredientWhiteSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientBBQSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientRanch: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientHoneyMustard: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientBeanSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientBuffSauce: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientMayo: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientSpicyMustard: {
+    SandwichIngredientSauceType2: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
@@ -114,40 +86,28 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING(40),
       allowNull: true
     },
+    SandwichIngredientCanBacon: {
+      type: DataTypes.STRING(40),
+      allowNull: true
+    },
+    SandwichIngredientSausage: {
+      type: DataTypes.STRING(40),
+      allowNull: true
+    },
     SandwichIngredientPepperoni: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
-    SandwichIngredientBaconStrip: {
+    SandwichIngredientBaconBit: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
     //Cheese
-    SandwichIngredientPepJack: {
+    SandwichIngredientSecondaryCheese: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
-    SandwichIngredientCheddar: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientAmerican: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientColbyJack: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientProvolone: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientSwiss: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    SandwichIngredientSmokedGuda: {
+    SandwichIngredientFirstCheese: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
@@ -162,11 +122,7 @@ module.exports = (sequelize, DataTypes) => {
     SandwichIngredientCrispyChickenPatty: {
       type: DataTypes.STRING(40),
       allowNull: true
-    }//,
-    // SandwichIngredientSecondaryCheese: {
-    //   type: DataTypes.STRING(40),
-    //   allowNull: true
-    // }
+    }
   }, {});
   allsandwich.associate = function (models) {
     // associations can be defined here
