@@ -103,11 +103,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     //Cheese
-    SandwichIngredientSecondaryCheese: {
+    SandwichIngredientFirstCheese: {
       type: DataTypes.STRING(40),
       allowNull: true
     },
-    SandwichIngredientFirstCheese: {
+    SandwichIngredientSecondaryCheese: {
       type: DataTypes.STRING(40),
       allowNull: true
     },

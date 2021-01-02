@@ -147,8 +147,11 @@ router.post('/edit/sandwiches', function (req, res, next) {
                     SandwichName: req.body.sandwichname
                 },
                 defaults: {
+                    SandwichIngredientFirstCheese: req.body.ingFirstCheese,
+                    SandwichIngredientSecondaryCheese: req.body.ingSecondaryCheese,
                     SandwichPrice: req.body.sandwichprice,
-                    SandwichIngredientSauceType: req.body.ingSauceType,
+                    SandwichIngredientSauceType1: req.body.ingSauceType1,
+                    SandwichIngredientSauceType2: req.body.ingSauceType2,
                     SandwichIngredientTomato: req.body.ingTomato,
                     SandwichIngredientOnion: req.body.ingOnion,
                     SandwichIngredientMixedPepper: req.body.ingMixedPepper,
@@ -167,11 +170,16 @@ router.post('/edit/sandwiches', function (req, res, next) {
                     SandwichIngredientPepperoni: req.body.ingPepperoni,
                     SandwichIngredientBaconBit: req.body.ingBaconBit,
                     SandwichIngredientBaconStrip: req.body.ingBaconStrip,
-                    SandwichIngredientFirstCheese: req.body.ingFirstCheese,
-                    SandwichIngredientSecondaryCheese: req.body.ingSecondaryCheese,
                     SandwichIngredientBurgerPatty: req.body.ingBurgerPatty,
                     SandwichIngredientChickenPatty: req.body.ingChickenPatty,
-                    SandwichIngredientCrispyChickenPatty: req.body.ingCrispChickenPatty
+                    SandwichIngredientCrispyChickenPatty: req.body.ingCrispyChicken
+                }
+            }).spread(function (result, created) {
+                if (created) {
+                    res.redirect('/menu/edit/sandwiches');
+                    console.log(result);
+                } else {
+                    res.send('Was not created');
                 }
             });
         }
@@ -201,29 +209,53 @@ router.get('/edit/salads', function (req, res, next) {
         });
 });
 
-// router.post('/edit/salads', function (req, res, next) {
-//     let token = req.cookies.jwt;
-//     authService.verifyUser(token).then(user => {
-//         models.allsalads.findOrCreate({
-//             where: {
-//                 SaladName: req.body.saladname
-//             },
-//             defaults: {
-//                 SaladPrice: req.body.saladprice,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//                 SaladIngredient: req.body.,
-//             }
-//         })
-//     })
-// })
+router.post('/edit/salads', function (req, res, next) {
+    let token = req.cookies.jwt;
+    authService.verifyUser(token).then(user => {
+        if (user.Power == true) {
+            models.allsalads.findOrCreate({
+                where: {
+                    SaladName: req.body.saladname
+                    /* 
+                        Bug somewhere around the salds post.
+                    */
+                },
+                defaults: {
+                    SaladIngredientMushroom: req.body.ingMushroom,
+                    SaladIngredientMixedPepper: req.body.ingMixedPep,
+                    SaladIngredientTomato: req.body.ingTomato,
+                    SaladIngredientOnion: req.body.ingOnion,
+                    SaladIngredientJalapeno: req.body.ingJalapeno,
+                    SaladIngredientPineapple: req.body.ingPineapple,
+                    SaladIngredientBananaPep: req.body.ingBPepper,
+                    SaladIngredientPickle: req.body.ingPickle,
+                    SaladIngredientBlackOlive: req.body.ingBlackOlive,
+                    SaladIngredientCucumber: req.body.ingCucumber,
+                    SaladIngredientHam: req.body.ingHam,
+                    SaladIngredientTurkey: req.body.ingTurkey,
+                    SaladIngredientRoastBeef: req.body.ingRoastBeef,
+                    SaladIngredientSalami: req.body.ingSalami,
+                    SaladIngredientCanadianBacon: req.body.ingCanBacon,
+                    SaladIngredientBaconBits: req.body.ingBaconBit,
+                    SaladIngredientBaconStrips: req.body.ingBaconStrip,
+                    SaladIngredientBeefCrumble: req.body.ingBeefCrumble,
+                    SaladIngredientSausage: req.body.ingSausage,
+                    SaladIngredientPepperoni: req.body.ingPepperoni,
+                    SaladIngredientBurgerPatty: req.body.ingBurgerPatty,
+                    SaladIngredientCrispyChicken: req.body.ingCrispyChicken,
+                    SaladIngredientChickenPatty: req.body.ingChickenPatty,
+                }
+            }).spread(function (result, created) {
+                if (created) {
+                    res.redirect('/menu/edit/salads');
+                    console.log(result);
+                } else {
+                    res.send('Was not created');
+                }
+            });
+        }
+    });
+});
 
 
 

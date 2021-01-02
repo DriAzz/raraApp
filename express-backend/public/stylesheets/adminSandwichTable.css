@@ -161,6 +161,7 @@
 
 .sG-4-4 {
     width: 25%;
+    height: 42em;
     float: left;
 }
 
@@ -170,7 +171,7 @@
 }
 
 .sandwichCheese-opt1, .sandwichCheese-opt2 {
-    width: 95%;
+    width: 98%;
     height: 8em;
     float: left;
     margin-top: 10px;
@@ -180,8 +181,9 @@
 }
 
 .sandwichCheese-nameLeft {
-    width: 35%;
+    width: 42%;
     float: left;
+    text-align: center;
 }
 
 .cheeseOptSand {
@@ -192,8 +194,9 @@
 }
 
 .sandwichCheese-nameRight {
-    width: 50%;
+    width: 58%;
     float: left;
+    text-align: center;
 }
 
 .sandwichCheeseInput {
@@ -216,7 +219,7 @@
 }
 
 .sandwichCheeseSelectorDisabled {
-
+    
 }
 
 .sandwichSauce-container {
@@ -225,18 +228,19 @@
 }
 
 .sandwichSauce-opt1, .sandwichSauce-opt2 {
-    width: 95%;
+    width: 98%;
     height: 8em;
     float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: solid black 1px;
     box-shadow: grey 5px 5px 15px 3px;
 }
 
 .sandwichSauce-nameLeft {
-    width: 35%;
+    width: 42%;
     float: left;
+    text-align: center;
 }
 
 .sauceOptSand {
@@ -247,8 +251,9 @@
 }
 
 .sandwichSauce-nameRight {
-    width: 50%;
+    width: 58%;
     float: left;
+    text-align: center;
 }
 
 .sandwichSauceInput {
@@ -272,7 +277,7 @@
 
 .sandwichVegetable-container {
     width: 95%;
-    height: 38em;
+    height: 42em;
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -293,4 +298,69 @@
 
 .sandwichVegButton {
     width: 100%;
+}
+
+.sandwichMeats-container {
+    width: 95%;
+    height: 42em;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    box-shadow: grey 5px 5px 15px 3px;
+}
+
+.sandwichMeats-opt1, .sandwichMeats-opt2, .sandwichMeats-opt3 {
+    width: 100%;
+    float: left;
+    margin-top: 2em;
+}
+
+.sandwichMeatsC {
+    width: 16.6%;
+    float: left;
+}
+
+.sandwichMeatsCP {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.sandwichMeatsButton {
+    width: 100%;
+}
+
+.sandwichMeatsCPButton {
+    width: 50%;
+}
+
+.sandwichEnd-container {
+    width: 95%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    box-shadow: grey 5px 5px 15px 3px;
+}
+
+.sandwichProps-container {
+    width: 100%;
+    float: left;
+}
+
+.sandwichProps-left {
+    width: 50%;
+    float: left;
+}
+
+.sandwichProps-right {
+    width: 50%;
+    float: left;
+}
+
+.sandwichSubmit-container {
+    width: 100%;
+    float: left;
+    text-align: center;
 }
