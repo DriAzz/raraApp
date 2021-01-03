@@ -1,122 +1,121 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
-    const allsalads = sequelize.define('allsalads', {
-        SaladID: {
+/* jshint indent: 2 */
+
+module.exports = function (sequelize, DataTypes) {
+    const allpizzas = sequelize.define('allpizzas', {
+        PizzaID: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        SaladName: {
+        PizzaName: {
             type: DataTypes.STRING(40),
             allowNull: false
         },
-        SaladPrice: {
-            type: DataTypes.DECIMAL,
+        //Prices
+        PizzaLargePrice: {
+            type: DataTypes.DECIMAL(10, 2),
             allowNull: false
         },
-        //Sauces
-        SaladIngredientSauce1: {
+        PizzaMediumPrice: {
+            type: DataTypes.DECIMAL(10, 2),
+            allowNull: false
+        },
+        PizzaSmallPrice: {
+            type: DataTypes.DECIMAL(10, 2),
+            allowNull: false
+        },
+        //Ingredients
+        PizzaIngredientSauceType: {
+            type: DataTypes.STRING(40),
+            allowNull: false
+        },
+        PizzaIngredientCheddarCheese: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientSauce2: {
+        PizzaIngredientShreddedLettuce: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        //Vegetables
-        SaladIngredientTomato: {
+        PizzaIngredientPizzaCheese: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientOnion: {
+        PizzaIngredientPepperoni: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientMixedPepper: {
+        PizzaIngredientSausage: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientMushroom: {
+        PizzaIngredientSalami: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientJalapeno: {
+        PizzaIngredientCanBacon: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientBananaPepper: {
+        PizzaIngredientBeefBurger: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientPickle: {
+        PizzaIngredientBaconBits: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientBlackOlive: {
+        PizzaIngredientPickles: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientCucumber: {
+        PizzaIngredientBananaPepper: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientPineApple: {
+        PizzaIngredientBlackOlive: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientSaladLettuce: {
+        PizzaIngredientPineApple: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        //Meats
-        SaladIngredientRoastBeef: {
+        PizzaIngredientCucumber: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientHam: {
+        PizzaIngredientJalapeno: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientTurkey: {
+        PizzaIngredientMushroom: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientSalami: {
+        PizzaIngredientMixedPepper: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientPepperoni: {
+        PizzaIngredientTomato: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientBaconStrip: {
+        PizzaIngredientOnion: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientCanBacon: {
+        PizzaIngredientGrilledChicken: {
             type: DataTypes.STRING(40),
             allowNull: true
         },
-        SaladIngredientShreddedCheese: {
-            type: DataTypes.STRING(40),
-            allowNull: true
-        },
-        SaladIngredientBurgerPatty: {
-            type: DataTypes.STRING(40),
-            allowNull: true
-        },
-        SaladIngredientChickenPatty: {
-            type: DataTypes.STRING(40),
-            allowNull: true
-        },
-        SaladIngredientCrispyChickenPatty: {
+        PizzaIngredientSourKraut: {
             type: DataTypes.STRING(40),
             allowNull: true
         }
-    }, {});
-    allsalads.associate = function (models) {
-        // associations can be defined here
-    };
-    return allsalads;
+    }, {
+        tableName: 'allpizzas'
+    });
+    return allpizzas;
 };

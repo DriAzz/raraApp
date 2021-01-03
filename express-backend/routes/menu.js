@@ -12,7 +12,7 @@ router.get('/edit/pizzas', function (req, res, next) {
     authService.verifyUser(token)
         .then(user => {
             if (user.Power == true) {
-                models.allpizza.findAll({}).then(pizzaFound => {
+                models.allpizzas.findAll({}).then(pizzaFound => {
                     res.render('adminEditPizza', {
                         // FirstName: user.FirstName,
                         // Power: user.Power,
@@ -34,7 +34,7 @@ router.post('/edit/pizzas', function (req, res, next) {
     let token = req.cookies.jwt;
     authService.verifyUser(token).then(user => {
         if (user.Power == true) {
-            models.allpizza.findOrCreate({
+            models.allpizzas.findOrCreate({
                 where: {
                     PizzaName: req.body.pizzaname
                 },
@@ -57,7 +57,7 @@ router.post('/edit/pizzas', function (req, res, next) {
                     PizzaIngredientOnion: req.body.ingOnion,
                     PizzaIngredientPineApple: req.body.ingPineApple,
                     PizzaIngredientBananaPepper: req.body.ingBananaPepper,
-                    PizzaIngredientPickle: req.body.ingPickle,
+                    PizzaIngredientPickles: req.body.ingPickle,
                     PizzaIngredientJalapeno: req.body.ingJalapeno,
                     PizzaIngredientBlackOlive: req.body.ingBlackOlive,
                     PizzaIngredientSourKrout: req.body.ingSourKrout,
@@ -77,23 +77,23 @@ router.post('/edit/pizzas', function (req, res, next) {
 
 // Query for all pizza's
 router.get('/allpizzas', function (req, res, next) {
-    models.allpizza.findAll({
+    models.allpizzas.findAll({
         where: {
             PizzaID: {
                 [Op.gt]: 0
             }
         }
-    }).then(allpizzaFound => {
+    }).then(allpizzasFound => {
         res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(allpizzaFound));
-        console.log(allpizzaFound);
+        res.send(JSON.stringify(allpizzasFound));
+        console.log(allpizzasFound);
     });
 });
 
 router.put("/edit/pizzas/:id", function (req, res, next) {
     let pizzaID = parseInt(req.params.id);
 
-    models.allpizza.update(req.body, { where: { PizzaID: pizzaID } })
+    models.allpizzas.update(req.body, { where: { PizzaID: pizzaID } })
         .then(result => res.redirect('/admin/profile'))
         .catch(err => {
             res.status(400);
@@ -123,7 +123,7 @@ router.get('/edit/sandwiches', function (req, res, next) {
     authService.verifyUser(token)
         .then(user => {
             if (user.Power == true) {
-                models.allsandwich.findAll({}).then(sandwichFound => {
+                models.allsandwiches.findAll({}).then(sandwichFound => {
                     res.render('adminEditSand', {
                         sandwiches: sandwichFound
                     })
@@ -142,7 +142,7 @@ router.post('/edit/sandwiches', function (req, res, next) {
     let token = req.cookies.jwt;
     authService.verifyUser(token).then(user => {
         if (user.Power == true) {
-            models.allsandwich.findOrCreate({
+            models.allsandwiches.findOrCreate({
                 where: {
                     SandwichName: req.body.sandwichname
                 },
@@ -186,6 +186,21 @@ router.post('/edit/sandwiches', function (req, res, next) {
     });
 });
 
+// Query for all sandwiches
+router.get('/allsandwiches', function (req, res, next) {
+    models.allsandwiches.findAll({
+        where: {
+            SandwichID: {
+                [Op.gt]: 0
+            }
+        }
+    }).then(allsandwichesFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(allsandwichesFound));
+        console.log(allsandwichesFound);
+    });
+});
+
 
 
 //Salad Routes
@@ -216,11 +231,9 @@ router.post('/edit/salads', function (req, res, next) {
             models.allsalads.findOrCreate({
                 where: {
                     SaladName: req.body.saladname
-                    /* 
-                        Bug somewhere around the salds post.
-                    */
                 },
                 defaults: {
+                    SaladPrice: req.body.saladprice,
                     SaladIngredientMushroom: req.body.ingMushroom,
                     SaladIngredientMixedPepper: req.body.ingMixedPep,
                     SaladIngredientTomato: req.body.ingTomato,
@@ -243,7 +256,7 @@ router.post('/edit/salads', function (req, res, next) {
                     SaladIngredientPepperoni: req.body.ingPepperoni,
                     SaladIngredientBurgerPatty: req.body.ingBurgerPatty,
                     SaladIngredientCrispyChicken: req.body.ingCrispyChicken,
-                    SaladIngredientChickenPatty: req.body.ingChickenPatty,
+                    SaladIngredientChickenPatty: req.body.ingChickenPatty
                 }
             }).spread(function (result, created) {
                 if (created) {
@@ -257,6 +270,20 @@ router.post('/edit/salads', function (req, res, next) {
     });
 });
 
+// Query for all salads
+router.get('/allsalads', function (req, res, next) {
+    models.allsalads.findAll({
+        where: {
+            SaladID: {
+                [Op.gt]: 0
+            }
+        }
+    }).then(allsaladsFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(allsaladsFound));
+        console.log(allsaladsFound);
+    });
+});
 
 
 //Appetizers Route
@@ -266,7 +293,7 @@ router.get('/edit/appetizers', function (req, res, next) {
     authService.verifyUser(token)
         .then(user => {
             if (user.Power == true) {
-                models.allappetizer.findAll({}).then(appetizerFound => {
+                models.allappetizers.findAll({}).then(appetizerFound => {
                     res.render('adminEditAppet', {
                         appetizers: appetizerFound
                     })
@@ -281,6 +308,43 @@ router.get('/edit/appetizers', function (req, res, next) {
         });
 });
 
+router.post('/edit/appetizers', function (req, res, next) {
+    let token = req.cookies.jwt;
+    authService.verifyUser(token).then(user => {
+        if (user.Power == true) {
+            models.allappetizers.findOrCreate({
+                where: {
+                    AppetizerName: req.body.appetizername
+                },
+                defaults: {
+                    AppetizerPrice: req.body.appetizerprice
+                }
+            }).spread(function (result, created) {
+                if (created) {
+                    res.redirect('/menu/edit/appetizers');
+                    console.log(result);
+                } else {
+                    res.send('Was not created');
+                }
+            });
+        }
+    });
+});
+
+// Query for all appetizers
+router.get('/allappetizers', function (req, res, next) {
+    models.allappetizers.findAll({
+        where: {
+            AppetizerID: {
+                [Op.gt]: 0
+            }
+        }
+    }).then(allappetizersFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(allappetizersFound));
+        console.log(allappetizersFound);
+    });
+});
 
 
 //Sides Route
@@ -302,6 +366,44 @@ router.get('/edit/sides', function (req, res, next) {
                 res.send('Must be logged in');
             }
         });
+});
+
+router.post('/edit/sides', function (req, res, next) {
+    let token = req.cookies.jwt;
+    authService.verifyUser(token).then(user => {
+        if (user.Power == true) {
+            models.allsides.findOrCreate({
+                where: {
+                    SidesName: req.body.sidesname
+                },
+                defaults: {
+                    SidesPrice: req.body.sidesprice
+                }
+            }).spread(function (result, created) {
+                if (created) {
+                    res.redirect('/menu/edit/sides');
+                    console.log(result);
+                } else {
+                    res.send('Was not created');
+                }
+            });
+        }
+    });
+});
+
+// Query for all sides
+router.get('/allsides', function (req, res, next) {
+    models.allsides.findAll({
+        where: {
+            SidesID: {
+                [Op.gt]: 0
+            }
+        }
+    }).then(allsidesFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(allsidesFound));
+        console.log(allsidesFound);
+    });
 });
 
 module.exports = router;

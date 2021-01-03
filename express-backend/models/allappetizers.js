@@ -1,23 +1,23 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    const allsides = sequelize.define('allsides', {
-        SidesID: {
+    const allappetizers = sequelize.define('allappetizers', {
+        AppetizerID: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        SidesName: {
+        AppetizerName: {
             type: DataTypes.STRING(40),
             allowNull: false
         },
-        SidesPrice: {
+        AppetizerPrice: {
             type: DataTypes.DECIMAL,
             allowNull: false
         }
     }, {});
-    allsides.associate = function (models) {
+    allappetizers.associate = function (models) {
         // associations can be defined here
     };
-    return allsides;
+    return allappetizers;
 };

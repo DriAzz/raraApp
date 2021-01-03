@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 import PizzaRender from "../screens/PizzaRender";
 import OverviewRender from "../screens/OverviewRender";
+import SandwichRender from '../screens/SandwichRender';
+import SaladRender from '../screens/SaladRender';
+import AppetizerRender from '../screens/AppetizerRender';
 
 
 const MenuGetComponent = () => (
@@ -28,7 +31,7 @@ const MenuGetComponent = () => (
                                     <NavLink activeClassName="menu-active" className="navLink-salads navLinks-menu" exact to="/menu/salads">Salads</NavLink>
                                 </div>
                                 <div className="navLink-container">
-                                    <NavLink activeClassName="menu-active" className="navLink-appetizers navLinks-menu" exact to="/menu/appetizers">Appetizers</NavLink>
+                                    <NavLink activeClassName="menu-active" className="navLink-appetizers navLinks-menu" exact to="/menu/appetizers">Appetizers & Sides</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -36,9 +39,9 @@ const MenuGetComponent = () => (
                     <div className="menu-rightC">
                         <Route exact path="/menu/" component={OverviewRender} />
                         <Route path="/menu/pizzas/" component={PizzaRender} />
-                        {/* <Route exact path="/menu/sandwiches" component={} /> */}
-                        {/* <Route exact path="/menu/salads" component={} /> */}
-                        {/* <Route exact path="/menu/appetizers" component={} /> */}
+                        <Route path="/menu/sandwiches" component={SandwichRender} />
+                        <Route exact path="/menu/salads" component={SaladRender} />
+                        <Route exact path="/menu/appetizers" component={AppetizerRender} />
                     </div>
                 </div>
             </div>

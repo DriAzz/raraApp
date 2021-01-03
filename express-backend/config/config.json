@@ -1,12 +1,11 @@
 {
   "development": {
     "username": "root",
-    "password": "Password1!",
+    "password": "password1!",
     "database": "raramock",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false,
-    "define": { "timestamps" : false }
+    "operatorsAliases": false
   },
   "test": {
     "username": "root",
