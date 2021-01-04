@@ -5,15 +5,44 @@ font-family: 'Luckiest Guy', cursive;
 font-family: 'Pacifico', cursive;
 font-family: 'Bungee Inline', cursive;
 */
+.parallaxInnerContainer {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    width: 1550px;
+    height: 1000px;
+    background-image: url('../assets/woodBack.jpg');
+    background-repeat: no-repeat;
+    background-size: 1550px 700px;
+    filter: blur(8px);
+}
+
+.pizzaSpecHomeMainContainer {
+    position: fixed;
+    left: 50%;
+    z-index: 2;
+    width: 80%;
+    transform: translate(-50%);
+}
+
+.pizzaSpecContainerLeft {
+    width: 65%;
+    float: left;
+}
 
 .pizzaSpecContainer {
-    float: left;
-    margin-left: 4.2em;
-    margin-top: 5em;
-    width: 60%;
+    margin: auto;
+    width: 97%;
     height: 35em;
+    margin-top: 5em;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+}
+
+.pizzaSpecWeekSpecC {
+    width: 100%;
+    float: left;
 }
 
 .pizzaSpecText {
@@ -35,6 +64,12 @@ font-family: 'Bungee Inline', cursive;
 .hoursContainer {
     width: 50%;
     float: left;
+}
+
+.hoursTextContainer {
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 .hoursText {
@@ -98,24 +133,23 @@ font-family: 'Bungee Inline', cursive;
 }
 
 .csTitleContainer {
-    margin-top: 7em;
     text-align: center;
 }
 
 .csDateContainer {
-    margin-top: -2em;
+    margin-top: -1em;
     text-align: center;
 }
 
 .csHoursContainer {
-    margin-top: -2em;
+    margin-top: -1.5em;
 }
 
 .csTitle {
     font-family: 'Bungee Inline', cursive;
     text-shadow: 2px 2px red;
     font-size: 40px;
-    margin-left: 0.8em;
+    text-align: center;
 }
 
 .csDate {
@@ -135,9 +169,54 @@ font-family: 'Bungee Inline', cursive;
     margin-left: 1.4em;
 }
 
+.helpWantedContainerRight {
+    width: 35%;
+    float: left;
+}
+
+.helpWantedContainer {
+    width: 95%;
+    margin: auto;
+}
+
 
 /* Mobile View 245px max */
 
 @media only screen and (min-width: 0px) and (max-width: 245px) {
 
+}
+
+@media only screen and (min-width: 246px) and (max-width: 720px) {
+
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+    .parallaxInnerContainer {
+        width: 1250px;
+    }   
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1700px) {
+    .parallaxInnerContainer {
+        width: 1400px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1701px) and (max-width: 1800px) {
+    .parallaxInnerContainer {
+        width: 1500px;
+    }
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 1900px) {
+    .parallaxInnerContainer {
+        width: 1600px;
+        background-size: 1625px 700px;
+    }
 }

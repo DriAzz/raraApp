@@ -17,7 +17,7 @@ var Sequelize = require('sequelize');
 var info = {
     "revision": 1,
     "name": "initial_migration",
-    "created": "2021-01-03T00:40:05.652Z",
+    "created": "2021-01-03T16:01:08.669Z",
     "comment": ""
 };
 
@@ -218,141 +218,141 @@ var migrationCommands = [{
         params: [
             "allsalads",
             {
-                "SaladsID": {
+                "SaladID": {
                     "type": Sequelize.INTEGER(11),
-                    "field": "SaladsID",
+                    "field": "SaladID",
                     "autoIncrement": true,
                     "primaryKey": true,
                     "allowNull": false
                 },
-                "SaladsName": {
+                "SaladName": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsName",
+                    "field": "SaladName",
                     "allowNull": false
                 },
-                "SaladsPrice": {
+                "SaladPrice": {
                     "type": Sequelize.DECIMAL,
-                    "field": "SaladsPrice",
+                    "field": "SaladPrice",
                     "allowNull": false
                 },
-                "SaladsIngredientSauce1": {
+                "SaladIngredientSauce1": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientSauce1",
+                    "field": "SaladIngredientSauce1",
                     "allowNull": true
                 },
-                "SaladsIngredientSauce2": {
+                "SaladIngredientSauce2": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientSauce2",
+                    "field": "SaladIngredientSauce2",
                     "allowNull": true
                 },
-                "SaladsIngredientTomato": {
+                "SaladIngredientTomato": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientTomato",
+                    "field": "SaladIngredientTomato",
                     "allowNull": true
                 },
-                "SaladsIngredientOnion": {
+                "SaladIngredientOnion": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientOnion",
+                    "field": "SaladIngredientOnion",
                     "allowNull": true
                 },
-                "SaladsIngredientMixedPepper": {
+                "SaladIngredientMixedPepper": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientMixedPepper",
+                    "field": "SaladIngredientMixedPepper",
                     "allowNull": true
                 },
-                "SaladsIngredientMushroom": {
+                "SaladIngredientMushroom": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientMushroom",
+                    "field": "SaladIngredientMushroom",
                     "allowNull": true
                 },
-                "SaladsIngredientJalapeno": {
+                "SaladIngredientJalapeno": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientJalapeno",
+                    "field": "SaladIngredientJalapeno",
                     "allowNull": true
                 },
-                "SaladsIngredientBananaPepper": {
+                "SaladIngredientBananaPepper": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientBananaPepper",
+                    "field": "SaladIngredientBananaPepper",
                     "allowNull": true
                 },
-                "SaladsIngredientPickle": {
+                "SaladIngredientPickle": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientPickle",
+                    "field": "SaladIngredientPickle",
                     "allowNull": true
                 },
-                "SaladsIngredientBlackOlive": {
+                "SaladIngredientBlackOlive": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientBlackOlive",
+                    "field": "SaladIngredientBlackOlive",
                     "allowNull": true
                 },
-                "SaladsIngredientCucumber": {
+                "SaladIngredientCucumber": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientCucumber",
+                    "field": "SaladIngredientCucumber",
                     "allowNull": true
                 },
-                "SaladsIngredientPineApple": {
+                "SaladIngredientPineApple": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientPineApple",
+                    "field": "SaladIngredientPineApple",
                     "allowNull": true
                 },
-                "SaladsIngredientSaladsLettuce": {
+                "SaladIngredientSaladLettuce": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientSaladsLettuce",
+                    "field": "SaladIngredientSaladLettuce",
                     "allowNull": true
                 },
-                "SaladsIngredientRoastBeef": {
+                "SaladIngredientRoastBeef": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientRoastBeef",
+                    "field": "SaladIngredientRoastBeef",
                     "allowNull": true
                 },
-                "SaladsIngredientHam": {
+                "SaladIngredientHam": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientHam",
+                    "field": "SaladIngredientHam",
                     "allowNull": true
                 },
-                "SaladsIngredientTurkey": {
+                "SaladIngredientTurkey": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientTurkey",
+                    "field": "SaladIngredientTurkey",
                     "allowNull": true
                 },
-                "SaladsIngredientSalami": {
+                "SaladIngredientSalami": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientSalami",
+                    "field": "SaladIngredientSalami",
                     "allowNull": true
                 },
-                "SaladsIngredientPepperoni": {
+                "SaladIngredientPepperoni": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientPepperoni",
+                    "field": "SaladIngredientPepperoni",
                     "allowNull": true
                 },
-                "SaladsIngredientBaconStrip": {
+                "SaladIngredientBaconStrip": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientBaconStrip",
+                    "field": "SaladIngredientBaconStrip",
                     "allowNull": true
                 },
-                "SaladsIngredientCanBacon": {
+                "SaladIngredientCanBacon": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientCanBacon",
+                    "field": "SaladIngredientCanBacon",
                     "allowNull": true
                 },
-                "SaladsIngredientShreddedCheese": {
+                "SaladIngredientShreddedCheese": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientShreddedCheese",
+                    "field": "SaladIngredientShreddedCheese",
                     "allowNull": true
                 },
-                "SaladsIngredientBurgerPatty": {
+                "SaladIngredientBurgerPatty": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientBurgerPatty",
+                    "field": "SaladIngredientBurgerPatty",
                     "allowNull": true
                 },
-                "SaladsIngredientChickenPatty": {
+                "SaladIngredientChickenPatty": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientChickenPatty",
+                    "field": "SaladIngredientChickenPatty",
                     "allowNull": true
                 },
-                "SaladsIngredientCrispyChickenPatty": {
+                "SaladIngredientCrispyChickenPatty": {
                     "type": Sequelize.STRING(40),
-                    "field": "SaladsIngredientCrispyChickenPatty",
+                    "field": "SaladIngredientCrispyChickenPatty",
                     "allowNull": true
                 },
                 "createdAt": {
