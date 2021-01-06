@@ -26,7 +26,7 @@ class SandwichGet extends React.Component {
         console.log(this.state.sandwichData);
         if (this.state.sandwichData.length === 0) {
             return <div className="loadingScreen-container">
-                <i class="fas fa=hourglass"></i>
+                <i class="fas fa-hourglass"></i>
             </div>
         }
 

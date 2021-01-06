@@ -26,7 +26,7 @@ class SidesGet extends React.Component {
         console.log(this.state.sidesData);
         if (this.state.sidesData.length === 0) {
             return <div className="loadingScreen-container">
-                <i class="fas fa=hourglass"></i>
+                <i class="fas fa-hourglass"></i>
             </div>
         }
 
