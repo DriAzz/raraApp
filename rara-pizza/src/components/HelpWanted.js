@@ -7,8 +7,12 @@ const HelpWanted = () => (
             <a href="/apply" className="helpWanted-text">Help Wanted</a>
         </div>
         <div className="helpWanted-infoC">
-            <p className="helpWanted-p1">We need <b>Servers</b></p>
-            <p className="helpWanted-p1">We need <b>Cooks</b></p>
+            <div className="helpWantedGridP1">
+                <p className="helpWanted-p1">We need <b>Servers</b></p>
+            </div>
+            <div className="helpWantedGridP1">
+                <p className="helpWanted-p1">We need <b>Cooks</b></p>
+            </div>
         </div>
         <div className="helpWanted-buttonC">
             <button type="button" className="apply-now-button">

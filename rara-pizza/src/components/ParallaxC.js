@@ -81,7 +81,6 @@ const ParallaxComponent = () => (
                     <HelpWanted />
                 </div>
             </div>
-            <div className="readme" style={{ height: 200 }}></div>
         </div>
     </div>
 );
