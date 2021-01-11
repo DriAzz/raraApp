@@ -76,11 +76,27 @@ router.post('/edit/pizzas', function (req, res, next) {
 });
 
 // Query for all pizza's
-router.get('/allpizzas', function (req, res, next) {
+router.get('/pizzas/1', function (req, res, next) {
     models.allpizzas.findAll({
         where: {
             PizzaID: {
-                [Op.gt]: 0
+                [Op.gt]: 0,
+                [Op.lt]: 6
+            }
+        }
+    }).then(allpizzasFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(allpizzasFound));
+        console.log(allpizzasFound);
+    });
+});
+
+router.get('/pizzas/2', function (req, res, next) {
+    models.allpizzas.findAll({
+        where: {
+            PizzaID: {
+                [Op.gt]: 6,
+                [Op.lt]: 12
             }
         }
     }).then(allpizzasFound => {

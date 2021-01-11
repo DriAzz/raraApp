@@ -22,7 +22,7 @@ const MenuGetComponent = () => (
                                     <NavLink activeClassName="menu-active" className="navLink-overview navLinks-menu" exact to="/menu">Overview</NavLink>
                                 </div>
                                 <div className="navLink-container">
-                                    <NavLink activeClassName="menu-active" className="navLink-pizza navLinks-menu" exact to="/menu/pizzas/">Pizzas</NavLink>
+                                    <NavLink activeClassName="menu-active" className="navLink-pizza navLinks-menu" exact to="/menu/pizzas">Pizzas</NavLink>
                                 </div>
                                 <div className="navLink-container">
                                     <NavLink activeClassName="menu-active" className="navLink-sandwiches navLinks-menu" exact to="/menu/sandwiches">Sandwiches</NavLink>
