@@ -81,7 +81,7 @@ router.get('/pizzas/1', function (req, res, next) {
         where: {
             PizzaID: {
                 [Op.gt]: 0,
-                [Op.lt]: 6
+                [Op.lt]: 7
             }
         }
     }).then(allpizzasFound => {

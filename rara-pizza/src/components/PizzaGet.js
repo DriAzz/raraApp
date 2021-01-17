@@ -3,12 +3,17 @@ import axios from 'axios';
 import "../styles/pizzaGet.css";
 
 class PizzaGet extends React.Component {
-    state = {
-        pizzaData: []
+    constructor(props) {
+        super(props);
+        this.state = {
+            pizzaData: [],
+            uriRoutes: ['http://localhost:3000/menu/pizzas/1', 'http://localhost:3000/menu/pizzas/2',
+            'http://localhost:3000/menu/pizzas/3']
+        }
     };
 
     fetchPizzaData = () => {
-        var encodedURI = window.encodeURI(this.props.uri);
+        var encodedURI = window.encodeURI(this.state.uriRoutes);
         return axios.get(encodedURI).then(response => {
             this.setState(() => {
                 return {
