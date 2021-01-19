@@ -5,7 +5,7 @@
 }
 
 .menu-box {
-    width: 80%;
+    width: 95%;
     margin: auto;
     margin-top: 7em;
     height: 65em;
@@ -50,7 +50,7 @@
     text-decoration: none;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    margin-left: 2em;
+    padding-left: 0.5em;
 }
 
 .menu-active {
@@ -58,12 +58,12 @@
     text-shadow: 1px 1px 5px white;
 }
 
-
-
-
-
-
 .menu-rightC {
     width: 75%;
     float: left;
 }
+
+
+/* 1300 px on the PizzaGet Component */
+
+/* 1200 px on the MenuGet Component */

@@ -1,3 +1,7 @@
+.mobile-helpWantedGridP1 {
+    display: none;
+}
+
 .helpWanted-container {
     float: left;
     margin-top: 5em;
@@ -67,16 +71,215 @@
     margin-top: -8px;
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1000px) {
+/* @media only screen and (min-width: 200px) and (max-width: 299px) {
+    
+}
 
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+    
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+    
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+} */
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .helpWanted-container {
+        margin-top: 6.5em;
+        height: 11em;
+        background-color: rgba(0, 0, 0, 1);
+        border: solid red 1px;
+    }
+
+    .helpWanted-text {
+        font-size: 28px;
+        border: none;
+        background: transparent;
+    }
+
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .helpWanted-boxC {
+        margin-top: -0.5em;
+        background: transparent;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: -2em;
+    }
+
+    .mobile-helpWatedTextC1 {
+        height: 2em;
+        width: 100%;
+        float: left;
+        margin-top: 0.5em;
+    }
+
+    .mobile-helpWantedText1 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 25px;
+        color: white;
+    }
+
+    .mobile-helpWantedText2 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 25px;
+        color: red;
+    }
+
+    .helpWanted-buttonC {
+        width: 100%;
+        float: left;
+    }
+    .apply-now-button {
+        margin-top: -0.5em;
+        height: 45px;
+        font-size: 20px;
+        padding-top: 3px;
+    }
 }
 
 @media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .helpWanted-container {
+        margin-top: 7em;
+        height: 11em;
+        background-color: rgba(0, 0, 0, 1);
+        border: solid red 1px;
+    }
 
+    .helpWanted-text {
+        font-size: 28px;
+        border: none;
+        background: transparent;
+    }
+
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .helpWanted-boxC {
+        margin-top: -0.5em;
+        background: transparent;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: -2em;
+    }
+
+    .mobile-helpWatedTextC1 {
+        height: 2em;
+        width: 100%;
+        float: left;
+        margin-top: 0.5em;
+    }
+
+    .mobile-helpWantedText1 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 25px;
+        color: white;
+    }
+
+    .mobile-helpWantedText2 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 25px;
+        color: red;
+    }
+
+    .helpWanted-buttonC {
+        width: 100%;
+        float: left;
+    }
+    .apply-now-button {
+        margin-top: -0.5em;
+        height: 45px;
+        font-size: 20px;
+        padding-top: 3px;
+    }
 }
 
 @media only screen and (min-width: 1101px) and (max-width: 1200px) {
+    .helpWanted-container {
+        margin-top: 7em;
+        height: 11em;
+        background-color: rgba(0, 0, 0, 1);
+        border: solid red 1px;
+    }
 
+    .helpWanted-text {
+        font-size: 28px;
+        border: none;
+        background: transparent;
+    }
+
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .helpWanted-boxC {
+        margin-top: -0.5em;
+        background: transparent;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: -2em;
+    }
+
+    .mobile-helpWatedTextC1 {
+        height: 2em;
+        width: 100%;
+        float: left;
+        margin-top: 0.5em;
+    }
+
+    .mobile-helpWantedText1 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 25px;
+        color: white;
+    }
+
+    .mobile-helpWantedText2 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 25px;
+        color: red;
+    }
+
+    .helpWanted-buttonC {
+        width: 100%;
+        float: left;
+    }
+    .apply-now-button {
+        margin-top: -0.5em;
+        height: 45px;
+        font-size: 20px;
+        padding-top: 3px;
+    }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1300px) {

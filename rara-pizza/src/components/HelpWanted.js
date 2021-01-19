@@ -14,6 +14,16 @@ const HelpWanted = () => (
                 <p className="helpWanted-p1">We need <b>Cooks</b></p>
             </div>
         </div>
+
+        <div className="mobile-helpWantedGridP1">
+            <div className="mobile-helpWatedTextC1">
+                <p className="mobile-helpWantedText1">We Need</p>
+            </div>
+            <div className="mobile-helpWatedTextC2">
+                <p className="mobile-helpWantedText2">Servers | Cooks</p>
+            </div>
+        </div>
+
         <div className="helpWanted-buttonC">
             <button type="button" className="apply-now-button">
                 <a href="/apply" className="apply-link">Apply Now</a>

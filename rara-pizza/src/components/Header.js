@@ -16,8 +16,8 @@ const Header = () => (
         </div>
         <div className="rightContainer">
             <div className="NavLinkContainer">
-                <NavLink className="NavLinks" activeClassName="NavActive" to="/about">About</NavLink>
-                <NavLink className="NavLinks" activeClassName="NavActive" to="/menu">Menu</NavLink>
+                {/* <NavLink className="NavLinks" activeClassName="NavActive" to="/about">About</NavLink> */}
+                <NavLink className="NavLinks" activeClassName="NavActive" to="/menu/overview">Menu</NavLink>
                 <NavLink exact className="NavLinks" activeClassName="NavActive" to="/">Home</NavLink>
             </div>
         </div>

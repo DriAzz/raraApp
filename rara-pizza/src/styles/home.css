@@ -8,16 +8,39 @@
     float: left;
 }
 
+.bigScreenRender {
+    width: 100%;
+    float: left;
+}
+
+.mobileScreenRender {
+    width: 100%;
+    float: left;
+}   
+
 .parallaxContainer {
     margin: auto;
     width: 100%;
     margin-top: 8em;
     width: 80%;
 }
-/* 
-.topBlock {
-    width: 100%;
-    height: 5em;
-    float: left;
-    background-color: #000000;
-} */
+
+@media only screen and (min-width: 900px) and (max-width: 5000px) {
+    .bigScreenRender {
+        display: block;
+    }
+
+    .mobileScreenRender {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 899px) {
+    .bigScreenRender {
+        display: none;
+    }
+
+    .mobileScreenRender {
+        display: block;
+    }
+}

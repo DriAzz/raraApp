@@ -6,14 +6,12 @@ class PizzaGet extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            pizzaData: [],
-            uriRoutes: ['http://localhost:3000/menu/pizzas/1', 'http://localhost:3000/menu/pizzas/2',
-            'http://localhost:3000/menu/pizzas/3']
+            pizzaData: []
         }
     };
 
     fetchPizzaData = () => {
-        var encodedURI = window.encodeURI(this.state.uriRoutes);
+        var encodedURI = window.encodeURI(this.props.uri);
         return axios.get(encodedURI).then(response => {
             this.setState(() => {
                 return {

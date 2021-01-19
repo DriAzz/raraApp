@@ -175,18 +175,105 @@ font-family: 'Bungee Inline', cursive;
     margin: auto;
 }
 
-/* Mobile View 245px max */
+/* @media only screen and (min-width: 200px) and (max-width: 299px) {
+    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+} */
 
 @media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .hoursContainer {
+        width: 55%;
+        float: left;
+    }
 
+    .csHourContainer {
+        width: 45%;
+        float: left;
+    }
+
+    .parallaxInnerContainer {
+        width: 100%;
+    }
+
+    .pizzaSpecContainerLeft {
+        width: 100%;
+    }
+    
+    .pizzaSpecContainer {
+        width: 100%;
+    }
+
+    .helpWantedContainer {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        width: 45%;
+    }
 }
 
 @media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .parallaxInnerContainer {
+        width: 100%;
+    }
 
+    .pizzaSpecContainerLeft {
+        width: 100%;
+    }
+    
+    .pizzaSpecContainer {
+        width: 100%;
+    }
+
+    .helpWantedContainer {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1101px) and (max-width: 1200px) {
+    .parallaxInnerContainer {
+        width: 100%;
+    }
 
+    .pizzaSpecContainerLeft {
+        width: 100%;
+    }
+    
+    .pizzaSpecContainer {
+        width: 100%;
+    }
+
+    .helpWantedContainer {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1300px) {

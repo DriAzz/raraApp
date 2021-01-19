@@ -96,7 +96,22 @@ router.get('/pizzas/2', function (req, res, next) {
         where: {
             PizzaID: {
                 [Op.gt]: 6,
-                [Op.lt]: 12
+                [Op.lt]: 13
+            }
+        }
+    }).then(allpizzasFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(allpizzasFound));
+        console.log(allpizzasFound);
+    });
+});
+
+router.get('/pizzas/3', function (req, res, next) {
+    models.allpizzas.findAll({
+        where: {
+            PizzaID: {
+                [Op.gt]: 12,
+                [Op.lt]: 19
             }
         }
     }).then(allpizzasFound => {
@@ -203,19 +218,34 @@ router.post('/edit/sandwiches', function (req, res, next) {
 });
 
 // Query for all sandwiches
-router.get('/allsandwiches', function (req, res, next) {
+router.get('/sandwiches/1', function (req, res, next) {
     models.allsandwiches.findAll({
         where: {
             SandwichID: {
-                [Op.gt]: 0
+                [Op.gt]: 0,
+                [Op.lt]: 7
             }
         }
-    }).then(allsandwichesFound => {
+    }).then(allsandwiches => {
         res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(allsandwichesFound));
-        console.log(allsandwichesFound);
+        res.send(JSON.stringify(allsandwiches));
+        console.log(allsandwiches);
     });
 });
+
+// router.get('/allsandwiches', function (req, res, next) {
+//     models.allsandwiches.findAll({
+//         where: {
+//             SandwichID: {
+//                 [Op.gt]: 0
+//             }
+//         }
+//     }).then(allsandwichesFound => {
+//         res.setHeader('Content-Type', 'application/json');
+//         res.send(JSON.stringify(allsandwichesFound));
+//         console.log(allsandwichesFound);
+//     });
+// });
 
 
 
