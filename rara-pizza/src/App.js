@@ -6,6 +6,7 @@ import './styles/home.css';
 
 // Components
 import Header from './components/Header';
+import MobileHeader from './components/mobileComponents/MobileHeader';
 
 // Screens
 import Home from './screens/Home';
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        <MobileHeader />
         <div class="main-view">
           <Route exact path="/" component={ Home } />
           <Route path="/menu" component={ Menu } />

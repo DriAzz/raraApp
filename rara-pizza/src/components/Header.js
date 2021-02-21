@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import logo from '../assets/raraLogo.png';
 
+// 3. Make show/not show for responsive
+// 4. add CSS to this file
+
 const Header = () => (
     <div className="headerContainer">
         <div className="leftContainer">

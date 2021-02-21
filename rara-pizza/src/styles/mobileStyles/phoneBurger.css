@@ -1,0 +1,16 @@
+.phoneBurger-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    float: left;
+    background: white;
+}
+
+.phoneBurgerNav-container {
+    width: 100%;
+    float: left;
+    background: black;
+    margin-top: 199px;
+}

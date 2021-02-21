@@ -1,0 +1,102 @@
+@media only screen and (min-width: 50px) and (max-width: 899px) {
+    .mobileHeader-container {
+        float: left;
+        width: 100%;
+        margin-top: 3em;
+        height: 5em;
+        background-color: rgb(180, 50, 44);
+    }
+
+    .mobileHeader-left, .mobileHeader-middle, .mobileHeader-right {
+        float: left;
+        width: 33.3%;
+        text-align: center;
+        margin-top: 1.2em;
+    }
+
+    .mobileLeftNav-container, .mobileMiddleNav-container, .mobileRightNav-container {
+        width: 100%;
+        float: left;
+    }
+
+    .mobileHeader-Link {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+        text-decoration: none;
+    }
+
+    .mobileImageLogo {
+        width: 230px;
+        height: 130px;
+        margin-top: -3em;
+    }
+
+    .phoneBurgerGrid-1 {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobileImageLogo2 {
+        width: 200px;
+        height: 110px;
+        margin-top: -1.5em;
+        margin-right: 2.5em;
+    }
+    
+    .phoneBurger-container {
+        display: none;
+    }
+
+
+    .phoneBurgerButton-container {
+        width: 100%;
+        float: left;
+    }
+
+    .phoneBurgerButton {
+        width: 4em;
+        height: 4em;
+        border: none;
+        float: left;
+        margin-top: 0.4em;
+        margin-left: 0.4em;
+        border-radius: 50%;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+    }
+
+    .phoneBurgerComponent-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 599px) {
+    .phoneBurger-container {
+        display: block;
+        width: 100%;
+        height: 4em;
+        background-color: rgb(180, 50, 44);
+        float: left;
+    }
+
+
+
+    .mobileHeader-containerInner {
+        display: none;
+    }
+
+    .mobileHeader-container {
+        background: transparent;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 5000px) {
+    .mobileHeader-container {
+        display: none;
+    }
+}

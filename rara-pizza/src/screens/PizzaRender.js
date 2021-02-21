@@ -15,7 +15,7 @@ class PizzaRender extends React.Component {
                     <div className="pizzaGetTitle-container globalRenderTitle-contaier">
                         <p className="pizzaGetTitle globalRenderTitle">Pizzas</p>
                     </div>
-                    <div className="pizzaLink-container globalLink-container">
+                    <div className="pizzaLink-container globalLink-containerRender">
                         <Route exact path="/menu/pizzas/1" component={PizzaRender1} />
                         <Route exact path="/menu/pizzas/2" component={PizzaRender2} />
                         <Route exact path="/menu/pizzas/3" component={PizzaRender3} />
