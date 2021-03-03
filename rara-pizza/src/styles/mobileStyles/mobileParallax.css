@@ -1,19 +1,35 @@
-.mobileParallax-container {
-    width: 100%;
-    float: left;
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .mobileParallax-container {
+        width: 100%;
+        float: left;
+        display: inline;
+    }
+
+    .mobileParallax-containerInnerPhone {
+        display: none;
+    }
+    
+    .mobileParallax-containerInnerTablet {
+        width: 100%;
+        float: left;
+    }
+    
+    .mobileContainer1 {
+        width: 100%;
+        float: left;
+    }
+    
+    .mobileContainer2 {
+        width: 100%;
+        float: left;
+    }
 }
 
-.mobileParallax-containerInner {
-    width: 100%;
-    float: left;
-}
-
-.mobileContainer1 {
-    width: 100%;
-    float: left;
-}
-
-.mobileContainer2 {
-    width: 100%;
-    float: left;
+@media only screen and (min-width: 50px) and (max-width: 599px) {
+    .mobileParallax-containerInnerTablet {
+        display: none;
+    }
+    .mobileParallax-containerInnerPhone {
+        display: inline;
+    }
 }

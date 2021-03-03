@@ -7,50 +7,68 @@ class MobileHomeC2 extends React.Component {
             <div className="mobileHomeC2-main">
                 <div className="mobileHomeC2-gridC">
                     <div className="mobileHomeC2-grid">
-                        <div className="mobileHomeHours-C2">
-                            <div className="mobileHomeDays-C2">
-                                <p className="mobileHomeDays">Sun - Mon</p>
+                        <div className="mobileHomeC2-GridCInner">
+                            <div className="mobileHomeTitleContainer-C2">
+                                <div className="mobileHomeTitle-C2">
+                                    <p className="mobileHomeTitle">Regular Hours</p>
+                                </div>
                             </div>
                             <div className="mobileHomeHours-C2">
-                                <p className="mobileHomeHours">Closed</p>
-                            </div>
-                        </div>
-                        <div className="mobileHomeHours-C2">
-                            <div className="mobileHomeDays-C2">
-                                <p className="mobileHomeDays">Tues - Thurs</p>
-                            </div>
-                            <div className="mobileHomeHours-C2">
-                                <p className="mobileHomeHours">11AM - 8PM</p>
-                            </div>
-                        </div>
-                        <div className="mobileHomeHours-C2">
-                            <div className="mobileHomeDays-C2">
-                                <p className="mobileHomeDays">Fri - Sat</p>
+                                <div className="mobileHomeDays-C2">
+                                    <p className="mobileHomeDays">Sun - Mon</p>
+                                </div>
+                                <div className="mobileHomeHoursC-C2">
+                                    <p className="mobileHomeHours">Closed</p>
+                                </div>
                             </div>
                             <div className="mobileHomeHours-C2">
-                                <p className="mobileHomeHours">11AM - 9PM</p>
+                                <div className="mobileHomeDays-C2">
+                                    <p className="mobileHomeDays">Tues - Thurs</p>
+                                </div>
+                                <div className="mobileHomeHoursC-C2">
+                                    <p className="mobileHomeHours">11AM - 8PM</p>
+                                </div>
+                            </div>
+                            <div className="mobileHomeHours-C2">
+                                <div className="mobileHomeDays-C2">
+                                    <p className="mobileHomeDays">Fri - Sat</p>
+                                </div>
+                                <div className="mobileHomeHoursC-C2">
+                                    <p className="mobileHomeHours">11AM - 9PM</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="mobileHomeC2-grid">
-                        <div className="mobileHomeCarshow-C2">
-                            <div className="mobileHomeCarshowTitle-C2">
-                                <p>Car Show</p>
+                        <div className="mobileHomeC2-GridCInner mobileHomeC2-GridInnerWidthChange">
+                            <div className="mobileHomeHours-C2">
+                                <div className="mobileHomeCSTitle-C2">
+                                    <p className="mobileHomeTitle mobileTitleTypeCS">Car Show Hours</p>
+                                </div>
                             </div>
-                            <div className="mobileHomeCarshowDays-C2">
-                                <p>Tues - Fri</p>
+                            <div className="mobileHomeHours-C2">
+                                <div className="mobileHomeDays-C2">
+                                    <p className="mobileHomeDays">Tues - Thurs</p>
+                                </div>
+                                <div className="mobileHomeHoursC-C2">
+                                    <p className="mobileHomeHours">11AM - 8PM</p>
+                                </div>
                             </div>
-                            <div className="mobileHomeCarshowHours-C2">
-                                <p>4PM - 8PM</p>
+                            <div className="mobileHomeHours-C2">
+                                <div className="mobileHomeDays-C2">
+                                    <p className="mobileHomeDays">Fri</p>
+                                </div>
+                                <div className="mobileHomeHoursC-C2">
+                                    <p className="mobileHomeHours">11AM - 9PM</p>
+                                </div>
                             </div>
-                            <div className="mobileHomeCarshowSTitle-C2">
-                                <p>Car Show Special</p>
-                            </div>
-                            <div className="mobileHomeCarshowData-C2">
-                                <p>6" Loaded Meat</p>
-                            </div>
-                            <div className="mobileHomeCarshowPriceData-C2">
-                                <p>$4.99</p>
+                            <div className="mobileHomeHours-C2">
+                                <div className="mobileHomeHelpWanted-C2">
+                                    <p className="mobileHomeHelpWanted">Help Wanted</p>
+                                </div>
+                                <div className="mobileHomeApplyNow-C2">
+                                    <button className="mobileHomeApplyNow">Apply Now</button>
+                                </div>
                             </div>
                         </div>
                     </div>

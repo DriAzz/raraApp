@@ -2,3 +2,37 @@
     width: 100%;
     float: left;
 }
+
+/* Desktop View */
+@media only screen and (min-width: 900px) and (max-width: 4000px) {
+    .menuContainer-desktopView {
+        display: block;
+    }
+
+    .menuContainer-tabletView, .menuContainer-phoneView {
+        display: none;
+    }
+}
+
+
+/* Tablet View */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .menuContainer-tabletView {
+        display: block;
+    }
+
+    .menuContainer-desktopView, .menuContainer-phoneView {
+        display: none;
+    }
+}
+
+/* Phone View */
+@media only screen and (min-width: 1px) and (max-width: 599px) {
+    .menuContainer-phoneView {
+        display: block;
+    }
+
+    .menuContainer-desktopView, .menuContainer-tabletView {
+        display: none;
+    }
+}

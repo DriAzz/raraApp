@@ -27,11 +27,22 @@ class MobileHomeC1 extends React.Component {
                         </div>
                     </div>
                     <div className="mobileHomeC1-grid">
-                        <div className="mobileHomeHelpWanted-C1">
-                            <p className="mobileHomeHelpWanted">Help Wanted</p>
-                        </div>
-                        <div className="mobileHomeApplyNow-C1">
-                            <button className="mobileHomeApplyNow">Apply Now</button>
+                        <div className="mobileHomePizzaSpec-C1">
+                            <div className="mobileHomeCarshow-C1">
+                                <div className="mobileHomePizzaSpecName-C1">
+                                    <p className="mobileHomePizzaSpecName">Car Show Special</p>
+                                </div>
+                                <div className="mobileHomePizzaSpecPizza-C1">
+                                    <p className="mobileHomePizzaSpecPizza">6" One Topper Pizza</p>
+                                </div>
+                                <div className="mobileHomePizzaSpecPrice-C1 mobileHomeCarshowSpec-C1">
+                                    <div className="mobileHomePizzaSpecPrice-C1InnerBack">
+                                        <div className="mobileHomePizzaSpecPrice-C1Inner">
+                                            <p className="mobileHomePizzaSpecPrice"><b>$4.48</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
