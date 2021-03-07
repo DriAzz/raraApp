@@ -1,70 +1,56 @@
 .menuCom-container {
     width: 100%;
-    height: 62em;
     float: left;
+    height: 60em;
 }
 
 .menu-box {
-    width: 95%;
-    margin: auto;
-    margin-top: 7em;
-    height: 65em;
-    border: solid white 1px;
-    background: rgba(52, 71, 137, 1);
-}
-
-.menuHeight-box {
     width: 100%;
-    height: 80%;
     float: left;
+    height: 100%;
 }
 
 .menu-leftC {
-    width: 25%;
     height: 100%;
+    width: 20%;
     float: left;
-}
-
-.menu-leftC-line {
-    width: 100%;
-    height: 100%;
-    margin-top: 5em;
-    float: left;
-    border-right: solid white 1px;
+    font-family: 'Bungee Inline', cursive;
+    background: rgba(52, 71, 137, 0.2);
 }
 
 .menu-leftC-inner {
-    margin-top: 12em;
+    width: 100%;
+    float: left;
+    margin-top: 5em;
 }
 
 .navLink-container {
     width: 100%;
     float: left;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    text-align: center;
+    margin-top: 5em;;
 }
 
 .navLinks-menu {
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-decoration: none;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    padding-left: 0.5em;
+    color: rgb(180, 50, 44);
 }
 
 .menu-active {
-    text-decoration: underline;
-    text-shadow: 1px 1px 5px white;
+    color: white;
 }
 
 .menu-rightC {
-    width: 75%;
-    height: 45em;
+    width: 80%;
+    height: 100%;
     float: left;
+    font-family: 'Montserrat', sans-serif;
 }
 
+.menu-leftC-line {
+    float: left;
+    height: 100%;
+    border-right: solid red 1px;
+}
 
-/* 1300 px on the PizzaGet Component */
-
-/* 1200 px on the MenuGet Component */
+/* Bungee Inline, cursive */

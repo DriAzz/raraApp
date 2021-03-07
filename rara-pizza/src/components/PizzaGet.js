@@ -42,14 +42,14 @@ class PizzaGet extends React.Component {
                     <div className="pizzaGetIng-inner">
                         <div className="pizzaGetIng-sauces">
                             <div className="pizzaGetIng-title-container">
-                                <p className="pizzaGetIng-title">Sauce</p>
+                                <p className="pizzaGetIng-title pizzaGetIng-titleSauceC">Sauce</p>
                             </div>
                             <div className="pizzaGet-data-container">
                                 <p className="pizzaGet-ing">{pizza.PizzaIngredientSauceType}</p>
                             </div>
                         </div>
                         <div className="pizzaGetIng-meats">
-                            <div className="pizzaGetIng-title-container">
+                            <div className="pizzaGetIng-title-container pizzaGetIng-titleMeatsC">
                                 <p className="pizzaGetIng-title">Meats</p>
                             </div>
                             <div className="pizzaGet-data-container">
@@ -63,7 +63,7 @@ class PizzaGet extends React.Component {
                             </div>
                         </div>
                         <div className="pizzaGetIng-veg">
-                            <div className="pizzaGetIng-title-container">
+                            <div className="pizzaGetIng-title-container pizzaGetIng-titleVegetablesC">
                                 <p className="pizzaGetIng-title">Vegetables</p>
                             </div>
                             <div className="pizzaGet-data-container">

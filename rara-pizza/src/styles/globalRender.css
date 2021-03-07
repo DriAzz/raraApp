@@ -21,7 +21,7 @@
     width: 100%;
     float: left;
 }
-
+/*
 .globalLink-container {
     width: 100%;
     border: solid black 1px;
@@ -51,4 +51,10 @@
 .globalNavLink {
     font-size: 25px;
     text-decoration: none;
+} */
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 999px) {
+    
 }
