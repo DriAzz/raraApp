@@ -30,17 +30,27 @@
         display: block;
     }
 
-    .mobileScreenRender {
+    .mobileScreenRender, .mobilePhoScreenRender {
         display: none;
     }
 }
 
-@media only screen and (min-width: 50px) and (max-width: 899px) {
-    .bigScreenRender {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .bigScreenRender, .mobilePhoScreenRender {
         display: none;
     }
 
     .mobileScreenRender {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 599px) {
+    .bigScreenRender, .mobileScreenRender {
+        display: none;
+    }
+
+    .mobilePhoScreenRender {
         display: block;
     }
 }

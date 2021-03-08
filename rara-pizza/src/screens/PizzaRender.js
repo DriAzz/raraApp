@@ -20,7 +20,7 @@ class PizzaRender extends React.Component {
                         <Route exact path="/menu/pizzas/2" component={PizzaRender2} />
                         <Route exact path="/menu/pizzas/3" component={PizzaRender3} />
                     </div>
-                    {/* <div className="globalLink-container">
+                    <div className="globalLink-container">
                         <div className="pizzaButton-container globalLink-containerInner">
                             <div className="pizzaNavLink-container globalButton-container">
                                 <div className="globalButton-containerInner">
@@ -41,7 +41,7 @@ class PizzaRender extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </Router>
             </div>
         )

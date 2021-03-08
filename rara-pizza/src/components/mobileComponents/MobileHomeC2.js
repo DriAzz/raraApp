@@ -9,20 +9,20 @@ class MobileHomeC2 extends React.Component {
                     <div className="mobileHomeC2-grid">
                         <div className="mobileHomeC2-GridCInner">
                             <div className="mobileHomeTitleContainer-C2">
-                                <div className="mobileHomeTitle-C2">
+                                <div className="mobileHomeTitle-C2 mobileHomeDays-C2TITLE">
                                     <p className="mobileHomeTitle">Regular Hours</p>
                                 </div>
                             </div>
                             <div className="mobileHomeHours-C2">
-                                <div className="mobileHomeDays-C2">
+                                <div className="mobileHomeDays-C2 mobileHomeDays-C2REG">
                                     <p className="mobileHomeDays">Sun - Mon</p>
                                 </div>
                                 <div className="mobileHomeHoursC-C2">
-                                    <p className="mobileHomeHours">Closed</p>
+                                    <p className="mobileHomeHoursCLSD">Closed</p>
                                 </div>
                             </div>
                             <div className="mobileHomeHours-C2">
-                                <div className="mobileHomeDays-C2">
+                                <div className="mobileHomeDays-C2 mobileHomeDays-C2REG">
                                     <p className="mobileHomeDays">Tues - Thurs</p>
                                 </div>
                                 <div className="mobileHomeHoursC-C2">
@@ -30,7 +30,7 @@ class MobileHomeC2 extends React.Component {
                                 </div>
                             </div>
                             <div className="mobileHomeHours-C2">
-                                <div className="mobileHomeDays-C2">
+                                <div className="mobileHomeDays-C2 mobileHomeDays-C2REG">
                                     <p className="mobileHomeDays">Fri - Sat</p>
                                 </div>
                                 <div className="mobileHomeHoursC-C2">
@@ -48,7 +48,7 @@ class MobileHomeC2 extends React.Component {
                             </div>
                             <div className="mobileHomeHours-C2">
                                 <div className="mobileHomeDays-C2">
-                                    <p className="mobileHomeDays">Tues - Thurs</p>
+                                    <p className="mobileHomeDays mobileHomeCarshowDays">Tues - Thurs</p>
                                 </div>
                                 <div className="mobileHomeHoursC-C2">
                                     <p className="mobileHomeHours">11AM - 8PM</p>
@@ -56,13 +56,13 @@ class MobileHomeC2 extends React.Component {
                             </div>
                             <div className="mobileHomeHours-C2">
                                 <div className="mobileHomeDays-C2">
-                                    <p className="mobileHomeDays">Fri</p>
+                                    <p className="mobileHomeDays mobileHomeCarshowDays">Fri</p>
                                 </div>
                                 <div className="mobileHomeHoursC-C2">
                                     <p className="mobileHomeHours">11AM - 9PM</p>
                                 </div>
                             </div>
-                            <div className="mobileHomeHours-C2">
+                            <div className="mobileHomeHours-C2 mobileHomeHelpWantedC">
                                 <div className="mobileHomeHelpWanted-C2">
                                     <p className="mobileHomeHelpWanted">Help Wanted</p>
                                 </div>

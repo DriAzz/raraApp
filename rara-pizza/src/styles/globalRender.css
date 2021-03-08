@@ -21,6 +21,39 @@
     width: 100%;
     float: left;
 }
+
+.globalLink-container {
+    width: 100%;
+    float: left;
+    margin-top: 2em;
+}
+
+.globalLink-containerInner {
+    width: 40%;
+    margin: auto;
+}
+
+.globalButton-container {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.globalButton-containerInner {
+    border: solid red 1px;
+    width: 15%;
+    border-radius: 100%;
+}
+
+.globalNavLink {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+
 /*
 .globalLink-container {
     width: 100%;

@@ -28,12 +28,25 @@
 }
 
 
+/* Change back to 33.3% after design */
 
 .pizzaGet-box {
     width: 33.3%;
     margin-top: 3em;
     float: left;
     color: white;
+}
+
+.pizzaGet-boxBordered {
+    width: 100%;
+    float: left;
+    /* border-right: solid 1px red; */
+}
+
+.pizzaGet-boxMargin {
+    margin-top: 3em;
+    float: left;
+    width: 100%;
 }
 
 .pizzaGetName-container {
@@ -79,12 +92,26 @@
     margin-top: 0.5em;
 }
 
-.pizzaGet-ing {
-    margin-left: 2em;
-    margin-top: 0.2em;
-    font-size: 22px;
-    font-style: italic;
+/* .pizzaGet-data-containerInner {
+    width: 95%;
+    margin: auto;
+} */
+
+.pizzaGet-dataInnerContainer {
+    width: 100%;
     float: left;
+}
+
+.pizzaGet-dataGrid {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGet-ing {
+    float: left;
+    margin-top: 0.2em;
+    font-size: 18px;
+    font-style: italic;
 }
 
 .pizzaGetIng-meats {
@@ -99,6 +126,22 @@
 
 .pizzaGetIng-titleVegetablesC {
     margin-top: 5em;
+}
+
+.pizzaGetPrice-titleC {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGrid-3 {
+    margin-top: 2em;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.pizzaGet-price {
+    font-size: 20px;
 }
 
 /*
