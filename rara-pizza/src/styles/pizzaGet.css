@@ -32,9 +32,11 @@
 
 .pizzaGet-box {
     width: 33.3%;
+    height: 20em;
     margin-top: 3em;
     float: left;
     color: white;
+    border-bottom: solid white 1px;
 }
 
 .pizzaGet-boxBordered {
@@ -64,6 +66,60 @@
     float: left;
 }
 
+.pizzaGetSauce-container {
+    width: 100%;
+    float: left;
+}
+
+.pizzaGetSTitle {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.pizzaGetTop-container {
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+}
+
+.pizzaGetTopTitle {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.pizzaGetTopIng-container {
+    float: left;
+    width: 100%;
+}
+
+.pizzaGetTopIng {
+    float: left;
+    width: 33.3%;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .pizzaGetIng-inner {
     width: 100%;
     float: left;
@@ -143,99 +199,7 @@
 .pizzaGet-price {
     font-size: 20px;
 }
-
-/*
-.pizzaGetName-container {
-    width: 100%;
-    float: left;
-}
-
-.pizzaGet-name {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.pizzaGetIng-container {
-    margin-top: 5px;
-    margin-left: 0.7em;
-    width: 100%;
-    float: left;
-}
-
-.pizzaGetIng-inner {
-    width: 100%;
-    float: left;
-    height: 18em;
-    margin-top: 5px;
-}
-
-.pizzaGetIng-sauces, .pizzaGetIng-meats, .pizzaGetIng-veg {
-    width: 100%;
-    float: left;
-}
-
-.pizzaGetIng-title-container {
-    width: 100%;
-    float: left;
-}
-
-.pizzaGet-data-container {
-    width: 100%;
-    float: left;
-}
-
-.pizzaGetIng-title {
-    margin-left: 1em;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: underline;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.pizzaGet-ing {
-    float: left;
-    margin-left: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-}
-
-.pizzaGetPrice-container {
-    width: 100%;
-    float: left;
-}
-
-.pizzaGet-price {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.pizzaGrid-3 {
-    float: left;
-    width: 33.3%;
-    text-align: center;
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
-    .pizzaGrid-3 {
-        width: 100%;
-        float: left;
-        text-align: left;
-        margin-left: 20px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
-
-    .pizzaGetIng-container {
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-    .pizzaGetIng-inner {
-        height: 15em;
-    }
-} */
+ */
 
 @media only screen and (min-width: 900px) and (max-width: 999px) {
     .pizzaRender-container {

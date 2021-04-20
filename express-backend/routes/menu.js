@@ -51,6 +51,7 @@ router.post('/edit/pizzas', function (req, res, next) {
                     PizzaIngredientBeefBurger: req.body.ingBeef,
                     PizzaIngredientGrilledChicken: req.body.ingGChicken,
                     PizzaIngredientSmokedSausage: req.body.ingSmokeSausage,
+                    PizzaIngredientCucumber: req.body.ingCucumber,
                     PizzaIngredientMushroom: req.body.ingMushroom,
                     PizzaIngredientMixedPepper: req.body.ingMixedPepper,
                     PizzaIngredientTomato: req.body.ingTomato,
@@ -60,8 +61,9 @@ router.post('/edit/pizzas', function (req, res, next) {
                     PizzaIngredientPickles: req.body.ingPickle,
                     PizzaIngredientJalapeno: req.body.ingJalapeno,
                     PizzaIngredientBlackOlive: req.body.ingBlackOlive,
-                    PizzaIngredientSourKrout: req.body.ingSourKrout,
-                    PizzaIngredientShreddedLettuce: req.body.ingShreddedLettuce
+                    PizzaIngredientSourKraut: req.body.ingSourKrout,
+                    PizzaIngredientShreddedLettuce: req.body.ingShreddedLettuce,
+                    PizzaIngredientCheddarCheese: req.body.ingShreddedCheese
                 }
             }).spread(function (result, created) {
                 if (created) {

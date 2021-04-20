@@ -2,7 +2,6 @@ import React from 'react';
 import "../styles/menuGet.css";
 
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
-
 import PizzaRender from "../screens/PizzaRender";
 import SandwichRender from '../screens/SandwichRender';
 import SaladRender from '../screens/SaladRender';
