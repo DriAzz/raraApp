@@ -3,7 +3,7 @@ import "../styles/apply.css";
 
 const ApplyForm = () => (
     <div className="applyForm-container">
-        <form className="applyForm">
+        <form className="applyForm"> {/* This still needs a post */}
             <div className="titleForm-container">
                 <p className="titleForm">Employment Application</p>
             </div>

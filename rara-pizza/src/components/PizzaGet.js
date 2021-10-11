@@ -33,15 +33,6 @@ class PizzaGet extends React.Component {
             </div>
         }
 
-        var nullDetect = document.getElementById("pizzaGetTopIng7");
-        console.log(nullDetect);
-
-        if (nullDetect == null) {
-            alert(nullDetect);
-        } else {
-
-        }
-
         const pizzas = this.state.pizzaData.map(pizza => (
             <div className="pizzaGet-box" key={pizza.pizzaID}>
                 <div className="pizzaGetName-container">
@@ -57,41 +48,47 @@ class PizzaGet extends React.Component {
                         </div>
                     </div>
                     <div className="pizzaGetTop-container">
-                        <div className="pizzaGetTopTitle-container">
-                            <p className="pizzaGetTopTitle">Toppings</p>
-                        </div>
                         <div className="pizzaGetTopIng-container">
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng1">{pizza.PizzaIngredientPepperoni}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng2">{pizza.PizzaIngredientSausage}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng3">{pizza.PizzaIngredientSalami}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng4">{pizza.PizzaIngredientCanBacon}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng5">{pizza.PizzaIngredientBeefBurger}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng6">{pizza.PizzaIngredientBaconBits}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng7">{pizza.PizzaIngredientGrilledChicken}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng8">{pizza.PizzaIngredientPickles}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng9">{pizza.PizzaIngredientBananaPepper}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng10">{pizza.PizzaIngredientBlackOlive}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng11">{pizza.PizzaIngredientPineapple}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng12">{pizza.PizzaIngredientCucumber}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng13">{pizza.PizzaIngredientJalapeno}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng14">{pizza.PizzaIngredientMushroom}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng15">{pizza.PizzaIngredientMixedPepper}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng16">{pizza.PizzaIngredientTomato}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng17">{pizza.PizzaIngredientOnion}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng18">{pizza.PizzaIngredientSourKraut}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng19">{pizza.PizzaIngredientShreddedLettuce}</p>
-                            <p className="pizzaGetTopIng" id="pizzaGetTopIng20">{pizza.PizzaIngredientCheddarCheese}</p>
+                            <div className="pizzaGetTopIng-Meats">
+                                <p className="pizzaGetTopIng-MeatsTitle">Meats</p>
+                                <div className="pizzaGetTopIng-MeatsIngredients">
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng1">{pizza.PizzaIngredientPepperoni}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng2">{pizza.PizzaIngredientSausage}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng3">{pizza.PizzaIngredientSalami}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng4">{pizza.PizzaIngredientCanBacon}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng5">{pizza.PizzaIngredientBeefBurger}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng6">{pizza.PizzaIngredientBaconBits}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng7">{pizza.PizzaIngredientGrilledChicken}</p>
+                                </div>
+                            </div>
+                            <div className="pizzaGetTopIng-Veggies">
+                            <p className="pizzaGetTopIng-VeggiesTitle">Veggies</p>
+                                <div className="pizzaGetTopIng-VeggiesIngredients">
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng8">{pizza.PizzaIngredientPickles}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng9">{pizza.PizzaIngredientBananaPepper}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng10">{pizza.PizzaIngredientBlackOlive}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng11">{pizza.PizzaIngredientPineapple}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng13">{pizza.PizzaIngredientJalapeno}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng14">{pizza.PizzaIngredientMushroom}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng15">{pizza.PizzaIngredientMixedPepper}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng16">{pizza.PizzaIngredientTomato}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng17">{pizza.PizzaIngredientOnion}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng18">{pizza.PizzaIngredientSourKraut}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng19">{pizza.PizzaIngredientShreddedLettuce}</p>
+                                    <p className="pizzaGetTopIng" id="pizzaGetTopIng20">{pizza.PizzaIngredientCheddarCheese}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="pizzaGetPrice-container">
                         <div className="pizzaGetPriceLarge-container pizzaGetPriceA-containerGlobal">
-                            <p className="pizzaGetPriceLarge">$</p>
+                            <p className="pizzaGetPriceLarge">16": ${pizza.PizzaLargePrice}</p>
                         </div>
                         <div className="pizzaGetPriceMedium-container pizzaGetPriceA-containerGlobal">
-                            <p className="pizzaGetPriceLarge"></p>
+                            <p className="pizzaGetPriceMedium">12": ${pizza.PizzaMediumPrice}</p>
                         </div>
                         <div className="pizzaGetPriceSmall-container pizzaGetPriceA-containerGlobal">
-                            <p className="pizzaGetPriceLarge"></p>
+                            <p className="pizzaGetPriceSmall">6": ${pizza.PizzaSmallPrice}</p>
                         </div>
                     </div>
                 </div>

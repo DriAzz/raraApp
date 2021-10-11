@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/mobileStyles/mobileHomeC1.css";
+import "../../../styles/mobileStyles/mobileHomeC1.css";
 
 class MobileHomeC1 extends React.Component {
     render() {
@@ -26,7 +26,7 @@ class MobileHomeC1 extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="mobileHomeC1-grid">
+                    <div className="mobileHomeC1-grid mobileHomeC1CarShowHIDE">
                         <div className="mobileHomePizzaSpec-C1">
                             <div className="mobileHomeCarshow-C1">
                                 <div className="mobileHomePizzaSpecName-C1">

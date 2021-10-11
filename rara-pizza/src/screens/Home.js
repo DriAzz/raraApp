@@ -1,8 +1,8 @@
 import React from 'react';
 
 import ParallaxComponent from '../components/ParallaxC';
-import MobileParallaxC from '../components/mobileComponents/MobileParallaxC';
-import MobilePhoParallaxC from '../components/mobileComponents/MobilePhoParallaxC';
+import MobileParallaxC from '../components/mobileComponents/mobileHomeComponents/MobileParallaxC';
+import MobilePhoParallaxC from '../components/mobileComponents/mobileHomeComponents/MobilePhoParallaxC';
 
 import "../styles/home.css";
 

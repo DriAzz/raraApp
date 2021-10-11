@@ -2,8 +2,8 @@ import React from 'react';
 import "../styles/menu.css";
 import MenuGetComponent from "../components/MenuGet";
 
-import MobileTabMenuGet from "../components/mobileComponents/MobileTabMenuGet";
-import MobilePhoMenuGet from "../components/mobileComponents/MobilePhoMenuGet";
+import MobileTabMenuGet from "../components/mobileComponents/mobileMenuComponents/MobileTabMenuGet";
+import MobilePhoMenuGet from "../components/mobileComponents/mobileMenuComponents/MobilePhoMenuGet";
 
 const Menu = () => (
     <div className="menuContainer">

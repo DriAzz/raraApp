@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/mobileStyles/mobileParallax.css";
+import "../../../styles/mobileStyles/mobileParallax.css";
 
 import MobileHomeC1 from "./MobileHomeC1";
 import MobileHomeC2 from './MobileHomeC2';
@@ -15,9 +15,6 @@ class MobileParallaxC extends React.Component {
                     <div className="mobileContainer2">
                         <MobileHomeC2 />
                     </div>
-                </div>
-                <div className="mobileParallax-containerInnerPhone">
-                    {/* Add mobile phone elements here */}
                 </div>
             </div>
         )

@@ -32,7 +32,7 @@
 
 .pizzaGet-box {
     width: 33.3%;
-    height: 20em;
+    height: 21em;
     margin-top: 3em;
     float: left;
     color: white;
@@ -74,6 +74,11 @@
 .pizzaGetSTitle {
     text-decoration: underline;
     font-size: 25px;
+    margin-left: 1em;
+}
+
+.pizzaGetSIng {
+    margin-left: 1.5em;
 }
 
 .pizzaGetTop-container {
@@ -82,76 +87,35 @@
     float: left;
 }
 
-.pizzaGetTopTitle {
-    text-decoration: underline;
-    font-size: 25px;
-}
-
 .pizzaGetTopIng-container {
     float: left;
     width: 100%;
 }
 
-.pizzaGetTopIng {
-    float: left;
-    width: 33.3%;
-    margin-top: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.pizzaGetIng-inner {
+.pizzaGetTopIng-Meats {
     width: 100%;
     float: left;
 }
 
-.pizzaGetIng-sauces {
-    width: 100%;
-    float: left;
-}
-
-.pizzaGetIng-title-container {
-    width: 100%;
-    float: left;
-    margin-top: 2em;
-}
-
-.pizzaGetIng-title {
-    font-size: 22px;
+.pizzaGetTopIng-MeatsTitle, .pizzaGetTopIng-VeggiesTitle {
     text-decoration: underline;
-    margin-left: 2em;
+    font-size: 25px;
+    margin-left: 1em;
 }
 
-.pizzaGet-data-container {
+.pizzaGetTopIng-Veggies {
     width: 100%;
     float: left;
     margin-top: 0.5em;
 }
 
-/* .pizzaGet-data-containerInner {
-    width: 95%;
-    margin: auto;
-} */
+.pizzaGetTopIng {
+    float: left;
+    /* width: 33.3%; */
+    margin-left: 1.5em;
+    margin-top: 5px;
+    padding: 0;
+}
 
 .pizzaGet-dataInnerContainer {
     width: 100%;
@@ -184,9 +148,26 @@
     margin-top: 5em;
 }
 
-.pizzaGetPrice-titleC {
+.pizzaGetPrice-container {
     width: 100%;
     float: left;
+    margin-top: 0.8em;
+}
+
+.pizzaGetPriceA-containerGlobal {
+    width: 33.2%;
+    float: left;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.pizzaGetPriceLarge-container {
+    border-right: solid white 1px;
+}
+
+.pizzaGetPriceSmall-container {
+    border-left: solid white 1px;
 }
 
 .pizzaGrid-3 {
@@ -196,13 +177,11 @@
     text-align: center;
 }
 
-.pizzaGet-price {
-    font-size: 20px;
-}
- */
+
 
 @media only screen and (min-width: 900px) and (max-width: 999px) {
     .pizzaRender-container {
         background: white;
     }
 }
+

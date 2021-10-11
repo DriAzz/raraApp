@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/mobileStyles/mobileHomeC2.css";
+import "../../../styles/mobileStyles/mobileHomeC2.css";
 
 class MobileHomeC2 extends React.Component {
     render() {

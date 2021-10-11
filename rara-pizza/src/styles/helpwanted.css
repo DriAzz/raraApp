@@ -282,6 +282,80 @@
     }
 }
 
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -4.8em;
+    }
+
+    .helpWanted-container {
+        height: auto;
+        background: none;
+        margin-top: 0;
+    }
+
+    .helpWanted-text {
+        font-size: 36px;
+    }
+
+    .apply-link {
+        font-size: 20px;
+        margin-top: -0.40em;
+    }
+
+    .apply-now-button {
+        height: 40px;
+        margin-top: 2.3em;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -4.8em;
+    }
+
+    .helpWanted-container {
+        height: auto;
+        background: none;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -4.8em;
+    }
+
+    .helpWanted-container {
+        height: auto;
+        background: none;
+        margin-top: 0;
+    }
+}
+
 @media only screen and (min-width: 1201px) and (max-width: 1300px) {
     .helpWanted-text {
         font-size: 30px;
