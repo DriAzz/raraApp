@@ -1,5 +1,8 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import "../../../styles/mobileStyles/mobileHomeC2.css";
+
+import HelpWanted from '../../HelpWanted';
 
 class MobileHomeC2 extends React.Component {
     render() {
@@ -63,12 +66,12 @@ class MobileHomeC2 extends React.Component {
                                 </div>
                             </div>
                             <div className="mobileHomeHours-C2 mobileHomeHelpWantedC">
-                                <div className="mobileHomeHelpWanted-C2">
-                                    <p className="mobileHomeHelpWanted">Help Wanted</p>
-                                </div>
-                                <div className="mobileHomeApplyNow-C2">
-                                    <button className="mobileHomeApplyNow">Apply Now</button>
-                                </div>
+                                <HelpWanted />
+                            </div>
+                            <div className="mobileHomeMenuC-C2">
+                                <button className="mobileHomeMenuButton-C2">
+                                    <NavLink className="mobileHomeMenuLink-C2" activeClassName="NavActive" to="/menu/pizzas/1">View Menu</NavLink>
+                                </button>
                             </div>
                         </div>
                     </div>

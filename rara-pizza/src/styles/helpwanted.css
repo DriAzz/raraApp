@@ -87,17 +87,157 @@
     
 }
 
-@media only screen and (min-width: 600px) and (max-width: 699px) {
-    
-}
 
-@media only screen and (min-width: 700px) and (max-width: 799px) {
-    
-}
+
+
 
 @media only screen and (min-width: 800px) and (max-width: 899px) {
 
 } */
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -4.8em;
+    }
+
+    .helpWanted-container {
+        height: auto;
+        background: none;
+        margin-top: 0;
+    }
+
+    .helpWanted-text {
+        font-size: 36px;
+    }
+
+    .apply-link {
+        font-size: 20px;
+        margin-top: -0.40em;
+    }
+
+    .apply-now-button {
+        height: 40px;
+        margin-top: 2.3em;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -4.8em;
+    }
+
+    .helpWanted-container {
+        height: auto;
+        background: none;
+        margin-top: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    .helpWanted-infoC {
+        display: none;
+    }
+
+    .mobile-helpWantedGridP1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -4.8em;
+    }
+
+    .helpWanted-container {
+        height: auto;
+        background: none;
+        margin-top: 4em;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+    .helpWanted-container {
+        background: none;
+    }
+
+    .helpWanted-text {
+        font-size: 35px;
+    }
+    
+    .helpWanted-p1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -45px;
+    }
+    
+    .apply-now-button {
+        margin-top: 0;
+        font-size: 20px;
+        height: 40px;
+    } 
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+    .helpWanted-container {
+        background: none;
+    }
+
+    .helpWanted-text {
+        font-size: 35px;
+    }
+    
+    .helpWanted-p1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -45px;
+    }
+    
+    .apply-now-button {
+        margin-top: 0;
+        font-size: 25px;
+    } 
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {    
+    .helpWanted-container {
+        background: none;
+    }
+
+    .helpWanted-text {
+        font-size: 35px;
+    }
+    
+    .helpWanted-p1 {
+        display: none;
+    }
+
+    .helpWanted-buttonC {
+        margin-top: -45px;
+    }
+    
+    .apply-now-button {
+        margin-top: 0;
+        font-size: 25px;
+    }
+}
 
 @media only screen and (min-width: 900px) and (max-width: 1000px) {
     .helpWanted-container {
@@ -279,80 +419,6 @@
         height: 45px;
         font-size: 20px;
         padding-top: 3px;
-    }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 399px) {
-    .helpWanted-infoC {
-        display: none;
-    }
-
-    .mobile-helpWantedGridP1 {
-        display: none;
-    }
-
-    .helpWanted-buttonC {
-        margin-top: -4.8em;
-    }
-
-    .helpWanted-container {
-        height: auto;
-        background: none;
-        margin-top: 0;
-    }
-
-    .helpWanted-text {
-        font-size: 36px;
-    }
-
-    .apply-link {
-        font-size: 20px;
-        margin-top: -0.40em;
-    }
-
-    .apply-now-button {
-        height: 40px;
-        margin-top: 2.3em;
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 499px) {
-    .helpWanted-infoC {
-        display: none;
-    }
-
-    .mobile-helpWantedGridP1 {
-        display: none;
-    }
-
-    .helpWanted-buttonC {
-        margin-top: -4.8em;
-    }
-
-    .helpWanted-container {
-        height: auto;
-        background: none;
-        margin-top: 0;
-    }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 599px) {
-    .helpWanted-infoC {
-        display: none;
-    }
-
-    .mobile-helpWantedGridP1 {
-        display: none;
-    }
-
-    .helpWanted-buttonC {
-        margin-top: -4.8em;
-    }
-
-    .helpWanted-container {
-        height: auto;
-        background: none;
-        margin-top: 0;
     }
 }
 

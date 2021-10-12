@@ -6,6 +6,7 @@
     height: 100vh;
     float: left;
     background: white;
+    z-index: 1;
 }
 
 .phoneBurgerNav-container {

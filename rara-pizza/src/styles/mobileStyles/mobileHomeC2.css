@@ -20,12 +20,6 @@
     text-align: center;
 }
 
-.mobileHomeC2-gridInner {
-    border: solid 2px;
-    border-radius: 5px;
-    width: 95%;
-}
-
 .mobileHomeC2-GridInnerWidthChange {
     width: auto;
 }
@@ -149,6 +143,10 @@
     margin-top: -1.8em;
 }
 
+.mobileHomeMenuC-C2 {
+    display: none;
+}
+
 @media only screen and (min-width: 700px) and (max-width: 799px) {
     .mobileHomeHelpWanted-C2 {
         width: 93%;
@@ -175,4 +173,147 @@
     .mobileHomeHelpWanted {
         font-size: 30px;
     }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    .mobileHomeHelpWantedC {
+        display: none;
+    }
+
+    .mobileHomeC2-main {
+        width: 100%;
+    }
+    
+    .mobileHomeC2-gridC {
+        border-top: solid 1px rgb(180, 50, 44);
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px rgb(180, 50, 44);
+        border-radius: 0;
+    }
+   
+    .mobileHomeHours {
+        font-size: 20px;
+    }
+    
+    .mobileHomeHoursCLSD {
+        font-size: 20px;
+    }
+    
+    .mobileHomeTitle {
+        font-size: 25px;
+    }
+        
+    .mobileHomeDays {
+        font-size: 25px;
+    }
+    
+    /* Carshow Hours */
+    
+    .mobileTitleTypeCS {
+        font-size: 25px;
+    }
+        
+    .mobileHomeDays-C2REG {
+        margin-top: -1em;
+    }
+
+    .mobileHomeMenuC-C2 {
+        display: inline;
+        width: 100%;
+        float: left;
+    }
+
+    .mobileHomeMenuButton-C2 {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: none;
+        border-color: red;
+        border-style: solid;
+    }
+
+    .mobileHomeMenuLink-C2 {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        font-family: 'Bungee Inline', cursive;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    .mobileHomeHelpWantedC {
+        display: none;
+    }
+
+    .mobileHomeC2-main {
+        width: 100%;
+    }
+    
+    .mobileHomeC2-gridC {
+        border-top: solid 1px rgb(180, 50, 44);
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px rgb(180, 50, 44);
+        border-radius: 0;
+    }
+   
+    .mobileHomeHours {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .mobileHomeHoursCLSD {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .mobileHomeTitle {
+        font-size: 20px;
+    }
+        
+    .mobileHomeDays {
+        font-size: 20px;
+    }
+    
+    /* Carshow Hours */
+    
+    .mobileTitleTypeCS {
+        font-size: 20px;
+    }
+        
+    .mobileHomeDays-C2REG {
+        margin-top: -0.15em;
+    }
+
+    .mobileHomeMenuC-C2 {
+        display: inline;
+        width: 100%;
+        float: left;
+    }
+
+    .mobileHomeMenuButton-C2 {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: none;
+        border-color: red;
+        border-style: solid;
+    }
+
+    .mobileHomeMenuLink-C2 {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        font-family: 'Bungee Inline', cursive;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    .mobileHomeHelpWantedC {
+        display: none;
+    }
+
 }

@@ -23,7 +23,7 @@ class PhoneBurger extends React.Component {
                     </div>
                     <div className="phoneBurgerNav-container">
                         <NavLink activeClassName=""
-                            exact to="/menu/overview" className="burgerNav-link">Menu</NavLink>
+                            exact to="/menu/pizzas/1" className="burgerNav-link">Menu</NavLink>
                     </div>
                 </div>
             </div>
